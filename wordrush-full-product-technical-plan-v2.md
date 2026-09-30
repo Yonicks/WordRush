@@ -8,6 +8,8 @@
 **Initial Stack:** Expo React Native + TypeScript  
 **Scale Target:** 10,000+ vocabulary items, multiple children per family
 
+**Implementation update (2026-10-01):** First playable Expo slice is implemented: local child profiles, 100 draft seed words, recognition/reverse recall, initial scheduler/mastery, saved progress, results/XP, and a basic parent view. See [implementation status](docs/implementation-status.md) for validation and remaining work. This is not completion of the full V1 or production asset milestone.
+
 ---
 
 # 1. Executive Summary

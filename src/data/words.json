@@ -1,0 +1,802 @@
+[
+  {
+    "id": "w-000001",
+    "english": "apple",
+    "hebrew": "תפוח",
+    "category": "food",
+    "example": "The apple is red.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000002",
+    "english": "banana",
+    "hebrew": "בננה",
+    "category": "food",
+    "example": "I eat a banana.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000003",
+    "english": "bread",
+    "hebrew": "לחם",
+    "category": "food",
+    "example": "This bread is fresh.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000004",
+    "english": "water",
+    "hebrew": "מים",
+    "category": "food",
+    "example": "I drink water.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000005",
+    "english": "milk",
+    "hebrew": "חלב",
+    "category": "food",
+    "example": "The milk is cold.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000006",
+    "english": "egg",
+    "hebrew": "ביצה",
+    "category": "food",
+    "example": "An egg is on the plate.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000007",
+    "english": "rice",
+    "hebrew": "אורז",
+    "category": "food",
+    "example": "We eat rice.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000008",
+    "english": "cheese",
+    "hebrew": "גבינה",
+    "category": "food",
+    "example": "I like cheese.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000009",
+    "english": "orange",
+    "hebrew": "תפוז",
+    "category": "food",
+    "example": "An orange grows on a tree.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000010",
+    "english": "carrot",
+    "hebrew": "גזר",
+    "category": "food",
+    "example": "The carrot is orange.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000011",
+    "english": "dog",
+    "hebrew": "כלב",
+    "category": "animals",
+    "example": "The dog can run.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000012",
+    "english": "cat",
+    "hebrew": "חתול",
+    "category": "animals",
+    "example": "The cat is sleeping.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000013",
+    "english": "bird",
+    "hebrew": "ציפור",
+    "category": "animals",
+    "example": "A bird can fly.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000014",
+    "english": "fish",
+    "hebrew": "דג",
+    "category": "animals",
+    "example": "The fish is in the water.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000015",
+    "english": "horse",
+    "hebrew": "סוס",
+    "category": "animals",
+    "example": "The horse is big.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000016",
+    "english": "cow",
+    "hebrew": "פרה",
+    "category": "animals",
+    "example": "The cow eats grass.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000017",
+    "english": "sheep",
+    "hebrew": "כבשה",
+    "category": "animals",
+    "example": "The sheep is white.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000018",
+    "english": "duck",
+    "hebrew": "ברווז",
+    "category": "animals",
+    "example": "The duck can swim.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000019",
+    "english": "rabbit",
+    "hebrew": "ארנב",
+    "category": "animals",
+    "example": "The rabbit has long ears.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000020",
+    "english": "lion",
+    "hebrew": "אריה",
+    "category": "animals",
+    "example": "The lion is strong.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000021",
+    "english": "house",
+    "hebrew": "בית",
+    "category": "home",
+    "example": "This is my house.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000022",
+    "english": "door",
+    "hebrew": "דלת",
+    "category": "home",
+    "example": "Open the door.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000023",
+    "english": "window",
+    "hebrew": "חלון",
+    "category": "home",
+    "example": "Look through the window.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000024",
+    "english": "table",
+    "hebrew": "שולחן",
+    "category": "home",
+    "example": "The book is on the table.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000025",
+    "english": "chair",
+    "hebrew": "כיסא",
+    "category": "home",
+    "example": "Sit on the chair.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000026",
+    "english": "bed",
+    "hebrew": "מיטה",
+    "category": "home",
+    "example": "My bed is soft.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000027",
+    "english": "room",
+    "hebrew": "חדר",
+    "category": "home",
+    "example": "This is my room.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000028",
+    "english": "cup",
+    "hebrew": "כוס",
+    "category": "home",
+    "example": "The cup is blue.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000029",
+    "english": "plate",
+    "hebrew": "צלחת",
+    "category": "home",
+    "example": "The plate is on the table.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000030",
+    "english": "clock",
+    "hebrew": "שעון",
+    "category": "home",
+    "example": "Look at the clock.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000031",
+    "english": "book",
+    "hebrew": "ספר",
+    "category": "school",
+    "example": "I read a book.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000032",
+    "english": "pen",
+    "hebrew": "עט",
+    "category": "school",
+    "example": "This pen is blue.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000033",
+    "english": "pencil",
+    "hebrew": "עיפרון",
+    "category": "school",
+    "example": "I write with a pencil.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000034",
+    "english": "bag",
+    "hebrew": "תיק",
+    "category": "school",
+    "example": "My bag is green.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000035",
+    "english": "school",
+    "hebrew": "בית ספר",
+    "category": "school",
+    "example": "I go to school.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000036",
+    "english": "teacher",
+    "hebrew": "מורה",
+    "category": "school",
+    "example": "The teacher helps us.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000037",
+    "english": "friend",
+    "hebrew": "חבר",
+    "category": "school",
+    "example": "My friend is kind.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000038",
+    "english": "paper",
+    "hebrew": "נייר",
+    "category": "school",
+    "example": "Draw on the paper.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000039",
+    "english": "desk",
+    "hebrew": "שולחן כתיבה",
+    "category": "school",
+    "example": "My book is on the desk.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000040",
+    "english": "student",
+    "hebrew": "תלמיד",
+    "category": "school",
+    "example": "The student reads a book.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000041",
+    "english": "run",
+    "hebrew": "לרוץ",
+    "category": "actions",
+    "example": "I can run fast.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000042",
+    "english": "walk",
+    "hebrew": "ללכת",
+    "category": "actions",
+    "example": "We walk to school.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000043",
+    "english": "jump",
+    "hebrew": "לקפוץ",
+    "category": "actions",
+    "example": "I can jump high.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000044",
+    "english": "swim",
+    "hebrew": "לשחות",
+    "category": "actions",
+    "example": "We swim in the pool.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000045",
+    "english": "eat",
+    "hebrew": "לאכול",
+    "category": "actions",
+    "example": "I eat an apple.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000046",
+    "english": "drink",
+    "hebrew": "לשתות",
+    "category": "actions",
+    "example": "I drink water.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000047",
+    "english": "read",
+    "hebrew": "לקרוא",
+    "category": "actions",
+    "example": "We read a book.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000048",
+    "english": "write",
+    "hebrew": "לכתוב",
+    "category": "actions",
+    "example": "I write my name.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000049",
+    "english": "sleep",
+    "hebrew": "לישון",
+    "category": "actions",
+    "example": "I sleep at night.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000050",
+    "english": "play",
+    "hebrew": "לשחק",
+    "category": "actions",
+    "example": "We play together.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000051",
+    "english": "open",
+    "hebrew": "לפתוח",
+    "category": "actions",
+    "example": "Open your book.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000052",
+    "english": "close",
+    "hebrew": "לסגור",
+    "category": "actions",
+    "example": "Close the door.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000053",
+    "english": "listen",
+    "hebrew": "להקשיב",
+    "category": "actions",
+    "example": "Listen to the bird.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000054",
+    "english": "look",
+    "hebrew": "להסתכל",
+    "category": "actions",
+    "example": "Look at the sky.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000055",
+    "english": "help",
+    "hebrew": "לעזור",
+    "category": "actions",
+    "example": "I help my friend.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000056",
+    "english": "sing",
+    "hebrew": "לשיר",
+    "category": "actions",
+    "example": "We sing a song.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000057",
+    "english": "dance",
+    "hebrew": "לרקוד",
+    "category": "actions",
+    "example": "We dance together.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000058",
+    "english": "draw",
+    "hebrew": "לצייר",
+    "category": "actions",
+    "example": "I draw a house.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000059",
+    "english": "sit",
+    "hebrew": "לשבת",
+    "category": "actions",
+    "example": "Please sit here.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000060",
+    "english": "stand",
+    "hebrew": "לעמוד",
+    "category": "actions",
+    "example": "Stand by the door.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000061",
+    "english": "come",
+    "hebrew": "לבוא",
+    "category": "actions",
+    "example": "Come to my house.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000062",
+    "english": "go",
+    "hebrew": "ללכת",
+    "category": "actions",
+    "example": "We go to the park.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000063",
+    "english": "give",
+    "hebrew": "לתת",
+    "category": "actions",
+    "example": "Give me the book.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000064",
+    "english": "take",
+    "hebrew": "לקחת",
+    "category": "actions",
+    "example": "Take your bag.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000065",
+    "english": "find",
+    "hebrew": "למצוא",
+    "category": "actions",
+    "example": "Can you find my pen?",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000066",
+    "english": "big",
+    "hebrew": "גדול",
+    "category": "descriptions",
+    "example": "The house is big.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000067",
+    "english": "small",
+    "hebrew": "קטן",
+    "category": "descriptions",
+    "example": "The cat is small.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000068",
+    "english": "happy",
+    "hebrew": "שמח",
+    "category": "descriptions",
+    "example": "I am happy today.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000069",
+    "english": "sad",
+    "hebrew": "עצוב",
+    "category": "descriptions",
+    "example": "The boy feels sad.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000070",
+    "english": "hot",
+    "hebrew": "חם",
+    "category": "descriptions",
+    "example": "The soup is hot.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000071",
+    "english": "cold",
+    "hebrew": "קר",
+    "category": "descriptions",
+    "example": "The water is cold.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000072",
+    "english": "fast",
+    "hebrew": "מהיר",
+    "category": "descriptions",
+    "example": "The train is fast.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000073",
+    "english": "slow",
+    "hebrew": "איטי",
+    "category": "descriptions",
+    "example": "The turtle is slow.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000074",
+    "english": "new",
+    "hebrew": "חדש",
+    "category": "descriptions",
+    "example": "I have a new bag.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000075",
+    "english": "old",
+    "hebrew": "ישן",
+    "category": "descriptions",
+    "example": "This book is old.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000076",
+    "english": "good",
+    "hebrew": "טוב",
+    "category": "descriptions",
+    "example": "This is a good day.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000077",
+    "english": "long",
+    "hebrew": "ארוך",
+    "category": "descriptions",
+    "example": "The pencil is long.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000078",
+    "english": "short",
+    "hebrew": "קצר",
+    "category": "descriptions",
+    "example": "The story is short.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000079",
+    "english": "clean",
+    "hebrew": "נקי",
+    "category": "descriptions",
+    "example": "My room is clean.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000080",
+    "english": "strong",
+    "hebrew": "חזק",
+    "category": "descriptions",
+    "example": "The lion is strong.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000081",
+    "english": "in",
+    "hebrew": "בתוך",
+    "category": "place-time",
+    "example": "The fish is in the water.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000082",
+    "english": "on",
+    "hebrew": "על",
+    "category": "place-time",
+    "example": "The book is on the table.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000083",
+    "english": "under",
+    "hebrew": "מתחת",
+    "category": "place-time",
+    "example": "The cat is under the bed.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000084",
+    "english": "between",
+    "hebrew": "בין",
+    "category": "place-time",
+    "example": "The ball is between two chairs.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000085",
+    "english": "before",
+    "hebrew": "לפני",
+    "category": "place-time",
+    "example": "Wash your hands before lunch.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000086",
+    "english": "after",
+    "hebrew": "אחרי",
+    "category": "place-time",
+    "example": "We play after school.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000087",
+    "english": "today",
+    "hebrew": "היום",
+    "category": "place-time",
+    "example": "Today is a good day.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000088",
+    "english": "tomorrow",
+    "hebrew": "מחר",
+    "category": "place-time",
+    "example": "See you tomorrow.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000089",
+    "english": "morning",
+    "hebrew": "בוקר",
+    "category": "place-time",
+    "example": "I eat in the morning.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000090",
+    "english": "night",
+    "hebrew": "לילה",
+    "category": "place-time",
+    "example": "I sleep at night.",
+    "difficulty": 2
+  },
+  {
+    "id": "w-000091",
+    "english": "sun",
+    "hebrew": "שמש",
+    "category": "nature",
+    "example": "The sun is bright.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000092",
+    "english": "moon",
+    "hebrew": "ירח",
+    "category": "nature",
+    "example": "The moon is in the sky.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000093",
+    "english": "star",
+    "hebrew": "כוכב",
+    "category": "nature",
+    "example": "I see a star.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000094",
+    "english": "tree",
+    "hebrew": "עץ",
+    "category": "nature",
+    "example": "The tree is tall.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000095",
+    "english": "flower",
+    "hebrew": "פרח",
+    "category": "nature",
+    "example": "The flower is red.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000096",
+    "english": "rain",
+    "hebrew": "גשם",
+    "category": "nature",
+    "example": "The rain makes us wet.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000097",
+    "english": "sky",
+    "hebrew": "שמיים",
+    "category": "nature",
+    "example": "The sky is blue.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000098",
+    "english": "sea",
+    "hebrew": "ים",
+    "category": "nature",
+    "example": "The sea is big.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000099",
+    "english": "mountain",
+    "hebrew": "הר",
+    "category": "nature",
+    "example": "The mountain is high.",
+    "difficulty": 1
+  },
+  {
+    "id": "w-000100",
+    "english": "river",
+    "hebrew": "נהר",
+    "category": "nature",
+    "example": "The river is long.",
+    "difficulty": 1
+  }
+]
