@@ -4,8 +4,8 @@
 **Version:** 1.0  
 **Status:** Product & Engineering Blueprint  
 **Target:** Hebrew-speaking children learning English  
-**Primary Platform:** Mobile-first PWA  
-**Initial Stack:** React + TypeScript  
+**Primary Platform:** iOS and Android mobile app  
+**Initial Stack:** Expo React Native + TypeScript  
 **Scale Target:** 10,000+ vocabulary items, multiple children per family
 
 ---
@@ -42,7 +42,7 @@ WordRush extends this with:
 - parent analytics;
 - thousands of words;
 - multiple child profiles;
-- offline-first PWA support.
+- offline-first mobile support.
 
 The first release should feel extremely simple to the child:
 
@@ -1326,14 +1326,14 @@ Boss win   celebration sequence
 
 ---
 
-# 42. PWA Architecture
+# 42. Mobile App Architecture
 
 ```mermaid
 graph TD
 
-    UI[React PWA]
-    SW[Service Worker]
-    CACHE[Offline Cache]
+    UI[Expo React Native App]
+    STORE[Local Progress Store]
+    CACHE[Asset Cache]
     API[Application API]
     DB[(Database)]
     CDN[Assets CDN]
@@ -1341,8 +1341,8 @@ graph TD
     AUDIO[Audio Service]
 
     UI --> API
-    UI --> SW
-    SW --> CACHE
+    UI --> STORE
+    UI --> CACHE
 
     API --> DB
     API --> AI
@@ -1358,13 +1358,14 @@ graph TD
 ## Frontend
 
 ```text
-React
+Expo React Native
 TypeScript
-Vite
+React Navigation
 TanStack Query
 Zustand or Redux Toolkit
-React Router
-Framer Motion
+React Native Reanimated
+Expo AV
+Expo Haptics
 ```
 
 ## Styling
@@ -1372,9 +1373,9 @@ Framer Motion
 Recommended:
 
 ```text
-CSS Modules
+React Native StyleSheet
 or
-Tailwind CSS
+NativeWind
 ```
 
 Keep the design system small.
@@ -1792,7 +1793,7 @@ Levels
 Streaks
 Basic worlds
 Parent dashboard
-Offline PWA
+Offline mobile support
 ```
 
 ---
@@ -1855,10 +1856,10 @@ Teacher mode
 Tasks:
 
 - repository setup;
-- Vite + React + TS;
-- routing;
+- Expo + React Native + TS;
+- React Navigation;
 - design tokens;
-- PWA configuration;
+- local asset loading;
 - database schema;
 - child profile model.
 
@@ -1986,7 +1987,7 @@ gantt
     section Parent
     Dashboard                  :f1, after c3, 10d
 
-    section PWA
+    section Mobile App
     Offline                    :g1, after c3, 7d
     Sync                       :g2, after g1, 5d
 ```
@@ -2659,7 +2660,7 @@ graph TB
     CHILD[Child]
     PARENT[Parent]
 
-    WEB[WordRush PWA]
+    APP[WordRush Mobile App]
 
     GAME[Game Engine]
     LEARNING[Learning Engine]
@@ -2720,8 +2721,8 @@ Once that works correctly, everything else becomes a layer on top of a strong fo
 # 102. Suggested Initial Milestone Checklist
 
 ```text
-[ ] React + TypeScript project
-[ ] PWA enabled
+[ ] Expo React Native + TypeScript project
+[ ] iOS and Android app shell
 [ ] Child profile
 [ ] 100 seed words
 [ ] Word progress
@@ -3515,8 +3516,8 @@ Boss victory confetti
 Prefer:
 
 ```text
-CSS
-Framer Motion
+React Native styles
+React Native Reanimated
 Lottie
 Rive
 ```
@@ -3642,7 +3643,7 @@ Later:
 
 ```text
 landing-page hero
-PWA/App Store screenshots
+App Store / Play Store screenshots
 social preview image
 feature banner
 demo video/GIF
