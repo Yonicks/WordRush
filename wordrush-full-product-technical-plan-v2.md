@@ -2840,6 +2840,41 @@ Scale in validated batches:
 
 Reuse templates and systems wherever possible.
 
+## 105.2 Current committed asset pack
+
+The repository already contains the first production visual pack at
+`assets/wordrush-v1-sprite-style-assets/`. It is the source of truth for the
+first Expo implementation and should be wired into the app before generating
+additional visual assets.
+
+| Asset group | Quantity | Current path | Planned use |
+|---|---:|---|---|
+| Brand | 5 | `brand/` | App icon, logos and identity surfaces |
+| Mascot expressions | 7 | `mascot/` | Onboarding, encouragement, feedback and empty states |
+| Core UI art | 31 | `ui/` | Navigation, controls, status and game actions |
+| Category icons | 15 | `categories/` | Topic selection and category progress |
+| Vocabulary visuals | 100 | `vocabulary/` | Initial word-learning and review cards |
+| Feedback FX | 8 | `feedback-fx/` | Correct, wrong, XP, level-up and celebration states |
+| World/map art | 8 | `world/` | World map, paths, bridge and progression |
+| Avatars | 8 | `avatars/` | Child profile selection and profile surfaces |
+| Rewards | 12 | `rewards/` | Badges, streaks, medals and achievement screens |
+| Atlas/reference sheets | 5 | `assets/sprites/` | Visual reference only; not runtime textures |
+
+Pack metadata: 194 separate transparent PNGs in the named asset pack, plus 5
+atlas/reference PNGs. Vocabulary files are intentionally numbered
+`vocab-001.png` through `vocab-100.png`; they must remain unmapped until the
+first vocabulary dataset assigns stable word IDs. Audio is not included yet.
+
+Expo implementation rules:
+
+```text
+1. Import individual PNGs from the committed pack with static require() calls.
+2. Keep manifest.json and asset-inventory.csv as validation sources of truth.
+3. Map vocab-001..100 to stable word IDs in data, never by filename guesswork.
+4. Add pronunciation audio separately under the audio asset pipeline.
+5. Use atlas/reference sheets for design QA, not as runtime UI textures.
+```
+
 ---
 
 # 106. Asset Architecture
@@ -2867,14 +2902,17 @@ graph TD
 
 | Asset | Qty | Priority | V1? | Format |
 |---|---:|---|---|---|
-| Primary logo | 1 | P0 | Yes | SVG + PNG |
-| Horizontal logo | 1 | P1 | Yes | SVG + PNG |
-| Monochrome logo | 2 | P1 | Yes | SVG |
-| App icon | 1 | P0 | Yes | PNG 1024×1024 |
+| Primary logo | 1 | P0 | Yes | PNG |
+| Horizontal logo | 1 | P1 | Yes | PNG |
+| Monochrome/logo variants | 3 | P1 | Yes | PNG |
+| App icon | 1 | P0 | Yes | PNG |
 | Favicon set | 3–5 | P0 | Yes | PNG/ICO |
 | Splash artwork | 1 | P1 | Yes | WebP/PNG |
 | Social preview | 1 | P3 | Later | WebP |
 | Logo animation | 1 | P3 | Later | Lottie/WebM |
+
+The current committed brand files are `logo-primary.png`, `logo-wide.png`,
+`logo-compact.png`, `logo-mark.png`, and `app-icon.png`.
 
 Before mass-generating assets, define:
 
@@ -3754,41 +3792,24 @@ advanced parent reports
 
 ```text
 assets/
-├── brand/
-│   ├── logo/
-│   ├── icons/
-│   └── splash/
-│
-├── mascot/
-│   ├── static/
-│   └── animated/
-│
-├── ui/
-│   ├── icons/
-│   ├── badges/
-│   ├── states/
-│   └── effects/
-│
-├── worlds/
-│   ├── world-01/
-│   ├── world-02/
-│   └── world-03/
-│
-├── bosses/
-│
-├── vocabulary/
-│   ├── images/
-│   ├── diagrams/
-│   └── category-icons/
-│
-├── audio/
-│   ├── words/
-│   ├── sfx/
-│   └── music/
-│
-├── avatars/
-├── parent/
-└── marketing/
+├── sprites/                         # atlas/reference sheets
+└── wordrush-v1-sprite-style-assets/
+    ├── brand/
+    ├── mascot/
+    ├── ui/
+    ├── categories/
+    ├── vocabulary/
+    ├── feedback-fx/
+    ├── world/
+    ├── avatars/
+    ├── rewards/
+    ├── manifest.json
+    └── asset-inventory.csv
+
+# Planned additions
+assets/audio/{words,sfx,music}/
+assets/parent/
+assets/marketing/
 ```
 
 ---
@@ -4399,21 +4420,20 @@ This supports rollback and quality improvements without losing history.
 
 | Category | Asset Group | Initial Qty | V1 Priority | Format |
 |---|---|---:|---|---|
-| Brand | Logo set | 3–5 | P0 | SVG/PNG |
+| Brand | Logo set | 5 | P0 | PNG |
 | Brand | App icon | 1 | P0 | PNG |
-| Mascot | Expressions | 6–8 | P0 | WebP/PNG |
-| UI | Core icons | 25–35 | P0 | SVG |
-| Categories | Category art | 15–20 | P0/P1 | SVG/WebP |
-| Vocabulary | Word visuals | 100 initial | P0 | WebP |
+| Mascot | Expressions | 7 | P0 | PNG |
+| UI | Core icons | 31 | P0 | PNG |
+| Categories | Category art | 15 | P0/P1 | PNG |
+| Vocabulary | Word visuals | 100 initial | P0 | PNG |
 | Vocabulary | Normal audio | 100 initial | P0 | MP3/AAC |
 | Vocabulary | Slow audio | 100 initial | P1 | MP3/AAC |
-| Worlds | Backgrounds | 3 | P1 | WebP |
-| Worlds | Map node states | 7–8 | P1 | SVG/WebP |
+| Worlds | World/map art | 8 | P1 | PNG |
 | Bosses | Characters | 0–3 initial | P2 | WebP |
-| Rewards | Badges | 10–15 | P1 | SVG/WebP |
-| FX | Feedback effects | 5–8 | P0/P1 | CSS/Lottie |
+| Rewards | Badges | 12 | P1 | PNG |
+| FX | Feedback effects | 8 | P0/P1 | PNG |
 | Audio | Game SFX | 8–12 | P1 | MP3/AAC |
-| Parent | Child avatars | 8–12 | P1 | WebP |
+| Parent | Child avatars | 8 | P1 | PNG |
 | Parent | Dashboard art | 5–8 | P1 | SVG/WebP |
 | Marketing | Launch assets | 5–10 | P3 | PNG/WebP |
 
