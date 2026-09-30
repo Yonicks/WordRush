@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "WordRush",
+    "slug": "wordrush",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/wordrush-v1-sprite-style-assets/brand/app-icon.png",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.wordrush.app" },
+    "android": { "package": "com.wordrush.app", "supportsRTL": true },
+    "web": { "bundler": "metro", "dir": "rtl" },
+    "plugins": [
+      [
+        "expo-localization",
+        { "supportedLocales": { "ios": ["he", "en"], "android": ["he", "en"] } }
+      ]
+    ]
+  }
+}
