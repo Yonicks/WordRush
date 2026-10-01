@@ -57,6 +57,16 @@ The first release should feel extremely simple to the child:
 
 All learning complexity stays invisible.
 
+## Current product direction: 500 words and a daily habit
+
+The next major milestone is a reviewed 500-word library and a reliable daily habit. The child must always be able to see the complete library, understand which words are new, learning, due, mastered, or marked as already known, and change that decision without losing progress.
+
+The target loop is **10 minutes and 10 words**. The scheduler should prefer due reviews, introduce a safe number of new words, recover missed questions, and stop gracefully when the child reaches the time or attention budget. “10 words” is a progress goal, not a reason to force ten unfamiliar items into one sitting.
+
+Known words are a first-class state. “I know this word” is available from a side action during play and from the library. It places the word in a profile-level skip list, prevents it from appearing as a new teaching item, preserves it for parent reporting, and allows a child or parent to restore it to learning. The action must be reversible and must never delete history.
+
+The game layer is part of retention, not decoration: each round should have a short animation beat, clear sound feedback, optional music, satisfying reward effects, and a world/reward loop. A parent-gated cosmetic shop may sell avatar outfits, themes, trails, music packs, and celebration effects. Purchases must never buy vocabulary advantage, streak protection, or required learning content.
+
 ---
 
 # 2. Product Vision
@@ -4524,6 +4534,113 @@ flowchart TD
 ---
 
 # 162. Final Asset Principle
+
+# 163. 500-Word Vocabulary Library
+
+The first content expansion is a reviewed set of 500 words, shipped in five batches of 100 so quality stays ahead of volume. Every word is a stable record, never an implicit relationship to a numbered image.
+
+Each record must contain:
+
+- stable word ID and normalized English spelling;
+- Hebrew translation and accepted answer variants;
+- age band, difficulty, category and frequency tier;
+- one child-safe example sentence and Hebrew explanation;
+- image ID, normal-speed audio ID and slow-speed audio ID;
+- confusion set, lesson batch and review status;
+- content review state and provenance.
+
+The release gate for each batch is educator review, image-to-word verification, native-speaker audio QA, RTL layout QA, and a successful offline asset validation run. No batch is “complete” because it merely contains 100 rows.
+
+# 164. All Words Library UX
+
+The home and parent areas expose an **All words** entry. The library supports:
+
+1. search in Hebrew or English;
+2. filters for category, level, new, learning, due, mastered and known;
+3. a compact card showing image, word, translation, audio and status;
+4. one-tap “I already know this” with undo;
+5. multi-select known-word management behind the parent gate;
+6. a review screen for the skip list, including “return to learning”;
+7. a progress summary: `known`, `mastered`, `learning`, `due`, `remaining`.
+
+The child flow uses encouraging language and no negative score for skipping a known word. The parent flow explains that known words remain in history and can still be sampled in optional maintenance practice.
+
+# 165. Known-Word and Skip-List Model
+
+Add a profile-scoped `knownWordIds` set and a timestamped decision record. Selection excludes known IDs from new-word introduction, while due reviews already in progress follow the child’s explicit choice and are not silently deleted. Restoring a word removes it from the exclusion set and places it in a low-pressure re-entry queue.
+
+Required transitions:
+
+```text
+new → known (child or parent action)
+known → learning (restore)
+learning → known (repeat action)
+known → maintenance review (optional)
+```
+
+The state migration must tolerate old saves that have no known-word field. Sync conflict resolution is per word and uses the newest explicit user decision, never a blind whole-profile overwrite.
+
+# 166. Ten-Minute Daily Mission
+
+Every daily session has a visible but non-punitive mission:
+
+- target duration: 10 minutes;
+- target exposure: up to 10 meaningful words;
+- first priority: due recognition and recall;
+- second priority: missed-word recovery;
+- third priority: new words, capped by age and recent failure rate;
+- finish state: celebrate progress even when the child stops early.
+
+The session header shows time, words touched, words secured and one next action. At completion, the result screen separates `reviewed`, `new`, `known/skipped`, and `needs another try`, so the child understands what happened.
+
+# 167. Child Game Feel Roadmap
+
+Gameplay should be delivered in layers:
+
+**P0 — immediate feedback:** mascot reactions, button press animation, correct/wrong motion, confetti, sound toggle, reduced-motion setting, and short transition timing.
+
+**P1 — repeatable loop:** world map nodes, daily chest, streak trail, combo meter, three round types, music loops, ambient background motion, and reward reveal animation.
+
+**P2 — long-term motivation:** unlockable worlds, avatar outfits, collectible badges, seasonal quests, safe cosmetic shop, family goals, and optional challenge events.
+
+Every animation has a duration budget, a reduced-motion fallback, and a reliable completion state. Audio can be muted independently from speech. Effects never block the next question or hide the correct answer.
+
+# 168. Cosmetic Shop and Parent Controls
+
+The shop is a safe customization layer, not a pay-to-learn system. It may contain avatar clothing, mascot themes, world skins, celebration effects and music packs. Learning content, review priority, streak protection and correct-answer boosts are never sold.
+
+The parent gate protects purchases, external links, account actions and bulk known-word changes. The parent dashboard shows purchase history, spending controls, restore purchases, and a no-purchase mode. The first release can ship the shop with earned-only cosmetics and add payments after consent, legal review and platform receipt validation.
+
+# 169. Success Metrics and Experiment Plan
+
+The north-star outcome is durable vocabulary growth with a sustainable daily habit. Track:
+
+- daily active learning days and median session duration;
+- percentage of sessions reaching 10 minutes without distress signals;
+- words secured per session and seven-day retention;
+- recognition-to-recall transfer;
+- known-word decisions and undo rate;
+- next-day return rate and streak recovery;
+- audio/image mode success compared with text mode;
+- parent-reported confidence and child-reported enjoyment.
+
+Run small, reversible experiments on session length, new-word caps, animation intensity, music defaults, and reward cadence. Success is not maximizing taps; it is improving next-day return and delayed recall without increasing frustration or fatigue.
+
+# 170. Delivery Milestones
+
+**M1 — Content foundation:** approve words 001–200, add known-word schema, migrations and tests.
+
+**M2 — Library:** ship All words, filters, search, skip-list review, undo and parent bulk management.
+
+**M3 — 500-word release:** approve batches 201–500, attach verified image/audio packs, and run offline QA.
+
+**M4 — Daily mission:** ship the ten-minute scheduler, progress ring, result breakdown and session history.
+
+**M5 — Game feel:** add P0 animation/audio feedback, reduced motion, music controls and mascot reactions.
+
+**M6 — Retention layer:** add worlds, streaks, chests, cosmetics and parent-gated shop foundations.
+
+**M7 — Validation:** test with children across the three age bands, review analytics, remove confusing prompts, and tune content before broad release.
 
 The asset pipeline must never become the bottleneck that prevents WordRush from reaching thousands of words.
 

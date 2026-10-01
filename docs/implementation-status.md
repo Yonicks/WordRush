@@ -10,13 +10,21 @@ The authoritative local schema is `src/engine/types.ts`; transitions are pure fu
 
 The seed file contains 100 draft words, not 100 reviewed image/audio learning packs. Words and artwork retain separate identities; no numbered image is assumed to mean a particular word.
 
+## Newly requested product direction
+
+The next product milestone is now a 500-word child-controlled learning library. A child or parent must be able to open **All words**, search/filter by category and level, mark a word as **I already know this**, undo that decision, and review the resulting **Known / Skip list**. Known words remain in the profile for reporting and optional maintenance reviews, but they are removed from new-word teaching until the child asks to practise them again.
+
+The daily target is a gentle 10-minute loop that aims for 10 meaningful words: due reviews first, then a capped number of new words, with a visible progress ring and a safe early finish when the child is tired. The product roadmap also adds a child-first game layer: short animated rounds, music and sound themes, celebratory effects, unlockable worlds and a cosmetic shop gated by a parent.
+
 ## Next implementation slice
 
-1. Review seed translations/examples with a Hebrew-speaking educator and map approved vocabulary images to stable word IDs.
-2. Replace device speech with recorded normal/slow pronunciation, preloading and verified offline playback.
-3. Add frustration control, listening/picture modes and calibrate session duration with children.
-4. Expand the parent view, parent gate and session history.
-5. Choose backend/auth, implement migration-ready database schema and explicit sync/conflict rules before cross-device use.
+1. Expand the reviewed seed from 100 to 500 stable word records, each with Hebrew translation, example, category, level, image ID and audio IDs.
+2. Add the vocabulary library screen, search/filtering, known-word toggle, skip-list review and undo flow.
+3. Change selection to the 10-minute daily contract: due reviews, up to 10 new words, missed-word recovery and explicit known-word exclusions.
+4. Replace device speech with recorded normal/slow pronunciation, preloading and verified offline playback.
+5. Add frustration control, listening/picture modes, animations, music/SFX and child usability calibration.
+6. Expand the parent view, parent gate, session history, daily streak and 10-word outcome metrics.
+7. Choose backend/auth, implement migration-ready database schema and explicit sync/conflict rules before cross-device use.
 
 ## Validation record
 
