@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync, existsSync } from "node:fs";
-import { join, relative } from "node:path";
+import { join, dirname } from "node:path";
 const root = "assets/wordrush-v1-sprite-style-assets";
 const manifest = JSON.parse(readFileSync(join(root, "manifest.json"), "utf8"));
 let total = 0;
@@ -17,14 +17,36 @@ for (const [category, count] of Object.entries(manifest.categories)) {
   total += files.length;
 }
 if (total !== manifest.assetCount) throw new Error("Manifest total mismatch");
-const themePath = "src/ui/theme.ts";
-for (const [, file] of readFileSync(themePath, "utf8").matchAll(
-  /require\("([^"]+)"\)/g,
-)) {
-  if (!existsSync(join("src/ui", file)))
-    throw new Error(`Missing runtime image: ${file}`);
+for (const modulePath of [
+  "src/ui/theme.ts",
+  "src/data/pictures.ts",
+  "src/data/audio.ts",
+]) {
+  for (const [, file] of readFileSync(modulePath, "utf8").matchAll(
+    /require\("([^"]+)"\)/g,
+  )) {
+    if (!existsSync(join(dirname(modulePath), file)))
+      throw new Error(`Missing runtime asset: ${file}`);
+  }
 }
-console.log(`${total} PNG assets verified; runtime image references resolve.`);
+const words = JSON.parse(readFileSync("src/data/words.json", "utf8")) as {
+  id: string;
+  imageId?: string;
+}[];
+const pictureSource = readFileSync("src/data/pictures.ts", "utf8");
+for (const word of words) {
+  if (word.imageId && !pictureSource.includes(`"${word.imageId}"`))
+    throw new Error(`Missing picture mapping: ${word.id}`);
+  for (const speed of ["normal", "slow"]) {
+    const file = `assets/audio/${word.id}-${speed}.mp3`;
+    const bytes = readFileSync(file);
+    if (
+      bytes.length < 1000 ||
+      !(bytes.subarray(0, 3).toString() === "ID3" || bytes[0] === 255)
+    )
+      throw new Error(`Invalid audio: ${file}`);
+  }
+}
 console.log(
-  "Vocabulary images remain unmapped pending semantic review. Recorded audio is not yet supplied.",
+  `${total} PNGs verified; ${words.filter((w) => w.imageId).length} explicit picture mappings; ${words.length * 2} pronunciation clips; runtime imports resolve.`,
 );

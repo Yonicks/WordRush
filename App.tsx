@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  AppState as NativeAppState,
   Image,
   Pressable,
   ScrollView,
@@ -10,25 +11,33 @@ import {
   View,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useIsFocused } from "@react-navigation/native";
 import {
   createNativeStackNavigator,
   NativeStackScreenProps,
 } from "@react-navigation/native-stack";
 import { StatusBar } from "expo-status-bar";
-import * as Speech from "expo-speech";
+import { Pronunciation } from "./src/audio/Pronunciation";
+import { DailyRing } from "./src/ui/DailyRing";
+import { pictures } from "./src/data/pictures";
+import {
+  createDraft,
+  dailyActivity,
+  recordActivity,
+  skipDiscoveryWord,
+} from "./src/engine/session";
 import * as Haptics from "expo-haptics";
 import { StoreProvider, useStore } from "./src/state/store";
-import { completeSession, recordAnswer, setWordKnown } from "./src/state/model";
 import {
-  effectiveMastery,
-  mastery,
-  optionsFor,
-  questionSequence,
-  selectWords,
-} from "./src/engine/learning";
-import type { Answer, Word } from "./src/engine/types";
+  completeSession,
+  submitSessionAnswer,
+  advanceSession,
+  setWordKnown,
+} from "./src/state/model";
+import { effectiveMastery, mastery } from "./src/engine/learning";
+import type { Word } from "./src/engine/types";
 import seed from "./src/data/words.json";
+import { categoryNames } from "./src/data/categories";
 import { art, colors as c } from "./src/ui/theme";
 const words: Word[] = seed;
 type Routes = {
@@ -95,7 +104,12 @@ function Home({ navigation }: Props<"Home">) {
   const child = state.children.find((x) => x.id === state.activeChildId);
   if (!child) return <Profiles navigation={navigation} />;
   const progress = Object.values(child.progress);
-  const due = progress.filter((p) => p.nextReviewAt <= Date.now()).length;
+  const due = progress.filter(
+    (p) =>
+      !(child.knownWordIds ?? []).includes(p.wordId) &&
+      p.nextReviewAt <= Date.now(),
+  ).length;
+  const daily = dailyActivity(state, child.id, Date.now());
   const hasDraft = state.activeSession?.childId === child.id;
   return (
     <Page>
@@ -130,6 +144,10 @@ function Home({ navigation }: Props<"Home">) {
         />
         <Text style={s.hint}>סיבוב קצר • בקצב שלכם</Text>
       </View>
+      <DailyRing
+        count={daily.wordIds.length}
+        minutes={Math.floor(daily.activeMs / 60000)}
+      />
       <View style={s.row}>
         <View style={s.stat}>
           <Text style={s.statNumber}>{child.xp}</Text>
@@ -151,7 +169,7 @@ function Home({ navigation }: Props<"Home">) {
           <Text style={s.sectionTitle}>מתחילים לגלות</Text>
           <Text style={s.small}>
             {progress.filter((p) => mastery(p) >= 80).length} מילים בשליטה מתוך
-            100
+            {words.length}
           </Text>
         </View>
       </View>
@@ -253,157 +271,156 @@ function Profiles({
 }
 function Play({ navigation }: Props<"Play">) {
   const { state, update } = useStore();
-  const [childId] = useState(state.activeChildId);
-  const child = state.children.find((x) => x.id === childId)!;
+  const focused = useIsFocused();
+  const child = state.children.find((c) => c.id === state.activeChildId)!;
   const draft =
     state.activeSession?.childId === child.id ? state.activeSession : null;
-  const [selected] = useState(() =>
-    draft
-      ? draft.selectedWordIds
-          .map((wordId) => words.find((w) => w.id === wordId))
-          .filter((w): w is Word => Boolean(w))
-      : selectWords(words, child.progress, Date.now(), 15, child.knownWordIds),
-  );
-  const [newWords] = useState(() =>
-    draft
-      ? (draft.newWordIds ?? [])
-          .map((wordId) => words.find((w) => w.id === wordId))
-          .filter((w): w is Word => Boolean(w))
-      : selected.filter((w) => !child.progress[w.id]),
-  );
-  const [discovery, setDiscovery] = useState(draft?.discoveryIndex ?? 0);
-  const [questions, setQuestions] = useState(() => questionSequence(selected));
-  const [index, setIndex] = useState(draft?.questionIndex ?? 0);
-  const [answers, setAnswers] = useState<Answer[]>(draft?.answers ?? []);
-  const [chosen, setChosen] = useState<string | null>(null);
-  const [sessionId] = useState(draft?.id ?? id);
-  const [startedAt] = useState(draft?.startedAt ?? Date.now);
   const timer = useRef(Date.now());
-  const locked = useRef(false);
-  const [audioError, setAudioError] = useState("");
-  const [slowSpeech, setSlowSpeech] = useState(false);
-  const q = questions[index];
-  const discovering = discovery < newWords.length;
-  const word = discovering ? newWords[discovery] : q.word;
-  const [options, setOptions] = useState(() => optionsFor(q.word, words));
-  useEffect(() => {
-    timer.current = Date.now();
-    locked.current = false;
-    setChosen(null);
-    setOptions(optionsFor(q.word, words));
-    setAudioError("");
-    Speech.stop();
-  }, [index, discovery]);
-  useEffect(
-    () => () => {
-      Speech.stop();
-    },
-    [],
-  );
+  const [heard, setHeard] = useState(false);
+  const [now, setNow] = useState(Date.now());
+  const [keepGoing, setKeepGoing] = useState(false);
+  const ending = useRef(false);
   useEffect(() => {
     if (!draft)
-      update((v) => ({
-        ...v,
-        activeSession: {
-          id: sessionId,
-          childId: child.id,
-          startedAt,
-          selectedWordIds: selected.map((w) => w.id),
-          newWordIds: newWords.map((w) => w.id),
-          questionIndex: 0,
-          discoveryIndex: 0,
-          answers: [],
-        },
-      }));
+      update((s) => {
+        const previous = s.activeSession;
+        const base = previous
+          ? completeSession(s, {
+              id: previous.id,
+              childId: previous.childId,
+              startedAt: previous.startedAt,
+              completedAt: Date.now(),
+              answers: previous.answers,
+              activityByDay: previous.activityByDay,
+              endedEarly: true,
+            })
+          : s;
+        return {
+          ...base,
+          activeSession: createDraft(base, words, id(), Date.now()),
+        };
+      });
   }, []);
-  const speak = (slow = slowSpeech) => {
-    Speech.stop();
-    Speech.speak(word.english, {
-      language: "en-US",
-      rate: slow ? 0.55 : 0.85,
-      onError: () => setAudioError("הקול לא זמין כרגע במכשיר הזה"),
-    });
-  };
-  const answer = (option: Word) => {
-    if (locked.current) return;
-    locked.current = true;
-    const a: Answer = {
-      wordId: q.word.id,
-      skill: q.skill,
-      correct: option.id === q.word.id,
-      responseMs: Date.now() - timer.current,
-      chosenId: option.id,
-      at: Date.now(),
+  const discovering = !!draft && draft.discoveryIndex < draft.newWordIds.length;
+  const q = draft?.queue[draft.questionIndex];
+  const wordId = discovering
+    ? draft!.newWordIds[draft!.discoveryIndex]
+    : q?.wordId;
+  const word = words.find((w) => w.id === wordId);
+  useEffect(() => {
+    timer.current = Date.now();
+    setHeard(false);
+  }, [draft?.questionIndex, draft?.discoveryIndex, wordId]);
+  useEffect(() => {
+    if (!focused) return;
+    let last = Date.now();
+    let active = NativeAppState.currentState === "active";
+    const tick = () => {
+      const at = Date.now();
+      const from = last;
+      last = at;
+      setNow(at);
+      if (active)
+        update((s) =>
+          s.activeSession?.childId === child.id
+            ? { ...s, activeSession: recordActivity(s.activeSession, from, at) }
+            : s,
+        );
     };
-    setChosen(option.id);
-    const nextAnswers = [...answers, a];
-    setAnswers(nextAnswers);
-    update((v) => ({
-      ...recordAnswer(v, child.id, a),
-      activeSession: {
-        id: sessionId,
-        childId: child.id,
-        startedAt,
-        selectedWordIds: selected.map((w) => w.id),
-        newWordIds: newWords.map((w) => w.id),
-        questionIndex: index,
-        discoveryIndex: discovery,
-        answers: nextAnswers,
-      },
-    }));
-    if (!a.correct)
-      setQuestions((existing) => [
-        ...existing,
-        { word: q.word, skill: q.skill },
-      ]);
+    const interval = setInterval(tick, 1000);
+    const subscription = NativeAppState.addEventListener("change", (status) => {
+      tick();
+      active = status === "active";
+      last = Date.now();
+    });
+    return () => {
+      clearInterval(interval);
+      subscription.remove();
+      tick();
+    };
+  }, [focused, child.id]);
+  if (!draft)
+    return (
+      <Page>
+        <ActivityIndicator />
+      </Page>
+    );
+  const daily = dailyActivity(state, child.id, now);
+  const finish = (early: boolean) => {
+    if (ending.current) return;
+    ending.current = true;
+    update((s) =>
+      s.activeSession
+        ? completeSession(s, {
+            id: draft.id,
+            childId: child.id,
+            startedAt: draft.startedAt,
+            completedAt: Date.now(),
+            answers: s.activeSession.answers,
+            activityByDay: s.activeSession.activityByDay,
+            endedEarly: early,
+          })
+        : s,
+    );
+    navigation.replace("Results", { sessionId: draft.id });
+  };
+  if (!word || !q)
+    return (
+      <Page>
+        <Heading
+          title="כל הכבוד על הדרך!"
+          caption="אין עוד מילים בסיבוב הזה. אפשר לנוח ולחזור בהמשך."
+        />
+        <Button label="לסיכום" onPress={() => finish(false)} />
+      </Page>
+    );
+  const chosen = draft.chosenId;
+  const options = q.optionIds.map((id) => words.find((w) => w.id === id)!);
+  const picture =
+    q.mode === "picture" && word.imageId && pictures[word.imageId];
+  const hint = draft.hintUsed;
+  const answer = (option: Word) => {
+    update((s) =>
+      submitSessionAnswer(s, option.id, Date.now() - timer.current, Date.now()),
+    );
     void Haptics.notificationAsync(
-      a.correct
+      option.id === word.id
         ? Haptics.NotificationFeedbackType.Success
         : Haptics.NotificationFeedbackType.Warning,
     ).catch(() => {});
   };
-  const next = () => {
-    if (index + 1 < questions.length) {
-      setIndex(index + 1);
-      update((v) =>
-        v.activeSession
-          ? {
-              ...v,
-              activeSession: {
-                ...v.activeSession,
-                questionIndex: index + 1,
-                answers,
-              },
-            }
-          : v,
-      );
-    } else {
-      update((v) =>
-        completeSession(v, {
-          id: sessionId,
-          childId: child.id,
-          startedAt,
-          completedAt: Date.now(),
-          answers,
-        }),
-      );
-      navigation.replace("Results", { sessionId });
-    }
-  };
+  const discoverNext = () =>
+    update((s) =>
+      s.activeSession
+        ? {
+            ...s,
+            activeSession: {
+              ...s.activeSession,
+              discoveryIndex: s.activeSession.discoveryIndex + 1,
+            },
+          }
+        : s,
+    );
   return (
     <Page>
       <View style={s.row}>
         <Text style={s.kicker}>
           {discovering
             ? "מגלים מילים חדשות"
-            : q.skill === "recognition"
-              ? "מאנגלית לעברית"
-              : "מעברית לאנגלית"}
+            : q.retry
+              ? "עוד הזדמנות, עם עזרה"
+              : q.mode === "listening"
+                ? "מקשיבים ומגלים"
+                : picture
+                  ? "מגלים בתמונות"
+                  : q.skill === "recognition"
+                    ? "מאנגלית לעברית"
+                    : "מעברית לאנגלית"}
         </Text>
         <Text style={s.small}>
           {discovering
-            ? `מילה ${discovery + 1} מתוך ${newWords.length}`
-            : `שאלה ${index + 1} מתוך ${questions.length}`}
+            ? `מילה ${draft.discoveryIndex + 1} מתוך ${draft.newWordIds.length}`
+            : `שאלה ${draft.questionIndex + 1} מתוך ${draft.queue.length}`}
         </Text>
       </View>
       <View style={s.track}>
@@ -411,124 +428,206 @@ function Play({ navigation }: Props<"Play">) {
           style={[
             s.fill,
             {
-              width: `${(discovering ? discovery / (newWords.length + questions.length) : (newWords.length + index) / (newWords.length + questions.length)) * 100}%`,
+              width: `${Math.min(100, ((draft.discoveryIndex + draft.questionIndex) / (draft.newWordIds.length + draft.queue.length)) * 100)}%`,
             },
           ]}
         />
       </View>
+      <Text style={s.small}>
+        {daily.wordIds.length}/10 מילים היום •{" "}
+        {Math.floor(daily.activeMs / 60000)} דקות • אפשר לסיים בכל רגע
+      </Text>
+      {daily.complete && !keepGoing && (
+        <View style={s.card}>
+          <Text style={s.sectionTitle}>עשיתם דרך יפה היום!</Text>
+          <Text style={s.small}>אפשר לנוח עכשיו, או להמשיך בקצב שלכם.</Text>
+          <Button label="לסיים להיום" onPress={() => finish(true)} />
+          <Button
+            secondary
+            label="עוד קצת"
+            onPress={() => setKeepGoing(true)}
+          />
+        </View>
+      )}
       <Heading
-        title={discovering ? "נעים להכיר!" : "מה המשמעות?"}
-        caption={discovering ? "מילה חדשה למסע שלכם" : "קחו רגע, אתם יכולים"}
+        title={
+          discovering
+            ? "נעים להכיר!"
+            : q.mode === "listening"
+              ? "איזו מילה שמעתם?"
+              : picture
+                ? "איך אומרים את זה באנגלית?"
+                : "מה המשמעות?"
+        }
+        caption="קחו את הזמן. לומדים גם מטעויות."
       />
       <View style={s.wordCard}>
-        <Text style={s.word}>
-          {discovering || q.skill === "recognition"
-            ? word.english
-            : word.hebrew}
-        </Text>
+        {(discovering || picture) && word.imageId && pictures[word.imageId] && (
+          <Image
+            source={pictures[word.imageId]}
+            accessibilityLabel={
+              discovering ? word.hebrew : "תמונה לזיהוי; אפשר לעבור לשאלה כתובה"
+            }
+            style={{ width: 130, height: 130, resizeMode: "contain" }}
+          />
+        )}
+        {(discovering ||
+          (q.mode === "text" && !picture) ||
+          chosen !== null ||
+          hint) && (
+          <Text
+            style={[
+              s.word,
+              (discovering || q.skill === "recognition") && s.englishText,
+            ]}
+          >
+            {discovering || q.skill === "recognition"
+              ? word.english
+              : word.hebrew}
+          </Text>
+        )}
         {discovering && (
           <>
             <Text style={s.translation}>{word.hebrew}</Text>
             <Text style={s.example}>{word.example}</Text>
-            <Button
-              secondary
-              label={slowSpeech ? "לשמוע בקצב רגיל" : "לשמוע לאט"}
-              onPress={() => {
-                const nextSlow = !slowSpeech;
-                setSlowSpeech(nextSlow);
-                speak(nextSlow);
-              }}
-            />
-            {audioError && <Text style={s.small}>{audioError}</Text>}
           </>
+        )}
+        {(discovering || q.mode === "listening" || chosen !== null || hint) && (
+          <Pronunciation
+            key={word.id}
+            wordId={word.id}
+            onHeard={() => setHeard(true)}
+          />
+        )}
+        {!discovering && q.mode !== "text" && chosen === null && (
+          <Button
+            secondary
+            label="לעבור לשאלה כתובה"
+            onPress={() =>
+              update((s) =>
+                s.activeSession
+                  ? {
+                      ...s,
+                      activeSession: {
+                        ...s.activeSession,
+                        queue: s.activeSession.queue.map((item, i) =>
+                          i === s.activeSession!.questionIndex
+                            ? { ...item, mode: "text" }
+                            : item,
+                        ),
+                      },
+                    }
+                  : s,
+              )
+            }
+          />
         )}
       </View>
       {discovering ? (
         <>
-          <Button
-            label="הכרנו! ממשיכים"
-            onPress={() => {
-              const nextDiscovery = discovery + 1;
-              setDiscovery(nextDiscovery);
-              update((v) =>
-                v.activeSession
-                  ? {
-                      ...v,
-                      activeSession: {
-                        ...v.activeSession,
-                        discoveryIndex: nextDiscovery,
-                      },
-                    }
-                  : v,
-              );
-            }}
-          />
+          <Button label="הכרנו! ממשיכים" onPress={discoverNext} />
           <Button
             secondary
             label="אני כבר מכיר/ה את המילה"
-            onPress={() => {
-              update((v) => setWordKnown(v, child.id, word.id, true));
-              const nextDiscovery = discovery + 1;
-              setDiscovery(nextDiscovery);
-              update((v) =>
-                v.activeSession
-                  ? {
-                      ...v,
-                      activeSession: {
-                        ...v.activeSession,
-                        discoveryIndex: nextDiscovery,
-                      },
-                    }
-                  : v,
-              );
-            }}
+            onPress={() =>
+              update((s) => ({
+                ...setWordKnown(s, child.id, word.id, true),
+                activeSession: s.activeSession
+                  ? skipDiscoveryWord(s.activeSession)
+                  : null,
+              }))
+            }
           />
         </>
       ) : (
         <>
+          {chosen === null && q.retry && (
+            <Text style={s.hint}>
+              אפשר לבקש רמז. זו ההזדמנות האחרונה לשאלה הזאת היום.
+            </Text>
+          )}
+          {hint && (
+            <Text accessibilityLiveRegion="polite" style={s.translation}>
+              {word.english} = {word.hebrew}
+            </Text>
+          )}
           <View style={s.options}>
             {options.map((option) => (
               <Pressable
                 key={option.id}
                 accessibilityRole="button"
-                disabled={chosen !== null}
+                disabled={
+                  chosen !== null || (q.mode === "listening" && !heard && !hint)
+                }
                 onPress={() => answer(option)}
                 style={[
                   s.option,
                   chosen !== null && option.id === word.id && s.correct,
                   chosen === option.id && option.id !== word.id && s.wrong,
+                  {
+                    opacity:
+                      q.mode === "listening" && !heard && !hint ? 0.6 : 1,
+                  },
                 ]}
               >
                 <Text
-                  style={[s.optionText, q.skill === "recall" && s.englishText]}
+                  style={[
+                    s.optionText,
+                    (q.skill === "recall" || !!picture) && s.englishText,
+                  ]}
                 >
-                  {q.skill === "recognition" ? option.hebrew : option.english}
+                  {q.skill === "recognition" && !picture
+                    ? option.hebrew
+                    : option.english}
                 </Text>
-                {chosen !== null && option.id === word.id && (
-                  <Text style={s.small}>✓</Text>
-                )}
               </Pressable>
             ))}
           </View>
+          {chosen === null && (
+            <Button
+              secondary
+              label="אפשר רמז?"
+              onPress={() =>
+                update((s) =>
+                  s.activeSession
+                    ? {
+                        ...s,
+                        activeSession: { ...s.activeSession, hintUsed: true },
+                      }
+                    : s,
+                )
+              }
+            />
+          )}
           {chosen !== null && (
             <View accessibilityLiveRegion="polite" style={s.feedback}>
               <Text style={s.sectionTitle}>
-                {chosen === word.id ? "כל הכבוד!" : "לומדים גם מטעויות"}
+                {chosen === word.id
+                  ? "כל הכבוד!"
+                  : q.retry
+                    ? "נתרגל שוב ביום אחר. כל ניסיון עוזר!"
+                    : "לומדים גם מטעויות"}
               </Text>
               <Text style={s.translation}>
-                <Text style={s.englishText}>{word.english}</Text> ={" "}
-                {word.hebrew}
+                {word.english} = {word.hebrew}
               </Text>
               <Button
                 label={
-                  index + 1 === questions.length ? "לסיום הסיבוב" : "ממשיכים"
+                  draft.questionIndex + 1 === draft.queue.length
+                    ? "לסיום הסיבוב"
+                    : "ממשיכים"
                 }
-                onPress={next}
+                onPress={() =>
+                  draft.questionIndex + 1 === draft.queue.length
+                    ? finish(false)
+                    : update(advanceSession)
+                }
               />
             </View>
           )}
         </>
       )}
+      <Button secondary label="לסיים לעכשיו" onPress={() => finish(true)} />
     </Page>
   );
 }
@@ -536,6 +635,7 @@ function Results({ navigation, route }: Props<"Results">) {
   const { state } = useStore();
   const session = state.sessions.find((s) => s.id === route.params.sessionId)!;
   const correct = session.answers.filter((a) => a.correct).length;
+  const daily = dailyActivity(state, session.childId, Date.now());
   return (
     <Page>
       <Image source={art.celebrate} style={s.resultArt} />
@@ -549,9 +649,19 @@ function Results({ navigation, route }: Props<"Results">) {
           {correct} תשובות נכונות מתוך {session.answers.length}
         </Text>
         <Text style={s.small}>
-          {new Set(session.answers.map((a) => a.wordId)).size} מילים תרגלנו היום
+          {new Set(session.answers.map((a) => a.wordId)).size} מילים תרגלנו
+          בסיבוב
         </Text>
       </View>
+      {session.endedEarly && (
+        <Text style={s.hint}>
+          גם סיבוב קצר מקדם אותנו. ההתקדמות שלכם נשמרה.
+        </Text>
+      )}
+      <DailyRing
+        count={daily.wordIds.length}
+        minutes={Math.floor(daily.activeMs / 60000)}
+      />
       <Button label="בחזרה להרפתקה" onPress={() => navigation.popToTop()} />
     </Page>
   );
@@ -563,23 +673,39 @@ function Library() {
   const [filter, setFilter] = useState<"all" | "known" | "learning" | "new">(
     "all",
   );
+  const [category, setCategory] = useState("all");
+  const [level, setLevel] = useState(0);
+  const [previewId, setPreviewId] = useState<string | null>(null);
+  const [shown, setShown] = useState(30);
+  const [undo, setUndo] = useState<{ wordId: string; known: boolean } | null>(
+    null,
+  );
+  useEffect(() => {
+    setShown(30);
+    setPreviewId(null);
+  }, [query, filter, category, level]);
   const knownIds = new Set(child.knownWordIds ?? []);
   const visible = words.filter((word) => {
-    const matches = `${word.english} ${word.hebrew} ${word.category}`
-      .toLowerCase()
-      .includes(query.trim().toLowerCase());
+    const matches =
+      `${word.english} ${word.hebrew} ${categoryNames[word.category]}`
+        .toLowerCase()
+        .includes(query.trim().toLowerCase());
     const known = knownIds.has(word.id);
     const learning = Boolean(child.progress[word.id]);
     return (
       matches &&
+      (category === "all" || word.category === category) &&
+      (!level || word.difficulty === level) &&
       (filter === "all" ||
         (filter === "known" && known) ||
         (filter === "learning" && learning && !known) ||
         (filter === "new" && !learning && !known))
     );
   });
-  const setKnown = (wordId: string, known: boolean) =>
+  const setKnown = (wordId: string, known: boolean) => {
+    setUndo({ wordId, known: knownIds.has(wordId) });
     update((current) => setWordKnown(current, child.id, wordId, known));
+  };
   return (
     <Page>
       <Heading
@@ -613,29 +739,132 @@ function Library() {
           </Pressable>
         ))}
       </View>
-      {visible.map((word) => {
+      <Text style={s.sectionTitle}>קטגוריה</Text>
+      <ScrollView
+        horizontal
+        contentContainerStyle={{ gap: 8, paddingVertical: 4 }}
+      >
+        {[["all", "כל הקטגוריות"], ...Object.entries(categoryNames)].map(
+          ([key, label]) => (
+            <Pressable
+              key={key}
+              accessibilityRole="button"
+              accessibilityState={{ selected: category === key }}
+              onPress={() => setCategory(key)}
+              style={[s.filter, category === key && s.filterSelected]}
+            >
+              <Text style={s.filterText}>{label}</Text>
+            </Pressable>
+          ),
+        )}
+      </ScrollView>
+      <Text style={s.sectionTitle}>רמה</Text>
+      <View style={s.filterRow}>
+        {[0, 1, 2, 3].map((value) => (
+          <Pressable
+            key={value}
+            accessibilityRole="button"
+            accessibilityState={{ selected: level === value }}
+            onPress={() => setLevel(value)}
+            style={[s.filter, level === value && s.filterSelected]}
+          >
+            <Text style={s.filterText}>
+              {value === 0 ? "כל הרמות" : `רמה ${value}`}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+      {undo && (
+        <View accessibilityLiveRegion="polite" style={s.card}>
+          <Text style={s.small}>הרשימה עודכנה</Text>
+          <Button
+            secondary
+            label="ביטול השינוי האחרון"
+            onPress={() => {
+              update((current) =>
+                setWordKnown(current, child.id, undo.wordId, undo.known),
+              );
+              setUndo(null);
+            }}
+          />
+        </View>
+      )}
+      <Text style={s.small}>{visible.length} מילים מתאימות</Text>
+      {visible.slice(0, shown).map((word) => {
         const known = knownIds.has(word.id);
         const learning = Boolean(child.progress[word.id]);
         return (
-          <View key={word.id} style={s.libraryRow}>
-            <View style={{ flex: 1, gap: 3 }}>
-              <Text style={[s.libraryWord, s.englishText]}>{word.english}</Text>
-              <Text style={s.small}>
-                {word.hebrew} • {known ? "כבר מכירים" : learning ? "בלמידה" : "חדשה"}
-              </Text>
+          <View key={word.id} style={[s.card, { padding: 14, gap: 8 }]}>
+            <View style={s.libraryRow}>
+              <View style={{ flex: 1, gap: 3 }}>
+                <Text style={[s.libraryWord, s.englishText]}>
+                  {word.english}
+                </Text>
+                <Text style={s.small}>
+                  {word.hebrew} •{" "}
+                  {known
+                    ? "כבר מכירים"
+                    : learning
+                      ? effectiveMastery(child.progress[word.id], Date.now()) >=
+                        80
+                        ? "בשליטה"
+                        : child.progress[word.id].nextReviewAt <= Date.now()
+                          ? "זמן לחזרה"
+                          : "בלמידה"
+                      : "חדשה"}{" "}
+                  • {categoryNames[word.category]} • רמה {word.difficulty}
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={
+                  known
+                    ? `להחזיר את ${word.english} ללמידה`
+                    : `לסמן שאני מכיר את ${word.english}`
+                }
+                onPress={() => setKnown(word.id, !known)}
+                style={[s.knownButton, known && s.knownButtonActive]}
+              >
+                <Text style={s.knownButtonText}>
+                  {known ? "להחזיר" : "מכיר/ה"}
+                </Text>
+              </Pressable>
             </View>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={known ? `להחזיר את ${word.english} ללמידה` : `לסמן שאני מכיר את ${word.english}`}
-              onPress={() => setKnown(word.id, !known)}
-              style={[s.knownButton, known && s.knownButtonActive]}
-            >
-              <Text style={s.knownButtonText}>{known ? "להחזיר" : "מכיר/ה"}</Text>
-            </Pressable>
+            <Button
+              secondary
+              label={
+                previewId === word.id ? "לסגור תצוגה" : "תמונה, משפט והגייה"
+              }
+              onPress={() =>
+                setPreviewId(previewId === word.id ? null : word.id)
+              }
+            />
+            {previewId === word.id && (
+              <View style={{ gap: 12, alignItems: "center" }}>
+                {word.imageId && (
+                  <Image
+                    source={pictures[word.imageId]}
+                    accessibilityLabel={word.hebrew}
+                    style={{ width: 110, height: 110, resizeMode: "contain" }}
+                  />
+                )}
+                <Text style={s.example}>{word.example}</Text>
+                <Pronunciation wordId={word.id} />
+              </View>
+            )}
           </View>
         );
       })}
-      {!visible.length && <Text style={s.subtitle}>לא מצאנו מילים כאלה עדיין.</Text>}
+      {shown < visible.length && (
+        <Button
+          secondary
+          label="עוד מילים"
+          onPress={() => setShown((n) => n + 30)}
+        />
+      )}
+      {!visible.length && (
+        <Text style={s.subtitle}>לא מצאנו מילים כאלה עדיין.</Text>
+      )}
     </Page>
   );
 }
@@ -645,6 +874,7 @@ function Parent() {
   const progress = Object.values(child.progress);
   const sessions = state.sessions.filter((s) => s.childId === child.id);
   const answers = sessions.flatMap((s) => s.answers);
+  const daily = dailyActivity(state, child.id, Date.now());
   return (
     <Page>
       <Heading
@@ -667,6 +897,14 @@ function Parent() {
           {progress.filter((p) => mastery(p) >= 80).length} מילים בשליטה
         </Text>
       </View>
+      <DailyRing
+        count={daily.wordIds.length}
+        minutes={Math.floor(daily.activeMs / 60000)}
+      />
+      <Text style={s.small}>
+        {child.knownWordIds?.length ?? 0} מילים סומנו כמוכרות • סימון עצמי אינו
+        מדד שליטה
+      </Text>
       <Text style={s.sectionTitle}>מילים שכדאי לחזק</Text>
       {!progress.length && (
         <Text style={s.subtitle}>אחרי המשחק הראשון תופיע כאן ההתקדמות.</Text>
@@ -772,6 +1010,7 @@ export default function App() {
 const s = StyleSheet.create({
   safe: { flex: 1, backgroundColor: c.cream },
   page: {
+    direction: "rtl",
     padding: 24,
     gap: 22,
     width: "100%",
@@ -787,7 +1026,7 @@ const s = StyleSheet.create({
     gap: 12,
   },
   headerRow: {
-    flexDirection: "row-reverse",
+    flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     gap: 12,
@@ -799,7 +1038,7 @@ const s = StyleSheet.create({
     letterSpacing: -1,
     writingDirection: "ltr",
   },
-  profile: { flexDirection: "row-reverse", alignItems: "center", gap: 8 },
+  profile: { flexDirection: "row", alignItems: "center", gap: 8 },
   avatar: { width: 38, height: 38 },
   avatarLarge: { width: 70, height: 70 },
   chip: {
@@ -880,7 +1119,7 @@ const s = StyleSheet.create({
     backgroundColor: "#EAF5E7",
     borderRadius: 24,
     padding: 16,
-    flexDirection: "row-reverse",
+    flexDirection: "row",
     alignItems: "center",
     gap: 12,
   },
@@ -936,7 +1175,7 @@ const s = StyleSheet.create({
     borderRadius: 8,
     overflow: "hidden",
   },
-  fill: { height: 8, backgroundColor: c.purple },
+  fill: { height: 8, backgroundColor: c.purple, alignSelf: "flex-end" },
   wordCard: {
     backgroundColor: c.white,
     borderRadius: 28,
@@ -992,7 +1231,7 @@ const s = StyleSheet.create({
     borderRadius: 16,
     gap: 10,
   },
-  filterRow: { flexDirection: "row-reverse", flexWrap: "wrap", gap: 8 },
+  filterRow: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
   filter: {
     borderRadius: 18,
     borderWidth: 1,
@@ -1004,7 +1243,7 @@ const s = StyleSheet.create({
   filterSelected: { backgroundColor: "#EEE9FC", borderColor: c.purple },
   filterText: { color: c.ink, fontWeight: "700", fontSize: 13 },
   libraryRow: {
-    flexDirection: "row-reverse",
+    flexDirection: "row",
     alignItems: "center",
     gap: 12,
     padding: 16,

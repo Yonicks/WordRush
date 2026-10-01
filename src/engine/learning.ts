@@ -29,54 +29,57 @@ export function updateProgress(
     nextReviewAtRecognition: 0,
     nextReviewAtRecall: 0,
   };
-  const days = answer.correct
-    ? [...new Set([...p.successDays, dayKey(answer.at)])]
-    : p.successDays;
-  const delta = answer.correct
-    ? answer.responseMs < 1500
-      ? 8
-      : answer.responseMs < 3000
-        ? 6
-        : answer.responseMs < 6000
-          ? 4
-          : 2
-    : -5;
+  const days =
+    answer.correct && !answer.assisted
+      ? [...new Set([...p.successDays, dayKey(answer.at)])]
+      : p.successDays;
+  const delta = answer.assisted
+    ? 0
+    : answer.correct
+      ? answer.responseMs < 1500
+        ? 8
+        : answer.responseMs < 3000
+          ? 6
+          : answer.responseMs < 6000
+            ? 4
+            : 2
+      : -5;
   const cap =
     days.length < 2 ? 55 : days.length < 3 ? 79 : days.length < 5 ? 94 : 100;
   const next = {
     ...p,
     [answer.skill]: Math.max(0, Math.min(cap, p[answer.skill] + delta)),
     seen: p.seen + 1,
-    correct: p.correct + Number(answer.correct),
-    streak: answer.correct ? p.streak + 1 : 0,
+    correct: p.correct + Number(answer.correct && !answer.assisted),
+    streak: answer.correct && !answer.assisted ? p.streak + 1 : 0,
     successDays: days,
     lastSeenAt: answer.at,
   };
   const score = mastery(next);
-  const interval = !answer.correct
-    ? 30000
-    : score < 20
-      ? 300000
-      : score < 40
-        ? 86400000
-        : score < 60
-          ? 3 * 86400000
-          : score < 80
-            ? 7 * 86400000
-            : score < 95
-              ? 30 * 86400000
-              : 60 * 86400000;
+  const interval =
+    !answer.correct || answer.assisted
+      ? 30000
+      : score < 20
+        ? 300000
+        : score < 40
+          ? 86400000
+          : score < 60
+            ? 3 * 86400000
+            : score < 80
+              ? 7 * 86400000
+              : score < 95
+                ? 30 * 86400000
+                : 60 * 86400000;
   const reviewAt = answer.at + interval;
+  const recognitionDue =
+    answer.skill === "recognition" ? reviewAt : next.nextReviewAtRecognition;
+  const recallDue =
+    answer.skill === "recall" ? reviewAt : next.nextReviewAtRecall;
   return {
     ...next,
-    nextReviewAt: Math.min(
-      next.nextReviewAtRecognition || Infinity,
-      next.nextReviewAtRecall || Infinity,
-      reviewAt,
-    ),
-    [answer.skill === "recognition"
-      ? "nextReviewAtRecognition"
-      : "nextReviewAtRecall"]: reviewAt,
+    nextReviewAtRecognition: recognitionDue,
+    nextReviewAtRecall: recallDue,
+    nextReviewAt: Math.min(recognitionDue || Infinity, recallDue || Infinity),
   };
 }
 export function shuffle<T>(items: T[], random = Math.random): T[] {
@@ -93,8 +96,10 @@ export function selectWords(
   now: number,
   limit = 15,
   knownWordIds: string[] = [],
+  newLimit = 5,
+  practicedToday: string[] = [],
 ): Word[] {
-  const excluded = new Set(knownWordIds);
+  const excluded = new Set([...knownWordIds, ...practicedToday]);
   const due = words
     .filter(
       (w) =>
@@ -147,11 +152,10 @@ export function selectWords(
         n++;
       }
   };
-  add(due, Math.ceil(limit * 0.4));
-  add(weak, Math.ceil(limit * 0.25));
-  add(fresh, Math.min(5, Math.ceil(limit * 0.2)));
+  add(due, limit);
+  add(weak, limit);
+  add(fresh, Math.min(10, Math.max(0, newLimit)));
   add(familiar, limit);
-  add(fresh, 5 - result.filter((w) => !progress[w.id]).length);
   return result;
 }
 export function optionsFor(
@@ -178,7 +182,7 @@ export function optionsFor(
   return shuffle([word, ...same.concat(rest).slice(0, 3)], random);
 }
 export const answerXp = (a: Answer) =>
-  a.correct ? 5 + (a.responseMs < 3000 ? 2 : 0) : 0;
+  a.correct ? (a.assisted ? 2 : 5 + (a.responseMs < 3000 ? 2 : 0)) : 0;
 export function questionSequence(
   words: Word[],
 ): { word: Word; skill: Skill }[] {

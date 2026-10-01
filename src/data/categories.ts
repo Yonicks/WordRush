@@ -1,0 +1,15 @@
+export const categoryNames: Record<string, string> = {
+  food: "אוכל",
+  animals: "חיות",
+  home: "בית",
+  school: "בית ספר",
+  actions: "פעולות",
+  descriptions: "תיאורים וצבעים",
+  "place-time": "זמן ומקום",
+  nature: "טבע",
+  body: "גוף",
+  clothes: "בגדים",
+  people: "אנשים ומשפחה",
+  transport: "תחבורה",
+  play: "משחקים ומוזיקה",
+};

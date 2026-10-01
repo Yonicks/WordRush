@@ -5,7 +5,9 @@
     "hebrew": "תפוח",
     "category": "food",
     "example": "The apple is red.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-013"
   },
   {
     "id": "w-000002",
@@ -13,7 +15,9 @@
     "hebrew": "בננה",
     "category": "food",
     "example": "I eat a banana.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-014"
   },
   {
     "id": "w-000003",
@@ -21,7 +25,9 @@
     "hebrew": "לחם",
     "category": "food",
     "example": "This bread is fresh.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-040"
   },
   {
     "id": "w-000004",
@@ -29,7 +35,8 @@
     "hebrew": "מים",
     "category": "food",
     "example": "I drink water.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000005",
@@ -37,7 +44,9 @@
     "hebrew": "חלב",
     "category": "food",
     "example": "The milk is cold.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-039"
   },
   {
     "id": "w-000006",
@@ -45,7 +54,9 @@
     "hebrew": "ביצה",
     "category": "food",
     "example": "An egg is on the plate.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-042"
   },
   {
     "id": "w-000007",
@@ -53,7 +64,8 @@
     "hebrew": "אורז",
     "category": "food",
     "example": "We eat rice.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000008",
@@ -61,7 +73,9 @@
     "hebrew": "גבינה",
     "category": "food",
     "example": "I like cheese.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-041"
   },
   {
     "id": "w-000009",
@@ -69,7 +83,9 @@
     "hebrew": "תפוז",
     "category": "food",
     "example": "An orange grows on a tree.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-015"
   },
   {
     "id": "w-000010",
@@ -77,7 +93,9 @@
     "hebrew": "גזר",
     "category": "food",
     "example": "The carrot is orange.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-096"
   },
   {
     "id": "w-000011",
@@ -85,7 +103,9 @@
     "hebrew": "כלב",
     "category": "animals",
     "example": "The dog can run.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-016"
   },
   {
     "id": "w-000012",
@@ -93,7 +113,9 @@
     "hebrew": "חתול",
     "category": "animals",
     "example": "The cat is sleeping.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-017"
   },
   {
     "id": "w-000013",
@@ -101,7 +123,8 @@
     "hebrew": "ציפור",
     "category": "animals",
     "example": "A bird can fly.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000014",
@@ -109,7 +132,8 @@
     "hebrew": "דג",
     "category": "animals",
     "example": "The fish is in the water.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000015",
@@ -117,7 +141,8 @@
     "hebrew": "סוס",
     "category": "animals",
     "example": "The horse is big.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000016",
@@ -125,7 +150,8 @@
     "hebrew": "פרה",
     "category": "animals",
     "example": "The cow eats grass.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000017",
@@ -133,7 +159,8 @@
     "hebrew": "כבשה",
     "category": "animals",
     "example": "The sheep is white.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000018",
@@ -141,7 +168,8 @@
     "hebrew": "ברווז",
     "category": "animals",
     "example": "The duck can swim.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000019",
@@ -149,7 +177,8 @@
     "hebrew": "ארנב",
     "category": "animals",
     "example": "The rabbit has long ears.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000020",
@@ -157,7 +186,8 @@
     "hebrew": "אריה",
     "category": "animals",
     "example": "The lion is strong.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000021",
@@ -165,7 +195,9 @@
     "hebrew": "בית",
     "category": "home",
     "example": "This is my house.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-021"
   },
   {
     "id": "w-000022",
@@ -173,7 +205,8 @@
     "hebrew": "דלת",
     "category": "home",
     "example": "Open the door.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000023",
@@ -181,7 +214,8 @@
     "hebrew": "חלון",
     "category": "home",
     "example": "Look through the window.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000024",
@@ -189,7 +223,9 @@
     "hebrew": "שולחן",
     "category": "home",
     "example": "The book is on the table.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-027"
   },
   {
     "id": "w-000025",
@@ -197,7 +233,9 @@
     "hebrew": "כיסא",
     "category": "home",
     "example": "Sit on the chair.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-026"
   },
   {
     "id": "w-000026",
@@ -205,7 +243,9 @@
     "hebrew": "מיטה",
     "category": "home",
     "example": "My bed is soft.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-075"
   },
   {
     "id": "w-000027",
@@ -213,7 +253,8 @@
     "hebrew": "חדר",
     "category": "home",
     "example": "This is my room.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000028",
@@ -221,7 +262,8 @@
     "hebrew": "כוס",
     "category": "home",
     "example": "The cup is blue.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000029",
@@ -229,7 +271,8 @@
     "hebrew": "צלחת",
     "category": "home",
     "example": "The plate is on the table.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000030",
@@ -237,7 +280,9 @@
     "hebrew": "שעון",
     "category": "home",
     "example": "Look at the clock.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-080"
   },
   {
     "id": "w-000031",
@@ -245,7 +290,9 @@
     "hebrew": "ספר",
     "category": "school",
     "example": "I read a book.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-025"
   },
   {
     "id": "w-000032",
@@ -253,7 +300,8 @@
     "hebrew": "עט",
     "category": "school",
     "example": "This pen is blue.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000033",
@@ -261,7 +309,9 @@
     "hebrew": "עיפרון",
     "category": "school",
     "example": "I write with a pencil.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-055"
   },
   {
     "id": "w-000034",
@@ -269,7 +319,8 @@
     "hebrew": "תיק",
     "category": "school",
     "example": "My bag is green.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000035",
@@ -277,7 +328,8 @@
     "hebrew": "בית ספר",
     "category": "school",
     "example": "I go to school.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000036",
@@ -285,7 +337,8 @@
     "hebrew": "מורה",
     "category": "school",
     "example": "The teacher helps us.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000037",
@@ -293,7 +346,8 @@
     "hebrew": "חבר",
     "category": "school",
     "example": "My friend is kind.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000038",
@@ -301,7 +355,8 @@
     "hebrew": "נייר",
     "category": "school",
     "example": "Draw on the paper.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000039",
@@ -309,7 +364,8 @@
     "hebrew": "שולחן כתיבה",
     "category": "school",
     "example": "My book is on the desk.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000040",
@@ -317,7 +373,8 @@
     "hebrew": "תלמיד",
     "category": "school",
     "example": "The student reads a book.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000041",
@@ -325,7 +382,8 @@
     "hebrew": "לרוץ",
     "category": "actions",
     "example": "I can run fast.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000042",
@@ -333,7 +391,8 @@
     "hebrew": "ללכת",
     "category": "actions",
     "example": "We walk to school.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000043",
@@ -341,7 +400,8 @@
     "hebrew": "לקפוץ",
     "category": "actions",
     "example": "I can jump high.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000044",
@@ -349,7 +409,8 @@
     "hebrew": "לשחות",
     "category": "actions",
     "example": "We swim in the pool.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000045",
@@ -357,7 +418,8 @@
     "hebrew": "לאכול",
     "category": "actions",
     "example": "I eat an apple.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000046",
@@ -365,7 +427,8 @@
     "hebrew": "לשתות",
     "category": "actions",
     "example": "I drink water.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000047",
@@ -373,7 +436,8 @@
     "hebrew": "לקרוא",
     "category": "actions",
     "example": "We read a book.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000048",
@@ -381,7 +445,8 @@
     "hebrew": "לכתוב",
     "category": "actions",
     "example": "I write my name.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000049",
@@ -389,7 +454,8 @@
     "hebrew": "לישון",
     "category": "actions",
     "example": "I sleep at night.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000050",
@@ -397,7 +463,8 @@
     "hebrew": "לשחק",
     "category": "actions",
     "example": "We play together.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000051",
@@ -405,7 +472,8 @@
     "hebrew": "לפתוח",
     "category": "actions",
     "example": "Open your book.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000052",
@@ -413,7 +481,8 @@
     "hebrew": "לסגור",
     "category": "actions",
     "example": "Close the door.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000053",
@@ -421,7 +490,8 @@
     "hebrew": "להקשיב",
     "category": "actions",
     "example": "Listen to the bird.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000054",
@@ -429,7 +499,8 @@
     "hebrew": "להסתכל",
     "category": "actions",
     "example": "Look at the sky.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000055",
@@ -437,7 +508,8 @@
     "hebrew": "לעזור",
     "category": "actions",
     "example": "I help my friend.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000056",
@@ -445,7 +517,8 @@
     "hebrew": "לשיר",
     "category": "actions",
     "example": "We sing a song.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000057",
@@ -453,7 +526,8 @@
     "hebrew": "לרקוד",
     "category": "actions",
     "example": "We dance together.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000058",
@@ -461,7 +535,8 @@
     "hebrew": "לצייר",
     "category": "actions",
     "example": "I draw a house.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000059",
@@ -469,7 +544,8 @@
     "hebrew": "לשבת",
     "category": "actions",
     "example": "Please sit here.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000060",
@@ -477,7 +553,8 @@
     "hebrew": "לעמוד",
     "category": "actions",
     "example": "Stand by the door.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000061",
@@ -485,7 +562,8 @@
     "hebrew": "לבוא",
     "category": "actions",
     "example": "Come to my house.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000062",
@@ -493,7 +571,8 @@
     "hebrew": "ללכת",
     "category": "actions",
     "example": "We go to the park.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000063",
@@ -501,7 +580,8 @@
     "hebrew": "לתת",
     "category": "actions",
     "example": "Give me the book.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000064",
@@ -509,7 +589,8 @@
     "hebrew": "לקחת",
     "category": "actions",
     "example": "Take your bag.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000065",
@@ -517,7 +598,8 @@
     "hebrew": "למצוא",
     "category": "actions",
     "example": "Can you find my pen?",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000066",
@@ -525,7 +607,8 @@
     "hebrew": "גדול",
     "category": "descriptions",
     "example": "The house is big.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000067",
@@ -533,7 +616,8 @@
     "hebrew": "קטן",
     "category": "descriptions",
     "example": "The cat is small.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000068",
@@ -541,7 +625,8 @@
     "hebrew": "שמח",
     "category": "descriptions",
     "example": "I am happy today.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000069",
@@ -549,7 +634,8 @@
     "hebrew": "עצוב",
     "category": "descriptions",
     "example": "The boy feels sad.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000070",
@@ -557,7 +643,8 @@
     "hebrew": "חם",
     "category": "descriptions",
     "example": "The soup is hot.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000071",
@@ -565,7 +652,8 @@
     "hebrew": "קר",
     "category": "descriptions",
     "example": "The water is cold.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000072",
@@ -573,7 +661,8 @@
     "hebrew": "מהיר",
     "category": "descriptions",
     "example": "The train is fast.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000073",
@@ -581,7 +670,8 @@
     "hebrew": "איטי",
     "category": "descriptions",
     "example": "The turtle is slow.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000074",
@@ -589,7 +679,8 @@
     "hebrew": "חדש",
     "category": "descriptions",
     "example": "I have a new bag.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000075",
@@ -597,7 +688,8 @@
     "hebrew": "ישן",
     "category": "descriptions",
     "example": "This book is old.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000076",
@@ -605,7 +697,8 @@
     "hebrew": "טוב",
     "category": "descriptions",
     "example": "This is a good day.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000077",
@@ -613,7 +706,8 @@
     "hebrew": "ארוך",
     "category": "descriptions",
     "example": "The pencil is long.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000078",
@@ -621,7 +715,8 @@
     "hebrew": "קצר",
     "category": "descriptions",
     "example": "The story is short.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000079",
@@ -629,7 +724,8 @@
     "hebrew": "נקי",
     "category": "descriptions",
     "example": "My room is clean.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000080",
@@ -637,7 +733,8 @@
     "hebrew": "חזק",
     "category": "descriptions",
     "example": "The lion is strong.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000081",
@@ -645,7 +742,8 @@
     "hebrew": "בתוך",
     "category": "place-time",
     "example": "The fish is in the water.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000082",
@@ -653,7 +751,8 @@
     "hebrew": "על",
     "category": "place-time",
     "example": "The book is on the table.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000083",
@@ -661,7 +760,8 @@
     "hebrew": "מתחת",
     "category": "place-time",
     "example": "The cat is under the bed.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000084",
@@ -669,7 +769,8 @@
     "hebrew": "בין",
     "category": "place-time",
     "example": "The ball is between two chairs.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000085",
@@ -677,7 +778,8 @@
     "hebrew": "לפני",
     "category": "place-time",
     "example": "Wash your hands before lunch.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000086",
@@ -685,7 +787,8 @@
     "hebrew": "אחרי",
     "category": "place-time",
     "example": "We play after school.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000087",
@@ -693,7 +796,8 @@
     "hebrew": "היום",
     "category": "place-time",
     "example": "Today is a good day.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000088",
@@ -701,7 +805,8 @@
     "hebrew": "מחר",
     "category": "place-time",
     "example": "See you tomorrow.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000089",
@@ -709,7 +814,8 @@
     "hebrew": "בוקר",
     "category": "place-time",
     "example": "I eat in the morning.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000090",
@@ -717,7 +823,8 @@
     "hebrew": "לילה",
     "category": "place-time",
     "example": "I sleep at night.",
-    "difficulty": 2
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000091",
@@ -725,7 +832,9 @@
     "hebrew": "שמש",
     "category": "nature",
     "example": "The sun is bright.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-023"
   },
   {
     "id": "w-000092",
@@ -733,7 +842,8 @@
     "hebrew": "ירח",
     "category": "nature",
     "example": "The moon is in the sky.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000093",
@@ -741,7 +851,8 @@
     "hebrew": "כוכב",
     "category": "nature",
     "example": "I see a star.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000094",
@@ -749,7 +860,9 @@
     "hebrew": "עץ",
     "category": "nature",
     "example": "The tree is tall.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-022"
   },
   {
     "id": "w-000095",
@@ -757,7 +870,9 @@
     "hebrew": "פרח",
     "category": "nature",
     "example": "The flower is red.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-060"
   },
   {
     "id": "w-000096",
@@ -765,7 +880,8 @@
     "hebrew": "גשם",
     "category": "nature",
     "example": "The rain makes us wet.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000097",
@@ -773,7 +889,8 @@
     "hebrew": "שמיים",
     "category": "nature",
     "example": "The sky is blue.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000098",
@@ -781,7 +898,8 @@
     "hebrew": "ים",
     "category": "nature",
     "example": "The sea is big.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000099",
@@ -789,7 +907,8 @@
     "hebrew": "הר",
     "category": "nature",
     "example": "The mountain is high.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
   },
   {
     "id": "w-000100",
@@ -797,6 +916,3633 @@
     "hebrew": "נהר",
     "category": "nature",
     "example": "The river is long.",
-    "difficulty": 1
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000101",
+    "english": "pear",
+    "hebrew": "אגס",
+    "category": "food",
+    "example": "I like the pear.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000102",
+    "english": "peach",
+    "hebrew": "אפרסק",
+    "category": "food",
+    "example": "I like the peach.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000103",
+    "english": "plum",
+    "hebrew": "שזיף",
+    "category": "food",
+    "example": "I like the plum.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000104",
+    "english": "lemon",
+    "hebrew": "לימון",
+    "category": "food",
+    "example": "I like the lemon.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000105",
+    "english": "melon",
+    "hebrew": "מלון",
+    "category": "food",
+    "example": "I like the melon.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000106",
+    "english": "watermelon",
+    "hebrew": "אבטיח",
+    "category": "food",
+    "example": "I like the watermelon.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000107",
+    "english": "strawberry",
+    "hebrew": "תות שדה",
+    "category": "food",
+    "example": "I like the strawberry.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000108",
+    "english": "grape",
+    "hebrew": "ענב",
+    "category": "food",
+    "example": "I like the grape.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000109",
+    "english": "cherry",
+    "hebrew": "דובדבן",
+    "category": "food",
+    "example": "I like the cherry.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000110",
+    "english": "pineapple",
+    "hebrew": "אננס",
+    "category": "food",
+    "example": "I like the pineapple.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000111",
+    "english": "mango",
+    "hebrew": "מנגו",
+    "category": "food",
+    "example": "I like the mango.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000112",
+    "english": "coconut",
+    "hebrew": "קוקוס",
+    "category": "food",
+    "example": "I like the coconut.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000113",
+    "english": "kiwi",
+    "hebrew": "קיווי",
+    "category": "food",
+    "example": "I like the kiwi.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000114",
+    "english": "apricot",
+    "hebrew": "משמש",
+    "category": "food",
+    "example": "I like the apricot.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000115",
+    "english": "avocado",
+    "hebrew": "אבוקדו",
+    "category": "food",
+    "example": "I like the avocado.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000116",
+    "english": "tomato",
+    "hebrew": "עגבנייה",
+    "category": "food",
+    "example": "I like the tomato.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000117",
+    "english": "cucumber",
+    "hebrew": "מלפפון",
+    "category": "food",
+    "example": "I like the cucumber.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000118",
+    "english": "potato",
+    "hebrew": "תפוח אדמה",
+    "category": "food",
+    "example": "I like the potato.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000119",
+    "english": "onion",
+    "hebrew": "בצל",
+    "category": "food",
+    "example": "I like the onion.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000120",
+    "english": "broccoli",
+    "hebrew": "ברוקולי",
+    "category": "food",
+    "example": "I like broccoli.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-097"
+  },
+  {
+    "id": "w-000121",
+    "english": "soup",
+    "hebrew": "מרק",
+    "category": "food",
+    "example": "We have soup for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000122",
+    "english": "salad",
+    "hebrew": "סלט",
+    "category": "food",
+    "example": "We have salad for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000123",
+    "english": "pasta",
+    "hebrew": "פסטה",
+    "category": "food",
+    "example": "We have pasta for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000124",
+    "english": "pizza",
+    "hebrew": "פיצה",
+    "category": "food",
+    "example": "We have pizza for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-044"
+  },
+  {
+    "id": "w-000125",
+    "english": "sandwich",
+    "hebrew": "כריך",
+    "category": "food",
+    "example": "We have a sandwich for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000126",
+    "english": "chicken",
+    "hebrew": "עוף",
+    "category": "food",
+    "example": "We have chicken for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000127",
+    "english": "meat",
+    "hebrew": "בשר",
+    "category": "food",
+    "example": "We have meat for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000128",
+    "english": "corn",
+    "hebrew": "תירס",
+    "category": "food",
+    "example": "We have corn for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000129",
+    "english": "peas",
+    "hebrew": "אפונה",
+    "category": "food",
+    "example": "We have peas for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000130",
+    "english": "beans",
+    "hebrew": "שעועית",
+    "category": "food",
+    "example": "We have beans for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000131",
+    "english": "lettuce",
+    "hebrew": "חסה",
+    "category": "food",
+    "example": "We have lettuce for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000132",
+    "english": "pepper",
+    "hebrew": "פלפל",
+    "category": "food",
+    "example": "The pepper is red.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000133",
+    "english": "pumpkin",
+    "hebrew": "דלעת",
+    "category": "food",
+    "example": "We make soup with pumpkin.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000134",
+    "english": "honey",
+    "hebrew": "דבש",
+    "category": "food",
+    "example": "The honey tastes sweet.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000135",
+    "english": "jam",
+    "hebrew": "ריבה",
+    "category": "food",
+    "example": "I spread jam on my toast.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000136",
+    "english": "yogurt",
+    "hebrew": "יוגורט",
+    "category": "food",
+    "example": "We have yogurt for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000137",
+    "english": "butter",
+    "hebrew": "חמאה",
+    "category": "food",
+    "example": "We put butter on bread.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000138",
+    "english": "cereal",
+    "hebrew": "דגני בוקר",
+    "category": "food",
+    "example": "I eat cereal for breakfast.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000139",
+    "english": "toast",
+    "hebrew": "לחם קלוי",
+    "category": "food",
+    "example": "I have toast for breakfast.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000140",
+    "english": "hummus",
+    "hebrew": "חומוס",
+    "category": "food",
+    "example": "We have hummus for lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000141",
+    "english": "cake",
+    "hebrew": "עוגה",
+    "category": "food",
+    "example": "I can see a cake.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-046"
+  },
+  {
+    "id": "w-000142",
+    "english": "cookie",
+    "hebrew": "עוגייה",
+    "category": "food",
+    "example": "I can see a cookie.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000143",
+    "english": "chocolate",
+    "hebrew": "שוקולד",
+    "category": "food",
+    "example": "I can see chocolate.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000144",
+    "english": "ice cream",
+    "hebrew": "גלידה",
+    "category": "food",
+    "example": "I can see ice cream.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000145",
+    "english": "juice",
+    "hebrew": "מיץ",
+    "category": "food",
+    "example": "I can see juice.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000146",
+    "english": "tea",
+    "hebrew": "תה",
+    "category": "food",
+    "example": "I can see tea.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000147",
+    "english": "sugar",
+    "hebrew": "סוכר",
+    "category": "food",
+    "example": "The sugar is sweet.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000148",
+    "english": "salt",
+    "hebrew": "מלח",
+    "category": "food",
+    "example": "Add a little salt to the soup.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000149",
+    "english": "flour",
+    "hebrew": "קמח",
+    "category": "food",
+    "example": "We use flour to bake a cake.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000150",
+    "english": "dough",
+    "hebrew": "בצק",
+    "category": "food",
+    "example": "We use dough to make bread.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000151",
+    "english": "pancake",
+    "hebrew": "פנקייק",
+    "category": "food",
+    "example": "I can see a pancake.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000152",
+    "english": "waffle",
+    "hebrew": "ופל",
+    "category": "food",
+    "example": "I can see a waffle.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000153",
+    "english": "biscuit",
+    "hebrew": "ביסקוויט",
+    "category": "food",
+    "example": "I can see a biscuit.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000154",
+    "english": "muffin",
+    "hebrew": "מאפין",
+    "category": "food",
+    "example": "I can see a muffin.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000155",
+    "english": "noodles",
+    "hebrew": "אטריות",
+    "category": "food",
+    "example": "I can see noodles.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000156",
+    "english": "sauce",
+    "hebrew": "רוטב",
+    "category": "food",
+    "example": "I can see sauce.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000157",
+    "english": "olive",
+    "hebrew": "זית",
+    "category": "food",
+    "example": "I can see a olive.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000158",
+    "english": "nut",
+    "hebrew": "אגוז",
+    "category": "food",
+    "example": "I can see a nut.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000159",
+    "english": "raisin",
+    "hebrew": "צימוק",
+    "category": "food",
+    "example": "I can see a raisin.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000160",
+    "english": "hamburger",
+    "hebrew": "המבורגר",
+    "category": "food",
+    "example": "I can see a hamburger.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-045"
+  },
+  {
+    "id": "w-000161",
+    "english": "elephant",
+    "hebrew": "פיל",
+    "category": "animals",
+    "example": "Look at the elephant.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-018"
+  },
+  {
+    "id": "w-000162",
+    "english": "monkey",
+    "hebrew": "קוף",
+    "category": "animals",
+    "example": "Look at the monkey.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000163",
+    "english": "tiger",
+    "hebrew": "טיגריס",
+    "category": "animals",
+    "example": "Look at the tiger.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000164",
+    "english": "bear",
+    "hebrew": "דוב",
+    "category": "animals",
+    "example": "Look at the bear.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000165",
+    "english": "zebra",
+    "hebrew": "זברה",
+    "category": "animals",
+    "example": "Look at the zebra.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000166",
+    "english": "giraffe",
+    "hebrew": "ג׳ירפה",
+    "category": "animals",
+    "example": "Look at the giraffe.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000167",
+    "english": "snake",
+    "hebrew": "נחש",
+    "category": "animals",
+    "example": "Look at the snake.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000168",
+    "english": "turtle",
+    "hebrew": "צב",
+    "category": "animals",
+    "example": "Look at the turtle.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000169",
+    "english": "frog",
+    "hebrew": "צפרדע",
+    "category": "animals",
+    "example": "Look at the frog.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000170",
+    "english": "mouse",
+    "hebrew": "עכבר",
+    "category": "animals",
+    "example": "Look at the mouse.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000171",
+    "english": "rat",
+    "hebrew": "חולדה",
+    "category": "animals",
+    "example": "Look at the rat.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000172",
+    "english": "pig",
+    "hebrew": "חזיר",
+    "category": "animals",
+    "example": "Look at the pig.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000173",
+    "english": "goat",
+    "hebrew": "עז",
+    "category": "animals",
+    "example": "Look at the goat.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000174",
+    "english": "chick",
+    "hebrew": "אפרוח",
+    "category": "animals",
+    "example": "Look at the chick.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000175",
+    "english": "rooster",
+    "hebrew": "תרנגול",
+    "category": "animals",
+    "example": "Look at the rooster.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000176",
+    "english": "hen",
+    "hebrew": "תרנגולת",
+    "category": "animals",
+    "example": "Look at the hen.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000177",
+    "english": "goose",
+    "hebrew": "אווז",
+    "category": "animals",
+    "example": "Look at the goose.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000178",
+    "english": "camel",
+    "hebrew": "גמל",
+    "category": "animals",
+    "example": "Look at the camel.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000179",
+    "english": "donkey",
+    "hebrew": "חמור",
+    "category": "animals",
+    "example": "Look at the donkey.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000180",
+    "english": "deer",
+    "hebrew": "אייל",
+    "category": "animals",
+    "example": "Look at the deer.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000181",
+    "english": "fox",
+    "hebrew": "שועל",
+    "category": "animals",
+    "example": "The fox is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000182",
+    "english": "wolf",
+    "hebrew": "זאב",
+    "category": "animals",
+    "example": "The wolf is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000183",
+    "english": "squirrel",
+    "hebrew": "סנאי",
+    "category": "animals",
+    "example": "The squirrel is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000184",
+    "english": "hedgehog",
+    "hebrew": "קיפוד",
+    "category": "animals",
+    "example": "The hedgehog is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000185",
+    "english": "bat",
+    "hebrew": "עטלף",
+    "category": "animals",
+    "example": "The bat is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000186",
+    "english": "owl",
+    "hebrew": "ינשוף",
+    "category": "animals",
+    "example": "The owl is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000187",
+    "english": "eagle",
+    "hebrew": "עיט",
+    "category": "animals",
+    "example": "The eagle is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000188",
+    "english": "parrot",
+    "hebrew": "תוכי",
+    "category": "animals",
+    "example": "The parrot is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000189",
+    "english": "penguin",
+    "hebrew": "פינגווין",
+    "category": "animals",
+    "example": "The penguin is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000190",
+    "english": "flamingo",
+    "hebrew": "פלמינגו",
+    "category": "animals",
+    "example": "The flamingo is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000191",
+    "english": "whale",
+    "hebrew": "לווייתן",
+    "category": "animals",
+    "example": "The whale is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000192",
+    "english": "dolphin",
+    "hebrew": "דולפין",
+    "category": "animals",
+    "example": "The dolphin is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000193",
+    "english": "shark",
+    "hebrew": "כריש",
+    "category": "animals",
+    "example": "The shark is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000194",
+    "english": "octopus",
+    "hebrew": "תמנון",
+    "category": "animals",
+    "example": "The octopus is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000195",
+    "english": "crab",
+    "hebrew": "סרטן",
+    "category": "animals",
+    "example": "The crab is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000196",
+    "english": "seal",
+    "hebrew": "כלב ים",
+    "category": "animals",
+    "example": "The seal is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000197",
+    "english": "butterfly",
+    "hebrew": "פרפר",
+    "category": "animals",
+    "example": "The butterfly is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000198",
+    "english": "bee",
+    "hebrew": "דבורה",
+    "category": "animals",
+    "example": "The bee is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000199",
+    "english": "ant",
+    "hebrew": "נמלה",
+    "category": "animals",
+    "example": "The ant is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000200",
+    "english": "spider",
+    "hebrew": "עכביש",
+    "category": "animals",
+    "example": "The spider is an animal.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000201",
+    "english": "sofa",
+    "hebrew": "ספה",
+    "category": "home",
+    "example": "The sofa is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-078"
+  },
+  {
+    "id": "w-000202",
+    "english": "lamp",
+    "hebrew": "מנורה",
+    "category": "home",
+    "example": "The lamp is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-079"
+  },
+  {
+    "id": "w-000203",
+    "english": "mirror",
+    "hebrew": "מראה",
+    "category": "home",
+    "example": "The mirror is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000204",
+    "english": "shelf",
+    "hebrew": "מדף",
+    "category": "home",
+    "example": "The shelf is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000205",
+    "english": "carpet",
+    "hebrew": "שטיח",
+    "category": "home",
+    "example": "The carpet is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000206",
+    "english": "pillow",
+    "hebrew": "כרית",
+    "category": "home",
+    "example": "The pillow is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000207",
+    "english": "blanket",
+    "hebrew": "שמיכה",
+    "category": "home",
+    "example": "The blanket is in our home.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000208",
+    "english": "curtain",
+    "hebrew": "וילון",
+    "category": "home",
+    "example": "The curtain is in our home.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000209",
+    "english": "wall",
+    "hebrew": "קיר",
+    "category": "home",
+    "example": "A picture is on the wall.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000210",
+    "english": "floor",
+    "hebrew": "רצפה",
+    "category": "home",
+    "example": "The ball is on the floor.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000211",
+    "english": "ceiling",
+    "hebrew": "תקרה",
+    "category": "home",
+    "example": "The lamp hangs from the ceiling.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000212",
+    "english": "roof",
+    "hebrew": "גג",
+    "category": "home",
+    "example": "The roof keeps the rain out.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000213",
+    "english": "stairs",
+    "hebrew": "מדרגות",
+    "category": "home",
+    "example": "We walk up the stairs.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000214",
+    "english": "kitchen",
+    "hebrew": "מטבח",
+    "category": "home",
+    "example": "We cook in the kitchen.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000215",
+    "english": "bathroom",
+    "hebrew": "חדר אמבטיה",
+    "category": "home",
+    "example": "I wash my hands in the bathroom.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000216",
+    "english": "bedroom",
+    "hebrew": "חדר שינה",
+    "category": "home",
+    "example": "My bed is in my bedroom.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000217",
+    "english": "living room",
+    "hebrew": "סלון",
+    "category": "home",
+    "example": "We sit in the living room.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000218",
+    "english": "balcony",
+    "hebrew": "מרפסת",
+    "category": "home",
+    "example": "We can see the street from the balcony.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000219",
+    "english": "garden",
+    "hebrew": "גינה",
+    "category": "home",
+    "example": "There are flowers in our garden.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000220",
+    "english": "garage",
+    "hebrew": "מוסך",
+    "category": "home",
+    "example": "Our car is in the garage.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000221",
+    "english": "spoon",
+    "hebrew": "כף",
+    "category": "home",
+    "example": "We use the spoon at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000222",
+    "english": "fork",
+    "hebrew": "מזלג",
+    "category": "home",
+    "example": "We use the fork at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000223",
+    "english": "knife",
+    "hebrew": "סכין",
+    "category": "home",
+    "example": "We use the knife at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000224",
+    "english": "bowl",
+    "hebrew": "קערה",
+    "category": "home",
+    "example": "We use the bowl at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000225",
+    "english": "bottle",
+    "hebrew": "בקבוק",
+    "category": "home",
+    "example": "We use the bottle at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-061"
+  },
+  {
+    "id": "w-000226",
+    "english": "pan",
+    "hebrew": "מחבת",
+    "category": "home",
+    "example": "We use the pan at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000227",
+    "english": "pot",
+    "hebrew": "סיר",
+    "category": "home",
+    "example": "We use the pot at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000228",
+    "english": "oven",
+    "hebrew": "תנור",
+    "category": "home",
+    "example": "We use the oven at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000229",
+    "english": "fridge",
+    "hebrew": "מקרר",
+    "category": "home",
+    "example": "We use the fridge at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000230",
+    "english": "sink",
+    "hebrew": "כיור",
+    "category": "home",
+    "example": "We use the sink at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-077"
+  },
+  {
+    "id": "w-000231",
+    "english": "soap",
+    "hebrew": "סבון",
+    "category": "home",
+    "example": "We use the soap at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000232",
+    "english": "towel",
+    "hebrew": "מגבת",
+    "category": "home",
+    "example": "We use the towel at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000233",
+    "english": "toothbrush",
+    "hebrew": "מברשת שיניים",
+    "category": "home",
+    "example": "We use the toothbrush at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000234",
+    "english": "toothpaste",
+    "hebrew": "משחת שיניים",
+    "category": "home",
+    "example": "We use the toothpaste at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000235",
+    "english": "comb",
+    "hebrew": "מסרק",
+    "category": "home",
+    "example": "We use the comb at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000236",
+    "english": "brush",
+    "hebrew": "מברשת",
+    "category": "home",
+    "example": "We use the brush at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000237",
+    "english": "broom",
+    "hebrew": "מטאטא",
+    "category": "home",
+    "example": "We use the broom at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000238",
+    "english": "bucket",
+    "hebrew": "דלי",
+    "category": "home",
+    "example": "We use the bucket at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000239",
+    "english": "key",
+    "hebrew": "מפתח",
+    "category": "home",
+    "example": "We use the key at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-066"
+  },
+  {
+    "id": "w-000240",
+    "english": "lock",
+    "hebrew": "מנעול",
+    "category": "home",
+    "example": "We use the lock at home.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000241",
+    "english": "eraser",
+    "hebrew": "מחק",
+    "category": "school",
+    "example": "We use the eraser at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000242",
+    "english": "ruler",
+    "hebrew": "סרגל",
+    "category": "school",
+    "example": "We use the ruler at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000243",
+    "english": "scissors",
+    "hebrew": "מספריים",
+    "category": "school",
+    "example": "We use the scissors at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-057"
+  },
+  {
+    "id": "w-000244",
+    "english": "glue",
+    "hebrew": "דבק",
+    "category": "school",
+    "example": "We use the glue at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000245",
+    "english": "notebook",
+    "hebrew": "מחברת",
+    "category": "school",
+    "example": "We use the notebook at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000246",
+    "english": "crayon",
+    "hebrew": "צבע שעווה",
+    "category": "school",
+    "example": "We use the crayon at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000247",
+    "english": "marker",
+    "hebrew": "טוש",
+    "category": "school",
+    "example": "We use the marker at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000248",
+    "english": "paint",
+    "hebrew": "צבע לצביעה",
+    "category": "school",
+    "example": "We use the paint at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000249",
+    "english": "paintbrush",
+    "hebrew": "מכחול",
+    "category": "school",
+    "example": "We use the paintbrush at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000250",
+    "english": "board",
+    "hebrew": "לוח",
+    "category": "school",
+    "example": "We use the board at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000251",
+    "english": "computer",
+    "hebrew": "מחשב",
+    "category": "school",
+    "example": "We use the computer at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-051"
+  },
+  {
+    "id": "w-000252",
+    "english": "keyboard",
+    "hebrew": "מקלדת",
+    "category": "school",
+    "example": "We use the keyboard at school.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000253",
+    "english": "screen",
+    "hebrew": "מסך",
+    "category": "school",
+    "example": "We use the screen at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000254",
+    "english": "tablet",
+    "hebrew": "מחשב לוח",
+    "category": "school",
+    "example": "We use the tablet at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-053"
+  },
+  {
+    "id": "w-000255",
+    "english": "pencil case",
+    "hebrew": "קלמר",
+    "category": "school",
+    "example": "We use the pencil case at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000256",
+    "english": "lunchbox",
+    "hebrew": "קופסת אוכל",
+    "category": "school",
+    "example": "We use the lunchbox at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000257",
+    "english": "map",
+    "hebrew": "מפה",
+    "category": "school",
+    "example": "We use the map at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-067"
+  },
+  {
+    "id": "w-000258",
+    "english": "calendar",
+    "hebrew": "לוח שנה",
+    "category": "school",
+    "example": "We use the calendar at school.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000259",
+    "english": "backpack",
+    "hebrew": "תרמיל",
+    "category": "school",
+    "example": "We use the backpack at school.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-028"
+  },
+  {
+    "id": "w-000260",
+    "english": "workbook",
+    "hebrew": "חוברת עבודה",
+    "category": "school",
+    "example": "We use the workbook at school.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000261",
+    "english": "lesson",
+    "hebrew": "שיעור",
+    "category": "school",
+    "example": "The lesson starts now.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000262",
+    "english": "homework",
+    "hebrew": "שיעורי בית",
+    "category": "school",
+    "example": "I do my homework after school.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000263",
+    "english": "classroom",
+    "hebrew": "כיתה",
+    "category": "school",
+    "example": "Our classroom has a big window.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000264",
+    "english": "library",
+    "hebrew": "ספרייה",
+    "category": "school",
+    "example": "We read books in the library.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000265",
+    "english": "playground",
+    "hebrew": "מגרש משחקים",
+    "category": "school",
+    "example": "We play in the playground.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000266",
+    "english": "alphabet",
+    "hebrew": "אלף־בית",
+    "category": "school",
+    "example": "We learn the English alphabet.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000267",
+    "english": "letter",
+    "hebrew": "אות",
+    "category": "school",
+    "example": "A is the first letter.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000268",
+    "english": "word",
+    "hebrew": "מילה",
+    "category": "school",
+    "example": "I know this word.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000269",
+    "english": "sentence",
+    "hebrew": "משפט",
+    "category": "school",
+    "example": "This sentence has five words.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000270",
+    "english": "story",
+    "hebrew": "סיפור",
+    "category": "school",
+    "example": "Tell me a story.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000271",
+    "english": "page",
+    "hebrew": "עמוד",
+    "category": "school",
+    "example": "Turn to the next page.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000272",
+    "english": "question",
+    "hebrew": "שאלה",
+    "category": "school",
+    "example": "I want to ask a question.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000273",
+    "english": "answer",
+    "hebrew": "תשובה",
+    "category": "school",
+    "example": "I know the answer.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000274",
+    "english": "number",
+    "hebrew": "מספר",
+    "category": "school",
+    "example": "Seven is my favorite number.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000275",
+    "english": "color",
+    "hebrew": "צבע",
+    "category": "school",
+    "example": "What color is your bag?",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000276",
+    "english": "shape",
+    "hebrew": "צורה",
+    "category": "school",
+    "example": "A circle is a round shape.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000277",
+    "english": "music",
+    "hebrew": "מוזיקה",
+    "category": "school",
+    "example": "I like listening to music.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000278",
+    "english": "art",
+    "hebrew": "אומנות",
+    "category": "school",
+    "example": "We make pictures in art class.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000279",
+    "english": "science",
+    "hebrew": "מדע",
+    "category": "school",
+    "example": "In science we learn about plants.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000280",
+    "english": "math",
+    "hebrew": "מתמטיקה",
+    "category": "school",
+    "example": "We count numbers in math class.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000281",
+    "english": "head",
+    "hebrew": "ראש",
+    "category": "body",
+    "example": "This is my head.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000282",
+    "english": "face",
+    "hebrew": "פנים",
+    "category": "body",
+    "example": "This is my face.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000283",
+    "english": "hair",
+    "hebrew": "שיער",
+    "category": "body",
+    "example": "This is my hair.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000284",
+    "english": "eye",
+    "hebrew": "עין",
+    "category": "body",
+    "example": "This is my eye.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000285",
+    "english": "ear",
+    "hebrew": "אוזן",
+    "category": "body",
+    "example": "This is my ear.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000286",
+    "english": "nose",
+    "hebrew": "אף",
+    "category": "body",
+    "example": "This is my nose.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000287",
+    "english": "mouth",
+    "hebrew": "פה",
+    "category": "body",
+    "example": "This is my mouth.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000288",
+    "english": "tooth",
+    "hebrew": "שן",
+    "category": "body",
+    "example": "This is my tooth.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000289",
+    "english": "tongue",
+    "hebrew": "לשון",
+    "category": "body",
+    "example": "This is my tongue.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000290",
+    "english": "neck",
+    "hebrew": "צוואר",
+    "category": "body",
+    "example": "This is my neck.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000291",
+    "english": "shoulder",
+    "hebrew": "כתף",
+    "category": "body",
+    "example": "This is my shoulder.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000292",
+    "english": "arm",
+    "hebrew": "זרוע",
+    "category": "body",
+    "example": "This is my arm.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000293",
+    "english": "hand",
+    "hebrew": "יד",
+    "category": "body",
+    "example": "This is my hand.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000294",
+    "english": "finger",
+    "hebrew": "אצבע",
+    "category": "body",
+    "example": "This is my finger.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000295",
+    "english": "thumb",
+    "hebrew": "אגודל",
+    "category": "body",
+    "example": "This is my thumb.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000296",
+    "english": "leg",
+    "hebrew": "רגל",
+    "category": "body",
+    "example": "This is my leg.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000297",
+    "english": "knee",
+    "hebrew": "ברך",
+    "category": "body",
+    "example": "This is my knee.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000298",
+    "english": "foot",
+    "hebrew": "כף רגל",
+    "category": "body",
+    "example": "This is my foot.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000299",
+    "english": "toe",
+    "hebrew": "אצבע בכף הרגל",
+    "category": "body",
+    "example": "This is my toe.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000300",
+    "english": "back",
+    "hebrew": "גב",
+    "category": "body",
+    "example": "This is my back.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000301",
+    "english": "shirt",
+    "hebrew": "חולצה",
+    "category": "clothes",
+    "example": "Look at the shirt.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000302",
+    "english": "t-shirt",
+    "hebrew": "חולצת טריקו",
+    "category": "clothes",
+    "example": "Look at the t-shirt.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000303",
+    "english": "pants",
+    "hebrew": "מכנסיים",
+    "category": "clothes",
+    "example": "Look at the pants.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000304",
+    "english": "shorts",
+    "hebrew": "מכנסיים קצרים",
+    "category": "clothes",
+    "example": "Look at the shorts.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000305",
+    "english": "dress",
+    "hebrew": "שמלה",
+    "category": "clothes",
+    "example": "Look at the dress.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000306",
+    "english": "skirt",
+    "hebrew": "חצאית",
+    "category": "clothes",
+    "example": "Look at the skirt.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000307",
+    "english": "coat",
+    "hebrew": "מעיל",
+    "category": "clothes",
+    "example": "Look at the coat.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000308",
+    "english": "jacket",
+    "hebrew": "ז׳קט",
+    "category": "clothes",
+    "example": "Look at the jacket.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000309",
+    "english": "sweater",
+    "hebrew": "סוודר",
+    "category": "clothes",
+    "example": "Look at the sweater.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000310",
+    "english": "hat",
+    "hebrew": "כובע",
+    "category": "clothes",
+    "example": "Look at the hat.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000311",
+    "english": "cap",
+    "hebrew": "כובע מצחייה",
+    "category": "clothes",
+    "example": "Look at the cap.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000312",
+    "english": "shoe",
+    "hebrew": "נעל",
+    "category": "clothes",
+    "example": "Look at the shoe.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000313",
+    "english": "sock",
+    "hebrew": "גרב",
+    "category": "clothes",
+    "example": "Look at the sock.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000314",
+    "english": "boot",
+    "hebrew": "מגף",
+    "category": "clothes",
+    "example": "Look at the boot.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000315",
+    "english": "sandal",
+    "hebrew": "סנדל",
+    "category": "clothes",
+    "example": "Look at the sandal.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000316",
+    "english": "scarf",
+    "hebrew": "צעיף",
+    "category": "clothes",
+    "example": "Look at the scarf.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000317",
+    "english": "glove",
+    "hebrew": "כפפה",
+    "category": "clothes",
+    "example": "Look at the glove.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000318",
+    "english": "belt",
+    "hebrew": "חגורה",
+    "category": "clothes",
+    "example": "Look at the belt.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000319",
+    "english": "pajamas",
+    "hebrew": "פיג׳מה",
+    "category": "clothes",
+    "example": "Look at the pajamas.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000320",
+    "english": "swimsuit",
+    "hebrew": "בגד ים",
+    "category": "clothes",
+    "example": "Look at the swimsuit.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000321",
+    "english": "mother",
+    "hebrew": "אמא",
+    "category": "people",
+    "example": "I can see my mother.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000322",
+    "english": "father",
+    "hebrew": "אבא",
+    "category": "people",
+    "example": "I can see my father.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000323",
+    "english": "sister",
+    "hebrew": "אחות",
+    "category": "people",
+    "example": "I can see my sister.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000324",
+    "english": "brother",
+    "hebrew": "אח",
+    "category": "people",
+    "example": "I can see my brother.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000325",
+    "english": "grandmother",
+    "hebrew": "סבתא",
+    "category": "people",
+    "example": "I can see my grandmother.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000326",
+    "english": "grandfather",
+    "hebrew": "סבא",
+    "category": "people",
+    "example": "I can see my grandfather.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000327",
+    "english": "family",
+    "hebrew": "משפחה",
+    "category": "people",
+    "example": "I love my family.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000328",
+    "english": "cousin",
+    "hebrew": "בן דוד",
+    "category": "people",
+    "example": "My cousin comes to play.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000329",
+    "english": "aunt",
+    "hebrew": "דודה",
+    "category": "people",
+    "example": "I can see my aunt.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000330",
+    "english": "uncle",
+    "hebrew": "דוד",
+    "category": "people",
+    "example": "I can see my uncle.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000331",
+    "english": "baby",
+    "hebrew": "תינוק",
+    "category": "people",
+    "example": "I can see my baby.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000332",
+    "english": "neighbor",
+    "hebrew": "שכן",
+    "category": "people",
+    "example": "I can see my neighbor.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000333",
+    "english": "doctor",
+    "hebrew": "רופא",
+    "category": "people",
+    "example": "I can see my doctor.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000334",
+    "english": "dentist",
+    "hebrew": "רופא שיניים",
+    "category": "people",
+    "example": "I can see my dentist.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000335",
+    "english": "nurse",
+    "hebrew": "אח סיעודי",
+    "category": "people",
+    "example": "The nurse helps me feel better.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000336",
+    "english": "coach",
+    "hebrew": "מאמן",
+    "category": "people",
+    "example": "I can see my coach.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000337",
+    "english": "team",
+    "hebrew": "קבוצה",
+    "category": "people",
+    "example": "Our team plays together.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000338",
+    "english": "parent",
+    "hebrew": "הורה",
+    "category": "people",
+    "example": "I can see my parent.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000339",
+    "english": "classmate",
+    "hebrew": "חבר לכיתה",
+    "category": "people",
+    "example": "I can see my classmate.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000340",
+    "english": "partner",
+    "hebrew": "שותף",
+    "category": "people",
+    "example": "My partner helps me with the game.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000341",
+    "english": "car",
+    "hebrew": "מכונית",
+    "category": "transport",
+    "example": "Look at the car.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-020"
+  },
+  {
+    "id": "w-000342",
+    "english": "bus",
+    "hebrew": "אוטובוס",
+    "category": "transport",
+    "example": "Look at the bus.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-056"
+  },
+  {
+    "id": "w-000343",
+    "english": "train",
+    "hebrew": "רכבת",
+    "category": "transport",
+    "example": "Look at the train.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-052"
+  },
+  {
+    "id": "w-000344",
+    "english": "bicycle",
+    "hebrew": "אופניים",
+    "category": "transport",
+    "example": "Look at the bicycle.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-054"
+  },
+  {
+    "id": "w-000345",
+    "english": "boat",
+    "hebrew": "סירה",
+    "category": "transport",
+    "example": "Look at the boat.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000346",
+    "english": "ship",
+    "hebrew": "אונייה",
+    "category": "transport",
+    "example": "Look at the ship.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-050"
+  },
+  {
+    "id": "w-000347",
+    "english": "airplane",
+    "hebrew": "מטוס",
+    "category": "transport",
+    "example": "Look at the airplane.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-048"
+  },
+  {
+    "id": "w-000348",
+    "english": "helicopter",
+    "hebrew": "מסוק",
+    "category": "transport",
+    "example": "Look at the helicopter.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000349",
+    "english": "truck",
+    "hebrew": "משאית",
+    "category": "transport",
+    "example": "Look at the truck.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000350",
+    "english": "motorcycle",
+    "hebrew": "אופנוע",
+    "category": "transport",
+    "example": "Look at the motorcycle.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000351",
+    "english": "scooter",
+    "hebrew": "קורקינט",
+    "category": "transport",
+    "example": "Look at the scooter.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000352",
+    "english": "tractor",
+    "hebrew": "טרקטור",
+    "category": "transport",
+    "example": "Look at the tractor.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000353",
+    "english": "taxi",
+    "hebrew": "מונית",
+    "category": "transport",
+    "example": "Look at the taxi.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000354",
+    "english": "ambulance",
+    "hebrew": "אמבולנס",
+    "category": "transport",
+    "example": "Look at the ambulance.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000355",
+    "english": "fire engine",
+    "hebrew": "כבאית",
+    "category": "transport",
+    "example": "Look at the fire engine.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000356",
+    "english": "wheel",
+    "hebrew": "גלגל",
+    "category": "transport",
+    "example": "Look at the wheel.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000357",
+    "english": "road",
+    "hebrew": "כביש",
+    "category": "transport",
+    "example": "Look at the road.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000358",
+    "english": "bridge",
+    "hebrew": "גשר",
+    "category": "transport",
+    "example": "Look at the bridge.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000359",
+    "english": "station",
+    "hebrew": "תחנה",
+    "category": "transport",
+    "example": "Look at the station.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000360",
+    "english": "airport",
+    "hebrew": "שדה תעופה",
+    "category": "transport",
+    "example": "Look at the airport.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000361",
+    "english": "cloud",
+    "hebrew": "ענן",
+    "category": "nature",
+    "example": "Look at the cloud.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-024"
+  },
+  {
+    "id": "w-000362",
+    "english": "snow",
+    "hebrew": "שלג",
+    "category": "nature",
+    "example": "Look at the snow.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000363",
+    "english": "wind",
+    "hebrew": "רוח",
+    "category": "nature",
+    "example": "Look at the wind.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000364",
+    "english": "storm",
+    "hebrew": "סערה",
+    "category": "nature",
+    "example": "Look at the storm.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000365",
+    "english": "rainbow",
+    "hebrew": "קשת בענן",
+    "category": "nature",
+    "example": "Look at the rainbow.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000366",
+    "english": "forest",
+    "hebrew": "יער",
+    "category": "nature",
+    "example": "Look at the forest.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000367",
+    "english": "leaf",
+    "hebrew": "עלה",
+    "category": "nature",
+    "example": "Look at the leaf.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000368",
+    "english": "branch",
+    "hebrew": "ענף",
+    "category": "nature",
+    "example": "Look at the branch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000369",
+    "english": "root",
+    "hebrew": "שורש",
+    "category": "nature",
+    "example": "Look at the root.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000370",
+    "english": "seed",
+    "hebrew": "זרע",
+    "category": "nature",
+    "example": "Look at the seed.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000371",
+    "english": "grass",
+    "hebrew": "דשא",
+    "category": "nature",
+    "example": "Look at the grass.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-088"
+  },
+  {
+    "id": "w-000372",
+    "english": "bush",
+    "hebrew": "שיח",
+    "category": "nature",
+    "example": "Look at the bush.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-070"
+  },
+  {
+    "id": "w-000373",
+    "english": "rock",
+    "hebrew": "סלע",
+    "category": "nature",
+    "example": "Look at the rock.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000374",
+    "english": "stone",
+    "hebrew": "אבן",
+    "category": "nature",
+    "example": "Look at the stone.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000375",
+    "english": "sand",
+    "hebrew": "חול",
+    "category": "nature",
+    "example": "Look at the sand.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000376",
+    "english": "beach",
+    "hebrew": "חוף",
+    "category": "nature",
+    "example": "Look at the beach.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000377",
+    "english": "lake",
+    "hebrew": "אגם",
+    "category": "nature",
+    "example": "Look at the lake.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000378",
+    "english": "island",
+    "hebrew": "אי",
+    "category": "nature",
+    "example": "Look at the island.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000379",
+    "english": "desert",
+    "hebrew": "מדבר",
+    "category": "nature",
+    "example": "Look at the desert.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000380",
+    "english": "valley",
+    "hebrew": "עמק",
+    "category": "nature",
+    "example": "Look at the valley.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000381",
+    "english": "afternoon",
+    "hebrew": "אחר הצהריים",
+    "category": "place-time",
+    "example": "We play in the afternoon.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000382",
+    "english": "evening",
+    "hebrew": "ערב",
+    "category": "place-time",
+    "example": "We read in the evening.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000383",
+    "english": "yesterday",
+    "hebrew": "אתמול",
+    "category": "place-time",
+    "example": "Yesterday we played a game.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000384",
+    "english": "week",
+    "hebrew": "שבוע",
+    "category": "place-time",
+    "example": "There are seven days in a week.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000385",
+    "english": "month",
+    "hebrew": "חודש",
+    "category": "place-time",
+    "example": "My birthday is next month.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000386",
+    "english": "year",
+    "hebrew": "שנה",
+    "category": "place-time",
+    "example": "A year has twelve months.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000387",
+    "english": "hour",
+    "hebrew": "שעה",
+    "category": "place-time",
+    "example": "The trip takes one hour.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000388",
+    "english": "minute",
+    "hebrew": "דקה",
+    "category": "place-time",
+    "example": "Please wait one minute.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000389",
+    "english": "second",
+    "hebrew": "שנייה",
+    "category": "place-time",
+    "example": "A minute has sixty seconds.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000390",
+    "english": "Monday",
+    "hebrew": "יום שני",
+    "category": "place-time",
+    "example": "Today is Monday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000391",
+    "english": "Tuesday",
+    "hebrew": "יום שלישי",
+    "category": "place-time",
+    "example": "Today is Tuesday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000392",
+    "english": "Wednesday",
+    "hebrew": "יום רביעי",
+    "category": "place-time",
+    "example": "Today is Wednesday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000393",
+    "english": "Thursday",
+    "hebrew": "יום חמישי",
+    "category": "place-time",
+    "example": "Today is Thursday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000394",
+    "english": "Friday",
+    "hebrew": "יום שישי",
+    "category": "place-time",
+    "example": "Today is Friday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000395",
+    "english": "Saturday",
+    "hebrew": "יום שבת",
+    "category": "place-time",
+    "example": "Today is Saturday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000396",
+    "english": "Sunday",
+    "hebrew": "יום ראשון",
+    "category": "place-time",
+    "example": "Today is Sunday.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000397",
+    "english": "spring",
+    "hebrew": "אביב",
+    "category": "place-time",
+    "example": "I like spring.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000398",
+    "english": "summer",
+    "hebrew": "קיץ",
+    "category": "place-time",
+    "example": "I like summer.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000399",
+    "english": "autumn",
+    "hebrew": "סתיו",
+    "category": "place-time",
+    "example": "I like autumn.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000400",
+    "english": "winter",
+    "hebrew": "חורף",
+    "category": "place-time",
+    "example": "I like winter.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000401",
+    "english": "cook",
+    "hebrew": "לבשל",
+    "category": "actions",
+    "example": "We can cook.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000402",
+    "english": "bake",
+    "hebrew": "לאפות",
+    "category": "actions",
+    "example": "We can bake.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000403",
+    "english": "wash",
+    "hebrew": "לשטוף",
+    "category": "actions",
+    "example": "We can wash.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000404",
+    "english": "clap",
+    "hebrew": "למחוא כפיים",
+    "category": "actions",
+    "example": "We can clap.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000405",
+    "english": "smile",
+    "hebrew": "לחייך",
+    "category": "actions",
+    "example": "We can smile.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000406",
+    "english": "laugh",
+    "hebrew": "לצחוק",
+    "category": "actions",
+    "example": "We can laugh.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000407",
+    "english": "cry",
+    "hebrew": "לבכות",
+    "category": "actions",
+    "example": "We can cry.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000408",
+    "english": "count",
+    "hebrew": "לספור",
+    "category": "actions",
+    "example": "We can count.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000409",
+    "english": "think",
+    "hebrew": "לחשוב",
+    "category": "actions",
+    "example": "We can think.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000410",
+    "english": "learn",
+    "hebrew": "ללמוד",
+    "category": "actions",
+    "example": "We can learn.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000411",
+    "english": "teach",
+    "hebrew": "ללמד",
+    "category": "actions",
+    "example": "We can teach.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000412",
+    "english": "ask",
+    "hebrew": "לשאול",
+    "category": "actions",
+    "example": "We can ask.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000413",
+    "english": "speak",
+    "hebrew": "לדבר",
+    "category": "actions",
+    "example": "We can speak.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000414",
+    "english": "say",
+    "hebrew": "לומר",
+    "category": "actions",
+    "example": "We can say.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000415",
+    "english": "tell",
+    "hebrew": "לספר",
+    "category": "actions",
+    "example": "We can tell.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000416",
+    "english": "try",
+    "hebrew": "לנסות",
+    "category": "actions",
+    "example": "We can try.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000417",
+    "english": "wait",
+    "hebrew": "לחכות",
+    "category": "actions",
+    "example": "We can wait.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000418",
+    "english": "stop",
+    "hebrew": "לעצור",
+    "category": "actions",
+    "example": "We can stop.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000419",
+    "english": "start",
+    "hebrew": "להתחיל",
+    "category": "actions",
+    "example": "We can start.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000420",
+    "english": "finish",
+    "hebrew": "לסיים",
+    "category": "actions",
+    "example": "We can finish.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000421",
+    "english": "build",
+    "hebrew": "לבנות",
+    "category": "actions",
+    "example": "We can build.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000422",
+    "english": "climb",
+    "hebrew": "לטפס",
+    "category": "actions",
+    "example": "We can climb.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000423",
+    "english": "fly",
+    "hebrew": "לעוף",
+    "category": "actions",
+    "example": "We can fly.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000424",
+    "english": "ride",
+    "hebrew": "לרכוב",
+    "category": "actions",
+    "example": "We can ride.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000425",
+    "english": "throw",
+    "hebrew": "לזרוק",
+    "category": "actions",
+    "example": "We can throw.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000426",
+    "english": "catch",
+    "hebrew": "לתפוס",
+    "category": "actions",
+    "example": "We can catch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000427",
+    "english": "kick",
+    "hebrew": "לבעוט",
+    "category": "actions",
+    "example": "We can kick.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000428",
+    "english": "push",
+    "hebrew": "לדחוף",
+    "category": "actions",
+    "example": "We can push.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000429",
+    "english": "pull",
+    "hebrew": "למשוך",
+    "category": "actions",
+    "example": "We can pull.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000430",
+    "english": "carry",
+    "hebrew": "לשאת",
+    "category": "actions",
+    "example": "We can carry.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000431",
+    "english": "buy",
+    "hebrew": "לקנות",
+    "category": "actions",
+    "example": "We can buy.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000432",
+    "english": "sell",
+    "hebrew": "למכור",
+    "category": "actions",
+    "example": "We can sell.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000433",
+    "english": "choose",
+    "hebrew": "לבחור",
+    "category": "actions",
+    "example": "We can choose.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000434",
+    "english": "share",
+    "hebrew": "לחלוק",
+    "category": "actions",
+    "example": "We can share.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000435",
+    "english": "remember",
+    "hebrew": "לזכור",
+    "category": "actions",
+    "example": "We can remember.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000436",
+    "english": "forget",
+    "hebrew": "לשכוח",
+    "category": "actions",
+    "example": "We can forget.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000437",
+    "english": "understand",
+    "hebrew": "להבין",
+    "category": "actions",
+    "example": "We can understand.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000438",
+    "english": "practice",
+    "hebrew": "לתרגל",
+    "category": "actions",
+    "example": "We can practice.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000439",
+    "english": "rest",
+    "hebrew": "לנוח",
+    "category": "actions",
+    "example": "We can rest.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000440",
+    "english": "travel",
+    "hebrew": "לטייל",
+    "category": "actions",
+    "example": "We can travel.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000441",
+    "english": "young",
+    "hebrew": "צעיר",
+    "category": "descriptions",
+    "example": "The young dog likes to play.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000442",
+    "english": "beautiful",
+    "hebrew": "יפה",
+    "category": "descriptions",
+    "example": "The flower is beautiful.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000443",
+    "english": "ugly",
+    "hebrew": "מכוער",
+    "category": "descriptions",
+    "example": "The monster in the story is ugly.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000444",
+    "english": "easy",
+    "hebrew": "קל לביצוע",
+    "category": "descriptions",
+    "example": "This puzzle is easy.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000445",
+    "english": "difficult",
+    "hebrew": "קשה לביצוע",
+    "category": "descriptions",
+    "example": "This question is difficult.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000446",
+    "english": "heavy",
+    "hebrew": "כבד",
+    "category": "descriptions",
+    "example": "The bag is heavy.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000447",
+    "english": "light",
+    "hebrew": "קל במשקל",
+    "category": "descriptions",
+    "example": "The feather is light.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000448",
+    "english": "soft",
+    "hebrew": "רך",
+    "category": "descriptions",
+    "example": "The pillow is soft.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000449",
+    "english": "hard",
+    "hebrew": "קשיח",
+    "category": "descriptions",
+    "example": "The stone is hard.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000450",
+    "english": "wet",
+    "hebrew": "רטוב",
+    "category": "descriptions",
+    "example": "My coat is wet.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000451",
+    "english": "dry",
+    "hebrew": "יבש",
+    "category": "descriptions",
+    "example": "The towel is dry.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000452",
+    "english": "full",
+    "hebrew": "מלא",
+    "category": "descriptions",
+    "example": "The bottle is full.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000453",
+    "english": "empty",
+    "hebrew": "ריק",
+    "category": "descriptions",
+    "example": "The cup is empty.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000454",
+    "english": "quiet",
+    "hebrew": "שקט",
+    "category": "descriptions",
+    "example": "The library is quiet.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000455",
+    "english": "loud",
+    "hebrew": "רועש",
+    "category": "descriptions",
+    "example": "The music is loud.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000456",
+    "english": "kind",
+    "hebrew": "אדיב",
+    "category": "descriptions",
+    "example": "Our neighbor is kind.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000457",
+    "english": "brave",
+    "hebrew": "אמיץ",
+    "category": "descriptions",
+    "example": "The firefighter is brave.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000458",
+    "english": "tired",
+    "hebrew": "עייף",
+    "category": "descriptions",
+    "example": "I am tired after the game.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000459",
+    "english": "hungry",
+    "hebrew": "רעב",
+    "category": "descriptions",
+    "example": "I am hungry before lunch.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000460",
+    "english": "thirsty",
+    "hebrew": "צמא",
+    "category": "descriptions",
+    "example": "I am thirsty after running.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000461",
+    "english": "red",
+    "hebrew": "אדום",
+    "category": "descriptions",
+    "example": "The apple is red.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000462",
+    "english": "blue",
+    "hebrew": "כחול",
+    "category": "descriptions",
+    "example": "The sky is blue.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000463",
+    "english": "green",
+    "hebrew": "ירוק",
+    "category": "descriptions",
+    "example": "The leaf is green.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000464",
+    "english": "yellow",
+    "hebrew": "צהוב",
+    "category": "descriptions",
+    "example": "The banana is yellow.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000465",
+    "english": "black",
+    "hebrew": "שחור",
+    "category": "descriptions",
+    "example": "The cat is black.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000466",
+    "english": "white",
+    "hebrew": "לבן",
+    "category": "descriptions",
+    "example": "The snow is white.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000467",
+    "english": "pink",
+    "hebrew": "ורוד",
+    "category": "descriptions",
+    "example": "The flower is pink.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000468",
+    "english": "purple",
+    "hebrew": "סגול",
+    "category": "descriptions",
+    "example": "The balloon is purple.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000469",
+    "english": "brown",
+    "hebrew": "חום",
+    "category": "descriptions",
+    "example": "The bear is brown.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000470",
+    "english": "gray",
+    "hebrew": "אפור",
+    "category": "descriptions",
+    "example": "The cloud is gray.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000471",
+    "english": "round",
+    "hebrew": "עגול",
+    "category": "descriptions",
+    "example": "The ball is round.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000472",
+    "english": "square",
+    "hebrew": "מרובע",
+    "category": "descriptions",
+    "example": "The window is square.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000473",
+    "english": "wide",
+    "hebrew": "רחב",
+    "category": "descriptions",
+    "example": "The road is wide.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000474",
+    "english": "narrow",
+    "hebrew": "צר",
+    "category": "descriptions",
+    "example": "The path is narrow.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000475",
+    "english": "tall",
+    "hebrew": "גבוה",
+    "category": "descriptions",
+    "example": "The tree is tall.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000476",
+    "english": "deep",
+    "hebrew": "עמוק",
+    "category": "descriptions",
+    "example": "The lake is deep.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000477",
+    "english": "shallow",
+    "hebrew": "רדוד",
+    "category": "descriptions",
+    "example": "The pool is shallow.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000478",
+    "english": "bright",
+    "hebrew": "בהיר",
+    "category": "descriptions",
+    "example": "The light is bright.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000479",
+    "english": "dark",
+    "hebrew": "חשוך",
+    "category": "descriptions",
+    "example": "The room is dark.",
+    "difficulty": 1,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000480",
+    "english": "colorful",
+    "hebrew": "צבעוני",
+    "category": "descriptions",
+    "example": "The picture is colorful.",
+    "difficulty": 3,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000481",
+    "english": "ball",
+    "hebrew": "כדור",
+    "category": "play",
+    "example": "Look at the ball.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-019"
+  },
+  {
+    "id": "w-000482",
+    "english": "toy",
+    "hebrew": "צעצוע",
+    "category": "play",
+    "example": "Look at the toy.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000483",
+    "english": "doll",
+    "hebrew": "בובה",
+    "category": "play",
+    "example": "Look at the doll.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000484",
+    "english": "kite",
+    "hebrew": "עפיפון",
+    "category": "play",
+    "example": "Look at the kite.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000485",
+    "english": "puzzle",
+    "hebrew": "פאזל",
+    "category": "play",
+    "example": "Look at the puzzle.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000486",
+    "english": "game",
+    "hebrew": "משחק",
+    "category": "play",
+    "example": "Look at the game.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000487",
+    "english": "slide",
+    "hebrew": "מגלשה",
+    "category": "play",
+    "example": "Look at the slide.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000488",
+    "english": "swing",
+    "hebrew": "נדנדה",
+    "category": "play",
+    "example": "Look at the swing.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000489",
+    "english": "rope",
+    "hebrew": "חבל",
+    "category": "play",
+    "example": "Look at the rope.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000490",
+    "english": "drum",
+    "hebrew": "תוף",
+    "category": "play",
+    "example": "Look at the drum.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000491",
+    "english": "guitar",
+    "hebrew": "גיטרה",
+    "category": "play",
+    "example": "Look at the guitar.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000492",
+    "english": "piano",
+    "hebrew": "פסנתר",
+    "category": "play",
+    "example": "Look at the piano.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000493",
+    "english": "flute",
+    "hebrew": "חליל",
+    "category": "play",
+    "example": "Look at the flute.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000494",
+    "english": "bell",
+    "hebrew": "פעמון",
+    "category": "play",
+    "example": "Look at the bell.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000495",
+    "english": "balloon",
+    "hebrew": "בלון",
+    "category": "play",
+    "example": "Look at the balloon.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000496",
+    "english": "gift",
+    "hebrew": "מתנה",
+    "category": "play",
+    "example": "Look at the gift.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft",
+    "imageId": "vocab-081"
+  },
+  {
+    "id": "w-000497",
+    "english": "ribbon",
+    "hebrew": "סרט קישוט",
+    "category": "play",
+    "example": "Look at the ribbon.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000498",
+    "english": "candle",
+    "hebrew": "נר",
+    "category": "play",
+    "example": "Look at the candle.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000499",
+    "english": "mask",
+    "hebrew": "מסכה",
+    "category": "play",
+    "example": "Look at the mask.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
+  },
+  {
+    "id": "w-000500",
+    "english": "costume",
+    "hebrew": "תחפושת",
+    "category": "play",
+    "example": "Look at the costume.",
+    "difficulty": 2,
+    "contentStatus": "editorial-draft"
   }
 ]

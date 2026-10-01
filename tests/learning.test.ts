@@ -26,10 +26,10 @@ const answer: Answer = {
   chosenId: seed[0].id,
   at: now,
 };
-test("seed has 100 stable, unique bilingual words and sentences", () => {
-  assert.equal(seed.length, 100);
-  assert.equal(new Set(seed.map((w) => w.id)).size, 100);
-  assert.equal(new Set(seed.map((w) => w.english)).size, 100);
+test("seed has 500 stable, unique bilingual words and sentences", () => {
+  assert.equal(seed.length, 500);
+  assert.equal(new Set(seed.map((w) => w.id)).size, 500);
+  assert.equal(new Set(seed.map((w) => w.english)).size, 500);
   for (const w of seed) {
     assert.match(w.id, /^w-\d{6}$/);
     assert.ok(w.english && w.hebrew && w.example && w.category);

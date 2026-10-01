@@ -6,6 +6,8 @@ export interface Word {
   category: string;
   example: string;
   difficulty: number;
+  imageId?: string;
+  contentStatus?: string;
 }
 export interface Progress {
   wordId: string;
@@ -35,14 +37,25 @@ export interface Answer {
   responseMs: number;
   chosenId: string;
   at: number;
+  assisted?: boolean;
+  mode?: "text" | "picture" | "listening";
 }
 export interface Session {
   id: string;
   childId: string;
   startedAt: number;
   completedAt: number;
+  endedEarly?: boolean;
+  activityByDay?: Record<string, number>;
   answers: Answer[];
   xp: number;
+}
+export interface Question {
+  wordId: string;
+  skill: Skill;
+  mode: "text" | "picture" | "listening";
+  retry: boolean;
+  optionIds: string[];
 }
 export interface SessionDraft {
   id: string;
@@ -52,6 +65,10 @@ export interface SessionDraft {
   newWordIds: string[];
   questionIndex: number;
   discoveryIndex: number;
+  queue: Question[];
+  chosenId: string | null;
+  hintUsed: boolean;
+  activityByDay: Record<string, number>;
   answers: Answer[];
 }
 export interface AppState {
