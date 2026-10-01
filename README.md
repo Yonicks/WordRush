@@ -24,7 +24,7 @@ The Expo base path is applied only for the Pages build; local browser previews c
 ## Implemented
 
 - Hebrew interface, separate local child profiles, avatars and XP.
-- 500 stable bilingual vocabulary records with categories, three difficulty levels and examples.
+- 1,000 stable bilingual vocabulary records with categories, four difficulty levels and examples.
 - Searchable library with category/level/status filters, known-word exclusions, undo, picture/example/pronunciation previews, and incremental loading.
 - Discover → varied recognition (text, picture or listening) → reverse recall → encouraging results.
 - 46 visually inspected picture mappings; 1,000 bundled synthetic pronunciation clips covering all words at normal and slow speed.

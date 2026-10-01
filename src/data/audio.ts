@@ -2000,4 +2000,2004 @@ export const audio: Record<string, { normal: number; slow: number }> = {
     normal: require("../../assets/audio/w-000500-normal.mp3"),
     slow: require("../../assets/audio/w-000500-slow.mp3"),
   },
+  "w-000501": {
+    normal: require("../../assets/audio/w-000501-normal.mp3"),
+    slow: require("../../assets/audio/w-000501-slow.mp3"),
+  },
+  "w-000502": {
+    normal: require("../../assets/audio/w-000502-normal.mp3"),
+    slow: require("../../assets/audio/w-000502-slow.mp3"),
+  },
+  "w-000503": {
+    normal: require("../../assets/audio/w-000503-normal.mp3"),
+    slow: require("../../assets/audio/w-000503-slow.mp3"),
+  },
+  "w-000504": {
+    normal: require("../../assets/audio/w-000504-normal.mp3"),
+    slow: require("../../assets/audio/w-000504-slow.mp3"),
+  },
+  "w-000505": {
+    normal: require("../../assets/audio/w-000505-normal.mp3"),
+    slow: require("../../assets/audio/w-000505-slow.mp3"),
+  },
+  "w-000506": {
+    normal: require("../../assets/audio/w-000506-normal.mp3"),
+    slow: require("../../assets/audio/w-000506-slow.mp3"),
+  },
+  "w-000507": {
+    normal: require("../../assets/audio/w-000507-normal.mp3"),
+    slow: require("../../assets/audio/w-000507-slow.mp3"),
+  },
+  "w-000508": {
+    normal: require("../../assets/audio/w-000508-normal.mp3"),
+    slow: require("../../assets/audio/w-000508-slow.mp3"),
+  },
+  "w-000509": {
+    normal: require("../../assets/audio/w-000509-normal.mp3"),
+    slow: require("../../assets/audio/w-000509-slow.mp3"),
+  },
+  "w-000510": {
+    normal: require("../../assets/audio/w-000510-normal.mp3"),
+    slow: require("../../assets/audio/w-000510-slow.mp3"),
+  },
+  "w-000511": {
+    normal: require("../../assets/audio/w-000511-normal.mp3"),
+    slow: require("../../assets/audio/w-000511-slow.mp3"),
+  },
+  "w-000512": {
+    normal: require("../../assets/audio/w-000512-normal.mp3"),
+    slow: require("../../assets/audio/w-000512-slow.mp3"),
+  },
+  "w-000513": {
+    normal: require("../../assets/audio/w-000513-normal.mp3"),
+    slow: require("../../assets/audio/w-000513-slow.mp3"),
+  },
+  "w-000514": {
+    normal: require("../../assets/audio/w-000514-normal.mp3"),
+    slow: require("../../assets/audio/w-000514-slow.mp3"),
+  },
+  "w-000515": {
+    normal: require("../../assets/audio/w-000515-normal.mp3"),
+    slow: require("../../assets/audio/w-000515-slow.mp3"),
+  },
+  "w-000516": {
+    normal: require("../../assets/audio/w-000516-normal.mp3"),
+    slow: require("../../assets/audio/w-000516-slow.mp3"),
+  },
+  "w-000517": {
+    normal: require("../../assets/audio/w-000517-normal.mp3"),
+    slow: require("../../assets/audio/w-000517-slow.mp3"),
+  },
+  "w-000518": {
+    normal: require("../../assets/audio/w-000518-normal.mp3"),
+    slow: require("../../assets/audio/w-000518-slow.mp3"),
+  },
+  "w-000519": {
+    normal: require("../../assets/audio/w-000519-normal.mp3"),
+    slow: require("../../assets/audio/w-000519-slow.mp3"),
+  },
+  "w-000520": {
+    normal: require("../../assets/audio/w-000520-normal.mp3"),
+    slow: require("../../assets/audio/w-000520-slow.mp3"),
+  },
+  "w-000521": {
+    normal: require("../../assets/audio/w-000521-normal.mp3"),
+    slow: require("../../assets/audio/w-000521-slow.mp3"),
+  },
+  "w-000522": {
+    normal: require("../../assets/audio/w-000522-normal.mp3"),
+    slow: require("../../assets/audio/w-000522-slow.mp3"),
+  },
+  "w-000523": {
+    normal: require("../../assets/audio/w-000523-normal.mp3"),
+    slow: require("../../assets/audio/w-000523-slow.mp3"),
+  },
+  "w-000524": {
+    normal: require("../../assets/audio/w-000524-normal.mp3"),
+    slow: require("../../assets/audio/w-000524-slow.mp3"),
+  },
+  "w-000525": {
+    normal: require("../../assets/audio/w-000525-normal.mp3"),
+    slow: require("../../assets/audio/w-000525-slow.mp3"),
+  },
+  "w-000526": {
+    normal: require("../../assets/audio/w-000526-normal.mp3"),
+    slow: require("../../assets/audio/w-000526-slow.mp3"),
+  },
+  "w-000527": {
+    normal: require("../../assets/audio/w-000527-normal.mp3"),
+    slow: require("../../assets/audio/w-000527-slow.mp3"),
+  },
+  "w-000528": {
+    normal: require("../../assets/audio/w-000528-normal.mp3"),
+    slow: require("../../assets/audio/w-000528-slow.mp3"),
+  },
+  "w-000529": {
+    normal: require("../../assets/audio/w-000529-normal.mp3"),
+    slow: require("../../assets/audio/w-000529-slow.mp3"),
+  },
+  "w-000530": {
+    normal: require("../../assets/audio/w-000530-normal.mp3"),
+    slow: require("../../assets/audio/w-000530-slow.mp3"),
+  },
+  "w-000531": {
+    normal: require("../../assets/audio/w-000531-normal.mp3"),
+    slow: require("../../assets/audio/w-000531-slow.mp3"),
+  },
+  "w-000532": {
+    normal: require("../../assets/audio/w-000532-normal.mp3"),
+    slow: require("../../assets/audio/w-000532-slow.mp3"),
+  },
+  "w-000533": {
+    normal: require("../../assets/audio/w-000533-normal.mp3"),
+    slow: require("../../assets/audio/w-000533-slow.mp3"),
+  },
+  "w-000534": {
+    normal: require("../../assets/audio/w-000534-normal.mp3"),
+    slow: require("../../assets/audio/w-000534-slow.mp3"),
+  },
+  "w-000535": {
+    normal: require("../../assets/audio/w-000535-normal.mp3"),
+    slow: require("../../assets/audio/w-000535-slow.mp3"),
+  },
+  "w-000536": {
+    normal: require("../../assets/audio/w-000536-normal.mp3"),
+    slow: require("../../assets/audio/w-000536-slow.mp3"),
+  },
+  "w-000537": {
+    normal: require("../../assets/audio/w-000537-normal.mp3"),
+    slow: require("../../assets/audio/w-000537-slow.mp3"),
+  },
+  "w-000538": {
+    normal: require("../../assets/audio/w-000538-normal.mp3"),
+    slow: require("../../assets/audio/w-000538-slow.mp3"),
+  },
+  "w-000539": {
+    normal: require("../../assets/audio/w-000539-normal.mp3"),
+    slow: require("../../assets/audio/w-000539-slow.mp3"),
+  },
+  "w-000540": {
+    normal: require("../../assets/audio/w-000540-normal.mp3"),
+    slow: require("../../assets/audio/w-000540-slow.mp3"),
+  },
+  "w-000541": {
+    normal: require("../../assets/audio/w-000541-normal.mp3"),
+    slow: require("../../assets/audio/w-000541-slow.mp3"),
+  },
+  "w-000542": {
+    normal: require("../../assets/audio/w-000542-normal.mp3"),
+    slow: require("../../assets/audio/w-000542-slow.mp3"),
+  },
+  "w-000543": {
+    normal: require("../../assets/audio/w-000543-normal.mp3"),
+    slow: require("../../assets/audio/w-000543-slow.mp3"),
+  },
+  "w-000544": {
+    normal: require("../../assets/audio/w-000544-normal.mp3"),
+    slow: require("../../assets/audio/w-000544-slow.mp3"),
+  },
+  "w-000545": {
+    normal: require("../../assets/audio/w-000545-normal.mp3"),
+    slow: require("../../assets/audio/w-000545-slow.mp3"),
+  },
+  "w-000546": {
+    normal: require("../../assets/audio/w-000546-normal.mp3"),
+    slow: require("../../assets/audio/w-000546-slow.mp3"),
+  },
+  "w-000547": {
+    normal: require("../../assets/audio/w-000547-normal.mp3"),
+    slow: require("../../assets/audio/w-000547-slow.mp3"),
+  },
+  "w-000548": {
+    normal: require("../../assets/audio/w-000548-normal.mp3"),
+    slow: require("../../assets/audio/w-000548-slow.mp3"),
+  },
+  "w-000549": {
+    normal: require("../../assets/audio/w-000549-normal.mp3"),
+    slow: require("../../assets/audio/w-000549-slow.mp3"),
+  },
+  "w-000550": {
+    normal: require("../../assets/audio/w-000550-normal.mp3"),
+    slow: require("../../assets/audio/w-000550-slow.mp3"),
+  },
+  "w-000551": {
+    normal: require("../../assets/audio/w-000551-normal.mp3"),
+    slow: require("../../assets/audio/w-000551-slow.mp3"),
+  },
+  "w-000552": {
+    normal: require("../../assets/audio/w-000552-normal.mp3"),
+    slow: require("../../assets/audio/w-000552-slow.mp3"),
+  },
+  "w-000553": {
+    normal: require("../../assets/audio/w-000553-normal.mp3"),
+    slow: require("../../assets/audio/w-000553-slow.mp3"),
+  },
+  "w-000554": {
+    normal: require("../../assets/audio/w-000554-normal.mp3"),
+    slow: require("../../assets/audio/w-000554-slow.mp3"),
+  },
+  "w-000555": {
+    normal: require("../../assets/audio/w-000555-normal.mp3"),
+    slow: require("../../assets/audio/w-000555-slow.mp3"),
+  },
+  "w-000556": {
+    normal: require("../../assets/audio/w-000556-normal.mp3"),
+    slow: require("../../assets/audio/w-000556-slow.mp3"),
+  },
+  "w-000557": {
+    normal: require("../../assets/audio/w-000557-normal.mp3"),
+    slow: require("../../assets/audio/w-000557-slow.mp3"),
+  },
+  "w-000558": {
+    normal: require("../../assets/audio/w-000558-normal.mp3"),
+    slow: require("../../assets/audio/w-000558-slow.mp3"),
+  },
+  "w-000559": {
+    normal: require("../../assets/audio/w-000559-normal.mp3"),
+    slow: require("../../assets/audio/w-000559-slow.mp3"),
+  },
+  "w-000560": {
+    normal: require("../../assets/audio/w-000560-normal.mp3"),
+    slow: require("../../assets/audio/w-000560-slow.mp3"),
+  },
+  "w-000561": {
+    normal: require("../../assets/audio/w-000561-normal.mp3"),
+    slow: require("../../assets/audio/w-000561-slow.mp3"),
+  },
+  "w-000562": {
+    normal: require("../../assets/audio/w-000562-normal.mp3"),
+    slow: require("../../assets/audio/w-000562-slow.mp3"),
+  },
+  "w-000563": {
+    normal: require("../../assets/audio/w-000563-normal.mp3"),
+    slow: require("../../assets/audio/w-000563-slow.mp3"),
+  },
+  "w-000564": {
+    normal: require("../../assets/audio/w-000564-normal.mp3"),
+    slow: require("../../assets/audio/w-000564-slow.mp3"),
+  },
+  "w-000565": {
+    normal: require("../../assets/audio/w-000565-normal.mp3"),
+    slow: require("../../assets/audio/w-000565-slow.mp3"),
+  },
+  "w-000566": {
+    normal: require("../../assets/audio/w-000566-normal.mp3"),
+    slow: require("../../assets/audio/w-000566-slow.mp3"),
+  },
+  "w-000567": {
+    normal: require("../../assets/audio/w-000567-normal.mp3"),
+    slow: require("../../assets/audio/w-000567-slow.mp3"),
+  },
+  "w-000568": {
+    normal: require("../../assets/audio/w-000568-normal.mp3"),
+    slow: require("../../assets/audio/w-000568-slow.mp3"),
+  },
+  "w-000569": {
+    normal: require("../../assets/audio/w-000569-normal.mp3"),
+    slow: require("../../assets/audio/w-000569-slow.mp3"),
+  },
+  "w-000570": {
+    normal: require("../../assets/audio/w-000570-normal.mp3"),
+    slow: require("../../assets/audio/w-000570-slow.mp3"),
+  },
+  "w-000571": {
+    normal: require("../../assets/audio/w-000571-normal.mp3"),
+    slow: require("../../assets/audio/w-000571-slow.mp3"),
+  },
+  "w-000572": {
+    normal: require("../../assets/audio/w-000572-normal.mp3"),
+    slow: require("../../assets/audio/w-000572-slow.mp3"),
+  },
+  "w-000573": {
+    normal: require("../../assets/audio/w-000573-normal.mp3"),
+    slow: require("../../assets/audio/w-000573-slow.mp3"),
+  },
+  "w-000574": {
+    normal: require("../../assets/audio/w-000574-normal.mp3"),
+    slow: require("../../assets/audio/w-000574-slow.mp3"),
+  },
+  "w-000575": {
+    normal: require("../../assets/audio/w-000575-normal.mp3"),
+    slow: require("../../assets/audio/w-000575-slow.mp3"),
+  },
+  "w-000576": {
+    normal: require("../../assets/audio/w-000576-normal.mp3"),
+    slow: require("../../assets/audio/w-000576-slow.mp3"),
+  },
+  "w-000577": {
+    normal: require("../../assets/audio/w-000577-normal.mp3"),
+    slow: require("../../assets/audio/w-000577-slow.mp3"),
+  },
+  "w-000578": {
+    normal: require("../../assets/audio/w-000578-normal.mp3"),
+    slow: require("../../assets/audio/w-000578-slow.mp3"),
+  },
+  "w-000579": {
+    normal: require("../../assets/audio/w-000579-normal.mp3"),
+    slow: require("../../assets/audio/w-000579-slow.mp3"),
+  },
+  "w-000580": {
+    normal: require("../../assets/audio/w-000580-normal.mp3"),
+    slow: require("../../assets/audio/w-000580-slow.mp3"),
+  },
+  "w-000581": {
+    normal: require("../../assets/audio/w-000581-normal.mp3"),
+    slow: require("../../assets/audio/w-000581-slow.mp3"),
+  },
+  "w-000582": {
+    normal: require("../../assets/audio/w-000582-normal.mp3"),
+    slow: require("../../assets/audio/w-000582-slow.mp3"),
+  },
+  "w-000583": {
+    normal: require("../../assets/audio/w-000583-normal.mp3"),
+    slow: require("../../assets/audio/w-000583-slow.mp3"),
+  },
+  "w-000584": {
+    normal: require("../../assets/audio/w-000584-normal.mp3"),
+    slow: require("../../assets/audio/w-000584-slow.mp3"),
+  },
+  "w-000585": {
+    normal: require("../../assets/audio/w-000585-normal.mp3"),
+    slow: require("../../assets/audio/w-000585-slow.mp3"),
+  },
+  "w-000586": {
+    normal: require("../../assets/audio/w-000586-normal.mp3"),
+    slow: require("../../assets/audio/w-000586-slow.mp3"),
+  },
+  "w-000587": {
+    normal: require("../../assets/audio/w-000587-normal.mp3"),
+    slow: require("../../assets/audio/w-000587-slow.mp3"),
+  },
+  "w-000588": {
+    normal: require("../../assets/audio/w-000588-normal.mp3"),
+    slow: require("../../assets/audio/w-000588-slow.mp3"),
+  },
+  "w-000589": {
+    normal: require("../../assets/audio/w-000589-normal.mp3"),
+    slow: require("../../assets/audio/w-000589-slow.mp3"),
+  },
+  "w-000590": {
+    normal: require("../../assets/audio/w-000590-normal.mp3"),
+    slow: require("../../assets/audio/w-000590-slow.mp3"),
+  },
+  "w-000591": {
+    normal: require("../../assets/audio/w-000591-normal.mp3"),
+    slow: require("../../assets/audio/w-000591-slow.mp3"),
+  },
+  "w-000592": {
+    normal: require("../../assets/audio/w-000592-normal.mp3"),
+    slow: require("../../assets/audio/w-000592-slow.mp3"),
+  },
+  "w-000593": {
+    normal: require("../../assets/audio/w-000593-normal.mp3"),
+    slow: require("../../assets/audio/w-000593-slow.mp3"),
+  },
+  "w-000594": {
+    normal: require("../../assets/audio/w-000594-normal.mp3"),
+    slow: require("../../assets/audio/w-000594-slow.mp3"),
+  },
+  "w-000595": {
+    normal: require("../../assets/audio/w-000595-normal.mp3"),
+    slow: require("../../assets/audio/w-000595-slow.mp3"),
+  },
+  "w-000596": {
+    normal: require("../../assets/audio/w-000596-normal.mp3"),
+    slow: require("../../assets/audio/w-000596-slow.mp3"),
+  },
+  "w-000597": {
+    normal: require("../../assets/audio/w-000597-normal.mp3"),
+    slow: require("../../assets/audio/w-000597-slow.mp3"),
+  },
+  "w-000598": {
+    normal: require("../../assets/audio/w-000598-normal.mp3"),
+    slow: require("../../assets/audio/w-000598-slow.mp3"),
+  },
+  "w-000599": {
+    normal: require("../../assets/audio/w-000599-normal.mp3"),
+    slow: require("../../assets/audio/w-000599-slow.mp3"),
+  },
+  "w-000600": {
+    normal: require("../../assets/audio/w-000600-normal.mp3"),
+    slow: require("../../assets/audio/w-000600-slow.mp3"),
+  },
+  "w-000601": {
+    normal: require("../../assets/audio/w-000601-normal.mp3"),
+    slow: require("../../assets/audio/w-000601-slow.mp3"),
+  },
+  "w-000602": {
+    normal: require("../../assets/audio/w-000602-normal.mp3"),
+    slow: require("../../assets/audio/w-000602-slow.mp3"),
+  },
+  "w-000603": {
+    normal: require("../../assets/audio/w-000603-normal.mp3"),
+    slow: require("../../assets/audio/w-000603-slow.mp3"),
+  },
+  "w-000604": {
+    normal: require("../../assets/audio/w-000604-normal.mp3"),
+    slow: require("../../assets/audio/w-000604-slow.mp3"),
+  },
+  "w-000605": {
+    normal: require("../../assets/audio/w-000605-normal.mp3"),
+    slow: require("../../assets/audio/w-000605-slow.mp3"),
+  },
+  "w-000606": {
+    normal: require("../../assets/audio/w-000606-normal.mp3"),
+    slow: require("../../assets/audio/w-000606-slow.mp3"),
+  },
+  "w-000607": {
+    normal: require("../../assets/audio/w-000607-normal.mp3"),
+    slow: require("../../assets/audio/w-000607-slow.mp3"),
+  },
+  "w-000608": {
+    normal: require("../../assets/audio/w-000608-normal.mp3"),
+    slow: require("../../assets/audio/w-000608-slow.mp3"),
+  },
+  "w-000609": {
+    normal: require("../../assets/audio/w-000609-normal.mp3"),
+    slow: require("../../assets/audio/w-000609-slow.mp3"),
+  },
+  "w-000610": {
+    normal: require("../../assets/audio/w-000610-normal.mp3"),
+    slow: require("../../assets/audio/w-000610-slow.mp3"),
+  },
+  "w-000611": {
+    normal: require("../../assets/audio/w-000611-normal.mp3"),
+    slow: require("../../assets/audio/w-000611-slow.mp3"),
+  },
+  "w-000612": {
+    normal: require("../../assets/audio/w-000612-normal.mp3"),
+    slow: require("../../assets/audio/w-000612-slow.mp3"),
+  },
+  "w-000613": {
+    normal: require("../../assets/audio/w-000613-normal.mp3"),
+    slow: require("../../assets/audio/w-000613-slow.mp3"),
+  },
+  "w-000614": {
+    normal: require("../../assets/audio/w-000614-normal.mp3"),
+    slow: require("../../assets/audio/w-000614-slow.mp3"),
+  },
+  "w-000615": {
+    normal: require("../../assets/audio/w-000615-normal.mp3"),
+    slow: require("../../assets/audio/w-000615-slow.mp3"),
+  },
+  "w-000616": {
+    normal: require("../../assets/audio/w-000616-normal.mp3"),
+    slow: require("../../assets/audio/w-000616-slow.mp3"),
+  },
+  "w-000617": {
+    normal: require("../../assets/audio/w-000617-normal.mp3"),
+    slow: require("../../assets/audio/w-000617-slow.mp3"),
+  },
+  "w-000618": {
+    normal: require("../../assets/audio/w-000618-normal.mp3"),
+    slow: require("../../assets/audio/w-000618-slow.mp3"),
+  },
+  "w-000619": {
+    normal: require("../../assets/audio/w-000619-normal.mp3"),
+    slow: require("../../assets/audio/w-000619-slow.mp3"),
+  },
+  "w-000620": {
+    normal: require("../../assets/audio/w-000620-normal.mp3"),
+    slow: require("../../assets/audio/w-000620-slow.mp3"),
+  },
+  "w-000621": {
+    normal: require("../../assets/audio/w-000621-normal.mp3"),
+    slow: require("../../assets/audio/w-000621-slow.mp3"),
+  },
+  "w-000622": {
+    normal: require("../../assets/audio/w-000622-normal.mp3"),
+    slow: require("../../assets/audio/w-000622-slow.mp3"),
+  },
+  "w-000623": {
+    normal: require("../../assets/audio/w-000623-normal.mp3"),
+    slow: require("../../assets/audio/w-000623-slow.mp3"),
+  },
+  "w-000624": {
+    normal: require("../../assets/audio/w-000624-normal.mp3"),
+    slow: require("../../assets/audio/w-000624-slow.mp3"),
+  },
+  "w-000625": {
+    normal: require("../../assets/audio/w-000625-normal.mp3"),
+    slow: require("../../assets/audio/w-000625-slow.mp3"),
+  },
+  "w-000626": {
+    normal: require("../../assets/audio/w-000626-normal.mp3"),
+    slow: require("../../assets/audio/w-000626-slow.mp3"),
+  },
+  "w-000627": {
+    normal: require("../../assets/audio/w-000627-normal.mp3"),
+    slow: require("../../assets/audio/w-000627-slow.mp3"),
+  },
+  "w-000628": {
+    normal: require("../../assets/audio/w-000628-normal.mp3"),
+    slow: require("../../assets/audio/w-000628-slow.mp3"),
+  },
+  "w-000629": {
+    normal: require("../../assets/audio/w-000629-normal.mp3"),
+    slow: require("../../assets/audio/w-000629-slow.mp3"),
+  },
+  "w-000630": {
+    normal: require("../../assets/audio/w-000630-normal.mp3"),
+    slow: require("../../assets/audio/w-000630-slow.mp3"),
+  },
+  "w-000631": {
+    normal: require("../../assets/audio/w-000631-normal.mp3"),
+    slow: require("../../assets/audio/w-000631-slow.mp3"),
+  },
+  "w-000632": {
+    normal: require("../../assets/audio/w-000632-normal.mp3"),
+    slow: require("../../assets/audio/w-000632-slow.mp3"),
+  },
+  "w-000633": {
+    normal: require("../../assets/audio/w-000633-normal.mp3"),
+    slow: require("../../assets/audio/w-000633-slow.mp3"),
+  },
+  "w-000634": {
+    normal: require("../../assets/audio/w-000634-normal.mp3"),
+    slow: require("../../assets/audio/w-000634-slow.mp3"),
+  },
+  "w-000635": {
+    normal: require("../../assets/audio/w-000635-normal.mp3"),
+    slow: require("../../assets/audio/w-000635-slow.mp3"),
+  },
+  "w-000636": {
+    normal: require("../../assets/audio/w-000636-normal.mp3"),
+    slow: require("../../assets/audio/w-000636-slow.mp3"),
+  },
+  "w-000637": {
+    normal: require("../../assets/audio/w-000637-normal.mp3"),
+    slow: require("../../assets/audio/w-000637-slow.mp3"),
+  },
+  "w-000638": {
+    normal: require("../../assets/audio/w-000638-normal.mp3"),
+    slow: require("../../assets/audio/w-000638-slow.mp3"),
+  },
+  "w-000639": {
+    normal: require("../../assets/audio/w-000639-normal.mp3"),
+    slow: require("../../assets/audio/w-000639-slow.mp3"),
+  },
+  "w-000640": {
+    normal: require("../../assets/audio/w-000640-normal.mp3"),
+    slow: require("../../assets/audio/w-000640-slow.mp3"),
+  },
+  "w-000641": {
+    normal: require("../../assets/audio/w-000641-normal.mp3"),
+    slow: require("../../assets/audio/w-000641-slow.mp3"),
+  },
+  "w-000642": {
+    normal: require("../../assets/audio/w-000642-normal.mp3"),
+    slow: require("../../assets/audio/w-000642-slow.mp3"),
+  },
+  "w-000643": {
+    normal: require("../../assets/audio/w-000643-normal.mp3"),
+    slow: require("../../assets/audio/w-000643-slow.mp3"),
+  },
+  "w-000644": {
+    normal: require("../../assets/audio/w-000644-normal.mp3"),
+    slow: require("../../assets/audio/w-000644-slow.mp3"),
+  },
+  "w-000645": {
+    normal: require("../../assets/audio/w-000645-normal.mp3"),
+    slow: require("../../assets/audio/w-000645-slow.mp3"),
+  },
+  "w-000646": {
+    normal: require("../../assets/audio/w-000646-normal.mp3"),
+    slow: require("../../assets/audio/w-000646-slow.mp3"),
+  },
+  "w-000647": {
+    normal: require("../../assets/audio/w-000647-normal.mp3"),
+    slow: require("../../assets/audio/w-000647-slow.mp3"),
+  },
+  "w-000648": {
+    normal: require("../../assets/audio/w-000648-normal.mp3"),
+    slow: require("../../assets/audio/w-000648-slow.mp3"),
+  },
+  "w-000649": {
+    normal: require("../../assets/audio/w-000649-normal.mp3"),
+    slow: require("../../assets/audio/w-000649-slow.mp3"),
+  },
+  "w-000650": {
+    normal: require("../../assets/audio/w-000650-normal.mp3"),
+    slow: require("../../assets/audio/w-000650-slow.mp3"),
+  },
+  "w-000651": {
+    normal: require("../../assets/audio/w-000651-normal.mp3"),
+    slow: require("../../assets/audio/w-000651-slow.mp3"),
+  },
+  "w-000652": {
+    normal: require("../../assets/audio/w-000652-normal.mp3"),
+    slow: require("../../assets/audio/w-000652-slow.mp3"),
+  },
+  "w-000653": {
+    normal: require("../../assets/audio/w-000653-normal.mp3"),
+    slow: require("../../assets/audio/w-000653-slow.mp3"),
+  },
+  "w-000654": {
+    normal: require("../../assets/audio/w-000654-normal.mp3"),
+    slow: require("../../assets/audio/w-000654-slow.mp3"),
+  },
+  "w-000655": {
+    normal: require("../../assets/audio/w-000655-normal.mp3"),
+    slow: require("../../assets/audio/w-000655-slow.mp3"),
+  },
+  "w-000656": {
+    normal: require("../../assets/audio/w-000656-normal.mp3"),
+    slow: require("../../assets/audio/w-000656-slow.mp3"),
+  },
+  "w-000657": {
+    normal: require("../../assets/audio/w-000657-normal.mp3"),
+    slow: require("../../assets/audio/w-000657-slow.mp3"),
+  },
+  "w-000658": {
+    normal: require("../../assets/audio/w-000658-normal.mp3"),
+    slow: require("../../assets/audio/w-000658-slow.mp3"),
+  },
+  "w-000659": {
+    normal: require("../../assets/audio/w-000659-normal.mp3"),
+    slow: require("../../assets/audio/w-000659-slow.mp3"),
+  },
+  "w-000660": {
+    normal: require("../../assets/audio/w-000660-normal.mp3"),
+    slow: require("../../assets/audio/w-000660-slow.mp3"),
+  },
+  "w-000661": {
+    normal: require("../../assets/audio/w-000661-normal.mp3"),
+    slow: require("../../assets/audio/w-000661-slow.mp3"),
+  },
+  "w-000662": {
+    normal: require("../../assets/audio/w-000662-normal.mp3"),
+    slow: require("../../assets/audio/w-000662-slow.mp3"),
+  },
+  "w-000663": {
+    normal: require("../../assets/audio/w-000663-normal.mp3"),
+    slow: require("../../assets/audio/w-000663-slow.mp3"),
+  },
+  "w-000664": {
+    normal: require("../../assets/audio/w-000664-normal.mp3"),
+    slow: require("../../assets/audio/w-000664-slow.mp3"),
+  },
+  "w-000665": {
+    normal: require("../../assets/audio/w-000665-normal.mp3"),
+    slow: require("../../assets/audio/w-000665-slow.mp3"),
+  },
+  "w-000666": {
+    normal: require("../../assets/audio/w-000666-normal.mp3"),
+    slow: require("../../assets/audio/w-000666-slow.mp3"),
+  },
+  "w-000667": {
+    normal: require("../../assets/audio/w-000667-normal.mp3"),
+    slow: require("../../assets/audio/w-000667-slow.mp3"),
+  },
+  "w-000668": {
+    normal: require("../../assets/audio/w-000668-normal.mp3"),
+    slow: require("../../assets/audio/w-000668-slow.mp3"),
+  },
+  "w-000669": {
+    normal: require("../../assets/audio/w-000669-normal.mp3"),
+    slow: require("../../assets/audio/w-000669-slow.mp3"),
+  },
+  "w-000670": {
+    normal: require("../../assets/audio/w-000670-normal.mp3"),
+    slow: require("../../assets/audio/w-000670-slow.mp3"),
+  },
+  "w-000671": {
+    normal: require("../../assets/audio/w-000671-normal.mp3"),
+    slow: require("../../assets/audio/w-000671-slow.mp3"),
+  },
+  "w-000672": {
+    normal: require("../../assets/audio/w-000672-normal.mp3"),
+    slow: require("../../assets/audio/w-000672-slow.mp3"),
+  },
+  "w-000673": {
+    normal: require("../../assets/audio/w-000673-normal.mp3"),
+    slow: require("../../assets/audio/w-000673-slow.mp3"),
+  },
+  "w-000674": {
+    normal: require("../../assets/audio/w-000674-normal.mp3"),
+    slow: require("../../assets/audio/w-000674-slow.mp3"),
+  },
+  "w-000675": {
+    normal: require("../../assets/audio/w-000675-normal.mp3"),
+    slow: require("../../assets/audio/w-000675-slow.mp3"),
+  },
+  "w-000676": {
+    normal: require("../../assets/audio/w-000676-normal.mp3"),
+    slow: require("../../assets/audio/w-000676-slow.mp3"),
+  },
+  "w-000677": {
+    normal: require("../../assets/audio/w-000677-normal.mp3"),
+    slow: require("../../assets/audio/w-000677-slow.mp3"),
+  },
+  "w-000678": {
+    normal: require("../../assets/audio/w-000678-normal.mp3"),
+    slow: require("../../assets/audio/w-000678-slow.mp3"),
+  },
+  "w-000679": {
+    normal: require("../../assets/audio/w-000679-normal.mp3"),
+    slow: require("../../assets/audio/w-000679-slow.mp3"),
+  },
+  "w-000680": {
+    normal: require("../../assets/audio/w-000680-normal.mp3"),
+    slow: require("../../assets/audio/w-000680-slow.mp3"),
+  },
+  "w-000681": {
+    normal: require("../../assets/audio/w-000681-normal.mp3"),
+    slow: require("../../assets/audio/w-000681-slow.mp3"),
+  },
+  "w-000682": {
+    normal: require("../../assets/audio/w-000682-normal.mp3"),
+    slow: require("../../assets/audio/w-000682-slow.mp3"),
+  },
+  "w-000683": {
+    normal: require("../../assets/audio/w-000683-normal.mp3"),
+    slow: require("../../assets/audio/w-000683-slow.mp3"),
+  },
+  "w-000684": {
+    normal: require("../../assets/audio/w-000684-normal.mp3"),
+    slow: require("../../assets/audio/w-000684-slow.mp3"),
+  },
+  "w-000685": {
+    normal: require("../../assets/audio/w-000685-normal.mp3"),
+    slow: require("../../assets/audio/w-000685-slow.mp3"),
+  },
+  "w-000686": {
+    normal: require("../../assets/audio/w-000686-normal.mp3"),
+    slow: require("../../assets/audio/w-000686-slow.mp3"),
+  },
+  "w-000687": {
+    normal: require("../../assets/audio/w-000687-normal.mp3"),
+    slow: require("../../assets/audio/w-000687-slow.mp3"),
+  },
+  "w-000688": {
+    normal: require("../../assets/audio/w-000688-normal.mp3"),
+    slow: require("../../assets/audio/w-000688-slow.mp3"),
+  },
+  "w-000689": {
+    normal: require("../../assets/audio/w-000689-normal.mp3"),
+    slow: require("../../assets/audio/w-000689-slow.mp3"),
+  },
+  "w-000690": {
+    normal: require("../../assets/audio/w-000690-normal.mp3"),
+    slow: require("../../assets/audio/w-000690-slow.mp3"),
+  },
+  "w-000691": {
+    normal: require("../../assets/audio/w-000691-normal.mp3"),
+    slow: require("../../assets/audio/w-000691-slow.mp3"),
+  },
+  "w-000692": {
+    normal: require("../../assets/audio/w-000692-normal.mp3"),
+    slow: require("../../assets/audio/w-000692-slow.mp3"),
+  },
+  "w-000693": {
+    normal: require("../../assets/audio/w-000693-normal.mp3"),
+    slow: require("../../assets/audio/w-000693-slow.mp3"),
+  },
+  "w-000694": {
+    normal: require("../../assets/audio/w-000694-normal.mp3"),
+    slow: require("../../assets/audio/w-000694-slow.mp3"),
+  },
+  "w-000695": {
+    normal: require("../../assets/audio/w-000695-normal.mp3"),
+    slow: require("../../assets/audio/w-000695-slow.mp3"),
+  },
+  "w-000696": {
+    normal: require("../../assets/audio/w-000696-normal.mp3"),
+    slow: require("../../assets/audio/w-000696-slow.mp3"),
+  },
+  "w-000697": {
+    normal: require("../../assets/audio/w-000697-normal.mp3"),
+    slow: require("../../assets/audio/w-000697-slow.mp3"),
+  },
+  "w-000698": {
+    normal: require("../../assets/audio/w-000698-normal.mp3"),
+    slow: require("../../assets/audio/w-000698-slow.mp3"),
+  },
+  "w-000699": {
+    normal: require("../../assets/audio/w-000699-normal.mp3"),
+    slow: require("../../assets/audio/w-000699-slow.mp3"),
+  },
+  "w-000700": {
+    normal: require("../../assets/audio/w-000700-normal.mp3"),
+    slow: require("../../assets/audio/w-000700-slow.mp3"),
+  },
+  "w-000701": {
+    normal: require("../../assets/audio/w-000701-normal.mp3"),
+    slow: require("../../assets/audio/w-000701-slow.mp3"),
+  },
+  "w-000702": {
+    normal: require("../../assets/audio/w-000702-normal.mp3"),
+    slow: require("../../assets/audio/w-000702-slow.mp3"),
+  },
+  "w-000703": {
+    normal: require("../../assets/audio/w-000703-normal.mp3"),
+    slow: require("../../assets/audio/w-000703-slow.mp3"),
+  },
+  "w-000704": {
+    normal: require("../../assets/audio/w-000704-normal.mp3"),
+    slow: require("../../assets/audio/w-000704-slow.mp3"),
+  },
+  "w-000705": {
+    normal: require("../../assets/audio/w-000705-normal.mp3"),
+    slow: require("../../assets/audio/w-000705-slow.mp3"),
+  },
+  "w-000706": {
+    normal: require("../../assets/audio/w-000706-normal.mp3"),
+    slow: require("../../assets/audio/w-000706-slow.mp3"),
+  },
+  "w-000707": {
+    normal: require("../../assets/audio/w-000707-normal.mp3"),
+    slow: require("../../assets/audio/w-000707-slow.mp3"),
+  },
+  "w-000708": {
+    normal: require("../../assets/audio/w-000708-normal.mp3"),
+    slow: require("../../assets/audio/w-000708-slow.mp3"),
+  },
+  "w-000709": {
+    normal: require("../../assets/audio/w-000709-normal.mp3"),
+    slow: require("../../assets/audio/w-000709-slow.mp3"),
+  },
+  "w-000710": {
+    normal: require("../../assets/audio/w-000710-normal.mp3"),
+    slow: require("../../assets/audio/w-000710-slow.mp3"),
+  },
+  "w-000711": {
+    normal: require("../../assets/audio/w-000711-normal.mp3"),
+    slow: require("../../assets/audio/w-000711-slow.mp3"),
+  },
+  "w-000712": {
+    normal: require("../../assets/audio/w-000712-normal.mp3"),
+    slow: require("../../assets/audio/w-000712-slow.mp3"),
+  },
+  "w-000713": {
+    normal: require("../../assets/audio/w-000713-normal.mp3"),
+    slow: require("../../assets/audio/w-000713-slow.mp3"),
+  },
+  "w-000714": {
+    normal: require("../../assets/audio/w-000714-normal.mp3"),
+    slow: require("../../assets/audio/w-000714-slow.mp3"),
+  },
+  "w-000715": {
+    normal: require("../../assets/audio/w-000715-normal.mp3"),
+    slow: require("../../assets/audio/w-000715-slow.mp3"),
+  },
+  "w-000716": {
+    normal: require("../../assets/audio/w-000716-normal.mp3"),
+    slow: require("../../assets/audio/w-000716-slow.mp3"),
+  },
+  "w-000717": {
+    normal: require("../../assets/audio/w-000717-normal.mp3"),
+    slow: require("../../assets/audio/w-000717-slow.mp3"),
+  },
+  "w-000718": {
+    normal: require("../../assets/audio/w-000718-normal.mp3"),
+    slow: require("../../assets/audio/w-000718-slow.mp3"),
+  },
+  "w-000719": {
+    normal: require("../../assets/audio/w-000719-normal.mp3"),
+    slow: require("../../assets/audio/w-000719-slow.mp3"),
+  },
+  "w-000720": {
+    normal: require("../../assets/audio/w-000720-normal.mp3"),
+    slow: require("../../assets/audio/w-000720-slow.mp3"),
+  },
+  "w-000721": {
+    normal: require("../../assets/audio/w-000721-normal.mp3"),
+    slow: require("../../assets/audio/w-000721-slow.mp3"),
+  },
+  "w-000722": {
+    normal: require("../../assets/audio/w-000722-normal.mp3"),
+    slow: require("../../assets/audio/w-000722-slow.mp3"),
+  },
+  "w-000723": {
+    normal: require("../../assets/audio/w-000723-normal.mp3"),
+    slow: require("../../assets/audio/w-000723-slow.mp3"),
+  },
+  "w-000724": {
+    normal: require("../../assets/audio/w-000724-normal.mp3"),
+    slow: require("../../assets/audio/w-000724-slow.mp3"),
+  },
+  "w-000725": {
+    normal: require("../../assets/audio/w-000725-normal.mp3"),
+    slow: require("../../assets/audio/w-000725-slow.mp3"),
+  },
+  "w-000726": {
+    normal: require("../../assets/audio/w-000726-normal.mp3"),
+    slow: require("../../assets/audio/w-000726-slow.mp3"),
+  },
+  "w-000727": {
+    normal: require("../../assets/audio/w-000727-normal.mp3"),
+    slow: require("../../assets/audio/w-000727-slow.mp3"),
+  },
+  "w-000728": {
+    normal: require("../../assets/audio/w-000728-normal.mp3"),
+    slow: require("../../assets/audio/w-000728-slow.mp3"),
+  },
+  "w-000729": {
+    normal: require("../../assets/audio/w-000729-normal.mp3"),
+    slow: require("../../assets/audio/w-000729-slow.mp3"),
+  },
+  "w-000730": {
+    normal: require("../../assets/audio/w-000730-normal.mp3"),
+    slow: require("../../assets/audio/w-000730-slow.mp3"),
+  },
+  "w-000731": {
+    normal: require("../../assets/audio/w-000731-normal.mp3"),
+    slow: require("../../assets/audio/w-000731-slow.mp3"),
+  },
+  "w-000732": {
+    normal: require("../../assets/audio/w-000732-normal.mp3"),
+    slow: require("../../assets/audio/w-000732-slow.mp3"),
+  },
+  "w-000733": {
+    normal: require("../../assets/audio/w-000733-normal.mp3"),
+    slow: require("../../assets/audio/w-000733-slow.mp3"),
+  },
+  "w-000734": {
+    normal: require("../../assets/audio/w-000734-normal.mp3"),
+    slow: require("../../assets/audio/w-000734-slow.mp3"),
+  },
+  "w-000735": {
+    normal: require("../../assets/audio/w-000735-normal.mp3"),
+    slow: require("../../assets/audio/w-000735-slow.mp3"),
+  },
+  "w-000736": {
+    normal: require("../../assets/audio/w-000736-normal.mp3"),
+    slow: require("../../assets/audio/w-000736-slow.mp3"),
+  },
+  "w-000737": {
+    normal: require("../../assets/audio/w-000737-normal.mp3"),
+    slow: require("../../assets/audio/w-000737-slow.mp3"),
+  },
+  "w-000738": {
+    normal: require("../../assets/audio/w-000738-normal.mp3"),
+    slow: require("../../assets/audio/w-000738-slow.mp3"),
+  },
+  "w-000739": {
+    normal: require("../../assets/audio/w-000739-normal.mp3"),
+    slow: require("../../assets/audio/w-000739-slow.mp3"),
+  },
+  "w-000740": {
+    normal: require("../../assets/audio/w-000740-normal.mp3"),
+    slow: require("../../assets/audio/w-000740-slow.mp3"),
+  },
+  "w-000741": {
+    normal: require("../../assets/audio/w-000741-normal.mp3"),
+    slow: require("../../assets/audio/w-000741-slow.mp3"),
+  },
+  "w-000742": {
+    normal: require("../../assets/audio/w-000742-normal.mp3"),
+    slow: require("../../assets/audio/w-000742-slow.mp3"),
+  },
+  "w-000743": {
+    normal: require("../../assets/audio/w-000743-normal.mp3"),
+    slow: require("../../assets/audio/w-000743-slow.mp3"),
+  },
+  "w-000744": {
+    normal: require("../../assets/audio/w-000744-normal.mp3"),
+    slow: require("../../assets/audio/w-000744-slow.mp3"),
+  },
+  "w-000745": {
+    normal: require("../../assets/audio/w-000745-normal.mp3"),
+    slow: require("../../assets/audio/w-000745-slow.mp3"),
+  },
+  "w-000746": {
+    normal: require("../../assets/audio/w-000746-normal.mp3"),
+    slow: require("../../assets/audio/w-000746-slow.mp3"),
+  },
+  "w-000747": {
+    normal: require("../../assets/audio/w-000747-normal.mp3"),
+    slow: require("../../assets/audio/w-000747-slow.mp3"),
+  },
+  "w-000748": {
+    normal: require("../../assets/audio/w-000748-normal.mp3"),
+    slow: require("../../assets/audio/w-000748-slow.mp3"),
+  },
+  "w-000749": {
+    normal: require("../../assets/audio/w-000749-normal.mp3"),
+    slow: require("../../assets/audio/w-000749-slow.mp3"),
+  },
+  "w-000750": {
+    normal: require("../../assets/audio/w-000750-normal.mp3"),
+    slow: require("../../assets/audio/w-000750-slow.mp3"),
+  },
+  "w-000751": {
+    normal: require("../../assets/audio/w-000751-normal.mp3"),
+    slow: require("../../assets/audio/w-000751-slow.mp3"),
+  },
+  "w-000752": {
+    normal: require("../../assets/audio/w-000752-normal.mp3"),
+    slow: require("../../assets/audio/w-000752-slow.mp3"),
+  },
+  "w-000753": {
+    normal: require("../../assets/audio/w-000753-normal.mp3"),
+    slow: require("../../assets/audio/w-000753-slow.mp3"),
+  },
+  "w-000754": {
+    normal: require("../../assets/audio/w-000754-normal.mp3"),
+    slow: require("../../assets/audio/w-000754-slow.mp3"),
+  },
+  "w-000755": {
+    normal: require("../../assets/audio/w-000755-normal.mp3"),
+    slow: require("../../assets/audio/w-000755-slow.mp3"),
+  },
+  "w-000756": {
+    normal: require("../../assets/audio/w-000756-normal.mp3"),
+    slow: require("../../assets/audio/w-000756-slow.mp3"),
+  },
+  "w-000757": {
+    normal: require("../../assets/audio/w-000757-normal.mp3"),
+    slow: require("../../assets/audio/w-000757-slow.mp3"),
+  },
+  "w-000758": {
+    normal: require("../../assets/audio/w-000758-normal.mp3"),
+    slow: require("../../assets/audio/w-000758-slow.mp3"),
+  },
+  "w-000759": {
+    normal: require("../../assets/audio/w-000759-normal.mp3"),
+    slow: require("../../assets/audio/w-000759-slow.mp3"),
+  },
+  "w-000760": {
+    normal: require("../../assets/audio/w-000760-normal.mp3"),
+    slow: require("../../assets/audio/w-000760-slow.mp3"),
+  },
+  "w-000761": {
+    normal: require("../../assets/audio/w-000761-normal.mp3"),
+    slow: require("../../assets/audio/w-000761-slow.mp3"),
+  },
+  "w-000762": {
+    normal: require("../../assets/audio/w-000762-normal.mp3"),
+    slow: require("../../assets/audio/w-000762-slow.mp3"),
+  },
+  "w-000763": {
+    normal: require("../../assets/audio/w-000763-normal.mp3"),
+    slow: require("../../assets/audio/w-000763-slow.mp3"),
+  },
+  "w-000764": {
+    normal: require("../../assets/audio/w-000764-normal.mp3"),
+    slow: require("../../assets/audio/w-000764-slow.mp3"),
+  },
+  "w-000765": {
+    normal: require("../../assets/audio/w-000765-normal.mp3"),
+    slow: require("../../assets/audio/w-000765-slow.mp3"),
+  },
+  "w-000766": {
+    normal: require("../../assets/audio/w-000766-normal.mp3"),
+    slow: require("../../assets/audio/w-000766-slow.mp3"),
+  },
+  "w-000767": {
+    normal: require("../../assets/audio/w-000767-normal.mp3"),
+    slow: require("../../assets/audio/w-000767-slow.mp3"),
+  },
+  "w-000768": {
+    normal: require("../../assets/audio/w-000768-normal.mp3"),
+    slow: require("../../assets/audio/w-000768-slow.mp3"),
+  },
+  "w-000769": {
+    normal: require("../../assets/audio/w-000769-normal.mp3"),
+    slow: require("../../assets/audio/w-000769-slow.mp3"),
+  },
+  "w-000770": {
+    normal: require("../../assets/audio/w-000770-normal.mp3"),
+    slow: require("../../assets/audio/w-000770-slow.mp3"),
+  },
+  "w-000771": {
+    normal: require("../../assets/audio/w-000771-normal.mp3"),
+    slow: require("../../assets/audio/w-000771-slow.mp3"),
+  },
+  "w-000772": {
+    normal: require("../../assets/audio/w-000772-normal.mp3"),
+    slow: require("../../assets/audio/w-000772-slow.mp3"),
+  },
+  "w-000773": {
+    normal: require("../../assets/audio/w-000773-normal.mp3"),
+    slow: require("../../assets/audio/w-000773-slow.mp3"),
+  },
+  "w-000774": {
+    normal: require("../../assets/audio/w-000774-normal.mp3"),
+    slow: require("../../assets/audio/w-000774-slow.mp3"),
+  },
+  "w-000775": {
+    normal: require("../../assets/audio/w-000775-normal.mp3"),
+    slow: require("../../assets/audio/w-000775-slow.mp3"),
+  },
+  "w-000776": {
+    normal: require("../../assets/audio/w-000776-normal.mp3"),
+    slow: require("../../assets/audio/w-000776-slow.mp3"),
+  },
+  "w-000777": {
+    normal: require("../../assets/audio/w-000777-normal.mp3"),
+    slow: require("../../assets/audio/w-000777-slow.mp3"),
+  },
+  "w-000778": {
+    normal: require("../../assets/audio/w-000778-normal.mp3"),
+    slow: require("../../assets/audio/w-000778-slow.mp3"),
+  },
+  "w-000779": {
+    normal: require("../../assets/audio/w-000779-normal.mp3"),
+    slow: require("../../assets/audio/w-000779-slow.mp3"),
+  },
+  "w-000780": {
+    normal: require("../../assets/audio/w-000780-normal.mp3"),
+    slow: require("../../assets/audio/w-000780-slow.mp3"),
+  },
+  "w-000781": {
+    normal: require("../../assets/audio/w-000781-normal.mp3"),
+    slow: require("../../assets/audio/w-000781-slow.mp3"),
+  },
+  "w-000782": {
+    normal: require("../../assets/audio/w-000782-normal.mp3"),
+    slow: require("../../assets/audio/w-000782-slow.mp3"),
+  },
+  "w-000783": {
+    normal: require("../../assets/audio/w-000783-normal.mp3"),
+    slow: require("../../assets/audio/w-000783-slow.mp3"),
+  },
+  "w-000784": {
+    normal: require("../../assets/audio/w-000784-normal.mp3"),
+    slow: require("../../assets/audio/w-000784-slow.mp3"),
+  },
+  "w-000785": {
+    normal: require("../../assets/audio/w-000785-normal.mp3"),
+    slow: require("../../assets/audio/w-000785-slow.mp3"),
+  },
+  "w-000786": {
+    normal: require("../../assets/audio/w-000786-normal.mp3"),
+    slow: require("../../assets/audio/w-000786-slow.mp3"),
+  },
+  "w-000787": {
+    normal: require("../../assets/audio/w-000787-normal.mp3"),
+    slow: require("../../assets/audio/w-000787-slow.mp3"),
+  },
+  "w-000788": {
+    normal: require("../../assets/audio/w-000788-normal.mp3"),
+    slow: require("../../assets/audio/w-000788-slow.mp3"),
+  },
+  "w-000789": {
+    normal: require("../../assets/audio/w-000789-normal.mp3"),
+    slow: require("../../assets/audio/w-000789-slow.mp3"),
+  },
+  "w-000790": {
+    normal: require("../../assets/audio/w-000790-normal.mp3"),
+    slow: require("../../assets/audio/w-000790-slow.mp3"),
+  },
+  "w-000791": {
+    normal: require("../../assets/audio/w-000791-normal.mp3"),
+    slow: require("../../assets/audio/w-000791-slow.mp3"),
+  },
+  "w-000792": {
+    normal: require("../../assets/audio/w-000792-normal.mp3"),
+    slow: require("../../assets/audio/w-000792-slow.mp3"),
+  },
+  "w-000793": {
+    normal: require("../../assets/audio/w-000793-normal.mp3"),
+    slow: require("../../assets/audio/w-000793-slow.mp3"),
+  },
+  "w-000794": {
+    normal: require("../../assets/audio/w-000794-normal.mp3"),
+    slow: require("../../assets/audio/w-000794-slow.mp3"),
+  },
+  "w-000795": {
+    normal: require("../../assets/audio/w-000795-normal.mp3"),
+    slow: require("../../assets/audio/w-000795-slow.mp3"),
+  },
+  "w-000796": {
+    normal: require("../../assets/audio/w-000796-normal.mp3"),
+    slow: require("../../assets/audio/w-000796-slow.mp3"),
+  },
+  "w-000797": {
+    normal: require("../../assets/audio/w-000797-normal.mp3"),
+    slow: require("../../assets/audio/w-000797-slow.mp3"),
+  },
+  "w-000798": {
+    normal: require("../../assets/audio/w-000798-normal.mp3"),
+    slow: require("../../assets/audio/w-000798-slow.mp3"),
+  },
+  "w-000799": {
+    normal: require("../../assets/audio/w-000799-normal.mp3"),
+    slow: require("../../assets/audio/w-000799-slow.mp3"),
+  },
+  "w-000800": {
+    normal: require("../../assets/audio/w-000800-normal.mp3"),
+    slow: require("../../assets/audio/w-000800-slow.mp3"),
+  },
+  "w-000801": {
+    normal: require("../../assets/audio/w-000801-normal.mp3"),
+    slow: require("../../assets/audio/w-000801-slow.mp3"),
+  },
+  "w-000802": {
+    normal: require("../../assets/audio/w-000802-normal.mp3"),
+    slow: require("../../assets/audio/w-000802-slow.mp3"),
+  },
+  "w-000803": {
+    normal: require("../../assets/audio/w-000803-normal.mp3"),
+    slow: require("../../assets/audio/w-000803-slow.mp3"),
+  },
+  "w-000804": {
+    normal: require("../../assets/audio/w-000804-normal.mp3"),
+    slow: require("../../assets/audio/w-000804-slow.mp3"),
+  },
+  "w-000805": {
+    normal: require("../../assets/audio/w-000805-normal.mp3"),
+    slow: require("../../assets/audio/w-000805-slow.mp3"),
+  },
+  "w-000806": {
+    normal: require("../../assets/audio/w-000806-normal.mp3"),
+    slow: require("../../assets/audio/w-000806-slow.mp3"),
+  },
+  "w-000807": {
+    normal: require("../../assets/audio/w-000807-normal.mp3"),
+    slow: require("../../assets/audio/w-000807-slow.mp3"),
+  },
+  "w-000808": {
+    normal: require("../../assets/audio/w-000808-normal.mp3"),
+    slow: require("../../assets/audio/w-000808-slow.mp3"),
+  },
+  "w-000809": {
+    normal: require("../../assets/audio/w-000809-normal.mp3"),
+    slow: require("../../assets/audio/w-000809-slow.mp3"),
+  },
+  "w-000810": {
+    normal: require("../../assets/audio/w-000810-normal.mp3"),
+    slow: require("../../assets/audio/w-000810-slow.mp3"),
+  },
+  "w-000811": {
+    normal: require("../../assets/audio/w-000811-normal.mp3"),
+    slow: require("../../assets/audio/w-000811-slow.mp3"),
+  },
+  "w-000812": {
+    normal: require("../../assets/audio/w-000812-normal.mp3"),
+    slow: require("../../assets/audio/w-000812-slow.mp3"),
+  },
+  "w-000813": {
+    normal: require("../../assets/audio/w-000813-normal.mp3"),
+    slow: require("../../assets/audio/w-000813-slow.mp3"),
+  },
+  "w-000814": {
+    normal: require("../../assets/audio/w-000814-normal.mp3"),
+    slow: require("../../assets/audio/w-000814-slow.mp3"),
+  },
+  "w-000815": {
+    normal: require("../../assets/audio/w-000815-normal.mp3"),
+    slow: require("../../assets/audio/w-000815-slow.mp3"),
+  },
+  "w-000816": {
+    normal: require("../../assets/audio/w-000816-normal.mp3"),
+    slow: require("../../assets/audio/w-000816-slow.mp3"),
+  },
+  "w-000817": {
+    normal: require("../../assets/audio/w-000817-normal.mp3"),
+    slow: require("../../assets/audio/w-000817-slow.mp3"),
+  },
+  "w-000818": {
+    normal: require("../../assets/audio/w-000818-normal.mp3"),
+    slow: require("../../assets/audio/w-000818-slow.mp3"),
+  },
+  "w-000819": {
+    normal: require("../../assets/audio/w-000819-normal.mp3"),
+    slow: require("../../assets/audio/w-000819-slow.mp3"),
+  },
+  "w-000820": {
+    normal: require("../../assets/audio/w-000820-normal.mp3"),
+    slow: require("../../assets/audio/w-000820-slow.mp3"),
+  },
+  "w-000821": {
+    normal: require("../../assets/audio/w-000821-normal.mp3"),
+    slow: require("../../assets/audio/w-000821-slow.mp3"),
+  },
+  "w-000822": {
+    normal: require("../../assets/audio/w-000822-normal.mp3"),
+    slow: require("../../assets/audio/w-000822-slow.mp3"),
+  },
+  "w-000823": {
+    normal: require("../../assets/audio/w-000823-normal.mp3"),
+    slow: require("../../assets/audio/w-000823-slow.mp3"),
+  },
+  "w-000824": {
+    normal: require("../../assets/audio/w-000824-normal.mp3"),
+    slow: require("../../assets/audio/w-000824-slow.mp3"),
+  },
+  "w-000825": {
+    normal: require("../../assets/audio/w-000825-normal.mp3"),
+    slow: require("../../assets/audio/w-000825-slow.mp3"),
+  },
+  "w-000826": {
+    normal: require("../../assets/audio/w-000826-normal.mp3"),
+    slow: require("../../assets/audio/w-000826-slow.mp3"),
+  },
+  "w-000827": {
+    normal: require("../../assets/audio/w-000827-normal.mp3"),
+    slow: require("../../assets/audio/w-000827-slow.mp3"),
+  },
+  "w-000828": {
+    normal: require("../../assets/audio/w-000828-normal.mp3"),
+    slow: require("../../assets/audio/w-000828-slow.mp3"),
+  },
+  "w-000829": {
+    normal: require("../../assets/audio/w-000829-normal.mp3"),
+    slow: require("../../assets/audio/w-000829-slow.mp3"),
+  },
+  "w-000830": {
+    normal: require("../../assets/audio/w-000830-normal.mp3"),
+    slow: require("../../assets/audio/w-000830-slow.mp3"),
+  },
+  "w-000831": {
+    normal: require("../../assets/audio/w-000831-normal.mp3"),
+    slow: require("../../assets/audio/w-000831-slow.mp3"),
+  },
+  "w-000832": {
+    normal: require("../../assets/audio/w-000832-normal.mp3"),
+    slow: require("../../assets/audio/w-000832-slow.mp3"),
+  },
+  "w-000833": {
+    normal: require("../../assets/audio/w-000833-normal.mp3"),
+    slow: require("../../assets/audio/w-000833-slow.mp3"),
+  },
+  "w-000834": {
+    normal: require("../../assets/audio/w-000834-normal.mp3"),
+    slow: require("../../assets/audio/w-000834-slow.mp3"),
+  },
+  "w-000835": {
+    normal: require("../../assets/audio/w-000835-normal.mp3"),
+    slow: require("../../assets/audio/w-000835-slow.mp3"),
+  },
+  "w-000836": {
+    normal: require("../../assets/audio/w-000836-normal.mp3"),
+    slow: require("../../assets/audio/w-000836-slow.mp3"),
+  },
+  "w-000837": {
+    normal: require("../../assets/audio/w-000837-normal.mp3"),
+    slow: require("../../assets/audio/w-000837-slow.mp3"),
+  },
+  "w-000838": {
+    normal: require("../../assets/audio/w-000838-normal.mp3"),
+    slow: require("../../assets/audio/w-000838-slow.mp3"),
+  },
+  "w-000839": {
+    normal: require("../../assets/audio/w-000839-normal.mp3"),
+    slow: require("../../assets/audio/w-000839-slow.mp3"),
+  },
+  "w-000840": {
+    normal: require("../../assets/audio/w-000840-normal.mp3"),
+    slow: require("../../assets/audio/w-000840-slow.mp3"),
+  },
+  "w-000841": {
+    normal: require("../../assets/audio/w-000841-normal.mp3"),
+    slow: require("../../assets/audio/w-000841-slow.mp3"),
+  },
+  "w-000842": {
+    normal: require("../../assets/audio/w-000842-normal.mp3"),
+    slow: require("../../assets/audio/w-000842-slow.mp3"),
+  },
+  "w-000843": {
+    normal: require("../../assets/audio/w-000843-normal.mp3"),
+    slow: require("../../assets/audio/w-000843-slow.mp3"),
+  },
+  "w-000844": {
+    normal: require("../../assets/audio/w-000844-normal.mp3"),
+    slow: require("../../assets/audio/w-000844-slow.mp3"),
+  },
+  "w-000845": {
+    normal: require("../../assets/audio/w-000845-normal.mp3"),
+    slow: require("../../assets/audio/w-000845-slow.mp3"),
+  },
+  "w-000846": {
+    normal: require("../../assets/audio/w-000846-normal.mp3"),
+    slow: require("../../assets/audio/w-000846-slow.mp3"),
+  },
+  "w-000847": {
+    normal: require("../../assets/audio/w-000847-normal.mp3"),
+    slow: require("../../assets/audio/w-000847-slow.mp3"),
+  },
+  "w-000848": {
+    normal: require("../../assets/audio/w-000848-normal.mp3"),
+    slow: require("../../assets/audio/w-000848-slow.mp3"),
+  },
+  "w-000849": {
+    normal: require("../../assets/audio/w-000849-normal.mp3"),
+    slow: require("../../assets/audio/w-000849-slow.mp3"),
+  },
+  "w-000850": {
+    normal: require("../../assets/audio/w-000850-normal.mp3"),
+    slow: require("../../assets/audio/w-000850-slow.mp3"),
+  },
+  "w-000851": {
+    normal: require("../../assets/audio/w-000851-normal.mp3"),
+    slow: require("../../assets/audio/w-000851-slow.mp3"),
+  },
+  "w-000852": {
+    normal: require("../../assets/audio/w-000852-normal.mp3"),
+    slow: require("../../assets/audio/w-000852-slow.mp3"),
+  },
+  "w-000853": {
+    normal: require("../../assets/audio/w-000853-normal.mp3"),
+    slow: require("../../assets/audio/w-000853-slow.mp3"),
+  },
+  "w-000854": {
+    normal: require("../../assets/audio/w-000854-normal.mp3"),
+    slow: require("../../assets/audio/w-000854-slow.mp3"),
+  },
+  "w-000855": {
+    normal: require("../../assets/audio/w-000855-normal.mp3"),
+    slow: require("../../assets/audio/w-000855-slow.mp3"),
+  },
+  "w-000856": {
+    normal: require("../../assets/audio/w-000856-normal.mp3"),
+    slow: require("../../assets/audio/w-000856-slow.mp3"),
+  },
+  "w-000857": {
+    normal: require("../../assets/audio/w-000857-normal.mp3"),
+    slow: require("../../assets/audio/w-000857-slow.mp3"),
+  },
+  "w-000858": {
+    normal: require("../../assets/audio/w-000858-normal.mp3"),
+    slow: require("../../assets/audio/w-000858-slow.mp3"),
+  },
+  "w-000859": {
+    normal: require("../../assets/audio/w-000859-normal.mp3"),
+    slow: require("../../assets/audio/w-000859-slow.mp3"),
+  },
+  "w-000860": {
+    normal: require("../../assets/audio/w-000860-normal.mp3"),
+    slow: require("../../assets/audio/w-000860-slow.mp3"),
+  },
+  "w-000861": {
+    normal: require("../../assets/audio/w-000861-normal.mp3"),
+    slow: require("../../assets/audio/w-000861-slow.mp3"),
+  },
+  "w-000862": {
+    normal: require("../../assets/audio/w-000862-normal.mp3"),
+    slow: require("../../assets/audio/w-000862-slow.mp3"),
+  },
+  "w-000863": {
+    normal: require("../../assets/audio/w-000863-normal.mp3"),
+    slow: require("../../assets/audio/w-000863-slow.mp3"),
+  },
+  "w-000864": {
+    normal: require("../../assets/audio/w-000864-normal.mp3"),
+    slow: require("../../assets/audio/w-000864-slow.mp3"),
+  },
+  "w-000865": {
+    normal: require("../../assets/audio/w-000865-normal.mp3"),
+    slow: require("../../assets/audio/w-000865-slow.mp3"),
+  },
+  "w-000866": {
+    normal: require("../../assets/audio/w-000866-normal.mp3"),
+    slow: require("../../assets/audio/w-000866-slow.mp3"),
+  },
+  "w-000867": {
+    normal: require("../../assets/audio/w-000867-normal.mp3"),
+    slow: require("../../assets/audio/w-000867-slow.mp3"),
+  },
+  "w-000868": {
+    normal: require("../../assets/audio/w-000868-normal.mp3"),
+    slow: require("../../assets/audio/w-000868-slow.mp3"),
+  },
+  "w-000869": {
+    normal: require("../../assets/audio/w-000869-normal.mp3"),
+    slow: require("../../assets/audio/w-000869-slow.mp3"),
+  },
+  "w-000870": {
+    normal: require("../../assets/audio/w-000870-normal.mp3"),
+    slow: require("../../assets/audio/w-000870-slow.mp3"),
+  },
+  "w-000871": {
+    normal: require("../../assets/audio/w-000871-normal.mp3"),
+    slow: require("../../assets/audio/w-000871-slow.mp3"),
+  },
+  "w-000872": {
+    normal: require("../../assets/audio/w-000872-normal.mp3"),
+    slow: require("../../assets/audio/w-000872-slow.mp3"),
+  },
+  "w-000873": {
+    normal: require("../../assets/audio/w-000873-normal.mp3"),
+    slow: require("../../assets/audio/w-000873-slow.mp3"),
+  },
+  "w-000874": {
+    normal: require("../../assets/audio/w-000874-normal.mp3"),
+    slow: require("../../assets/audio/w-000874-slow.mp3"),
+  },
+  "w-000875": {
+    normal: require("../../assets/audio/w-000875-normal.mp3"),
+    slow: require("../../assets/audio/w-000875-slow.mp3"),
+  },
+  "w-000876": {
+    normal: require("../../assets/audio/w-000876-normal.mp3"),
+    slow: require("../../assets/audio/w-000876-slow.mp3"),
+  },
+  "w-000877": {
+    normal: require("../../assets/audio/w-000877-normal.mp3"),
+    slow: require("../../assets/audio/w-000877-slow.mp3"),
+  },
+  "w-000878": {
+    normal: require("../../assets/audio/w-000878-normal.mp3"),
+    slow: require("../../assets/audio/w-000878-slow.mp3"),
+  },
+  "w-000879": {
+    normal: require("../../assets/audio/w-000879-normal.mp3"),
+    slow: require("../../assets/audio/w-000879-slow.mp3"),
+  },
+  "w-000880": {
+    normal: require("../../assets/audio/w-000880-normal.mp3"),
+    slow: require("../../assets/audio/w-000880-slow.mp3"),
+  },
+  "w-000881": {
+    normal: require("../../assets/audio/w-000881-normal.mp3"),
+    slow: require("../../assets/audio/w-000881-slow.mp3"),
+  },
+  "w-000882": {
+    normal: require("../../assets/audio/w-000882-normal.mp3"),
+    slow: require("../../assets/audio/w-000882-slow.mp3"),
+  },
+  "w-000883": {
+    normal: require("../../assets/audio/w-000883-normal.mp3"),
+    slow: require("../../assets/audio/w-000883-slow.mp3"),
+  },
+  "w-000884": {
+    normal: require("../../assets/audio/w-000884-normal.mp3"),
+    slow: require("../../assets/audio/w-000884-slow.mp3"),
+  },
+  "w-000885": {
+    normal: require("../../assets/audio/w-000885-normal.mp3"),
+    slow: require("../../assets/audio/w-000885-slow.mp3"),
+  },
+  "w-000886": {
+    normal: require("../../assets/audio/w-000886-normal.mp3"),
+    slow: require("../../assets/audio/w-000886-slow.mp3"),
+  },
+  "w-000887": {
+    normal: require("../../assets/audio/w-000887-normal.mp3"),
+    slow: require("../../assets/audio/w-000887-slow.mp3"),
+  },
+  "w-000888": {
+    normal: require("../../assets/audio/w-000888-normal.mp3"),
+    slow: require("../../assets/audio/w-000888-slow.mp3"),
+  },
+  "w-000889": {
+    normal: require("../../assets/audio/w-000889-normal.mp3"),
+    slow: require("../../assets/audio/w-000889-slow.mp3"),
+  },
+  "w-000890": {
+    normal: require("../../assets/audio/w-000890-normal.mp3"),
+    slow: require("../../assets/audio/w-000890-slow.mp3"),
+  },
+  "w-000891": {
+    normal: require("../../assets/audio/w-000891-normal.mp3"),
+    slow: require("../../assets/audio/w-000891-slow.mp3"),
+  },
+  "w-000892": {
+    normal: require("../../assets/audio/w-000892-normal.mp3"),
+    slow: require("../../assets/audio/w-000892-slow.mp3"),
+  },
+  "w-000893": {
+    normal: require("../../assets/audio/w-000893-normal.mp3"),
+    slow: require("../../assets/audio/w-000893-slow.mp3"),
+  },
+  "w-000894": {
+    normal: require("../../assets/audio/w-000894-normal.mp3"),
+    slow: require("../../assets/audio/w-000894-slow.mp3"),
+  },
+  "w-000895": {
+    normal: require("../../assets/audio/w-000895-normal.mp3"),
+    slow: require("../../assets/audio/w-000895-slow.mp3"),
+  },
+  "w-000896": {
+    normal: require("../../assets/audio/w-000896-normal.mp3"),
+    slow: require("../../assets/audio/w-000896-slow.mp3"),
+  },
+  "w-000897": {
+    normal: require("../../assets/audio/w-000897-normal.mp3"),
+    slow: require("../../assets/audio/w-000897-slow.mp3"),
+  },
+  "w-000898": {
+    normal: require("../../assets/audio/w-000898-normal.mp3"),
+    slow: require("../../assets/audio/w-000898-slow.mp3"),
+  },
+  "w-000899": {
+    normal: require("../../assets/audio/w-000899-normal.mp3"),
+    slow: require("../../assets/audio/w-000899-slow.mp3"),
+  },
+  "w-000900": {
+    normal: require("../../assets/audio/w-000900-normal.mp3"),
+    slow: require("../../assets/audio/w-000900-slow.mp3"),
+  },
+  "w-000901": {
+    normal: require("../../assets/audio/w-000901-normal.mp3"),
+    slow: require("../../assets/audio/w-000901-slow.mp3"),
+  },
+  "w-000902": {
+    normal: require("../../assets/audio/w-000902-normal.mp3"),
+    slow: require("../../assets/audio/w-000902-slow.mp3"),
+  },
+  "w-000903": {
+    normal: require("../../assets/audio/w-000903-normal.mp3"),
+    slow: require("../../assets/audio/w-000903-slow.mp3"),
+  },
+  "w-000904": {
+    normal: require("../../assets/audio/w-000904-normal.mp3"),
+    slow: require("../../assets/audio/w-000904-slow.mp3"),
+  },
+  "w-000905": {
+    normal: require("../../assets/audio/w-000905-normal.mp3"),
+    slow: require("../../assets/audio/w-000905-slow.mp3"),
+  },
+  "w-000906": {
+    normal: require("../../assets/audio/w-000906-normal.mp3"),
+    slow: require("../../assets/audio/w-000906-slow.mp3"),
+  },
+  "w-000907": {
+    normal: require("../../assets/audio/w-000907-normal.mp3"),
+    slow: require("../../assets/audio/w-000907-slow.mp3"),
+  },
+  "w-000908": {
+    normal: require("../../assets/audio/w-000908-normal.mp3"),
+    slow: require("../../assets/audio/w-000908-slow.mp3"),
+  },
+  "w-000909": {
+    normal: require("../../assets/audio/w-000909-normal.mp3"),
+    slow: require("../../assets/audio/w-000909-slow.mp3"),
+  },
+  "w-000910": {
+    normal: require("../../assets/audio/w-000910-normal.mp3"),
+    slow: require("../../assets/audio/w-000910-slow.mp3"),
+  },
+  "w-000911": {
+    normal: require("../../assets/audio/w-000911-normal.mp3"),
+    slow: require("../../assets/audio/w-000911-slow.mp3"),
+  },
+  "w-000912": {
+    normal: require("../../assets/audio/w-000912-normal.mp3"),
+    slow: require("../../assets/audio/w-000912-slow.mp3"),
+  },
+  "w-000913": {
+    normal: require("../../assets/audio/w-000913-normal.mp3"),
+    slow: require("../../assets/audio/w-000913-slow.mp3"),
+  },
+  "w-000914": {
+    normal: require("../../assets/audio/w-000914-normal.mp3"),
+    slow: require("../../assets/audio/w-000914-slow.mp3"),
+  },
+  "w-000915": {
+    normal: require("../../assets/audio/w-000915-normal.mp3"),
+    slow: require("../../assets/audio/w-000915-slow.mp3"),
+  },
+  "w-000916": {
+    normal: require("../../assets/audio/w-000916-normal.mp3"),
+    slow: require("../../assets/audio/w-000916-slow.mp3"),
+  },
+  "w-000917": {
+    normal: require("../../assets/audio/w-000917-normal.mp3"),
+    slow: require("../../assets/audio/w-000917-slow.mp3"),
+  },
+  "w-000918": {
+    normal: require("../../assets/audio/w-000918-normal.mp3"),
+    slow: require("../../assets/audio/w-000918-slow.mp3"),
+  },
+  "w-000919": {
+    normal: require("../../assets/audio/w-000919-normal.mp3"),
+    slow: require("../../assets/audio/w-000919-slow.mp3"),
+  },
+  "w-000920": {
+    normal: require("../../assets/audio/w-000920-normal.mp3"),
+    slow: require("../../assets/audio/w-000920-slow.mp3"),
+  },
+  "w-000921": {
+    normal: require("../../assets/audio/w-000921-normal.mp3"),
+    slow: require("../../assets/audio/w-000921-slow.mp3"),
+  },
+  "w-000922": {
+    normal: require("../../assets/audio/w-000922-normal.mp3"),
+    slow: require("../../assets/audio/w-000922-slow.mp3"),
+  },
+  "w-000923": {
+    normal: require("../../assets/audio/w-000923-normal.mp3"),
+    slow: require("../../assets/audio/w-000923-slow.mp3"),
+  },
+  "w-000924": {
+    normal: require("../../assets/audio/w-000924-normal.mp3"),
+    slow: require("../../assets/audio/w-000924-slow.mp3"),
+  },
+  "w-000925": {
+    normal: require("../../assets/audio/w-000925-normal.mp3"),
+    slow: require("../../assets/audio/w-000925-slow.mp3"),
+  },
+  "w-000926": {
+    normal: require("../../assets/audio/w-000926-normal.mp3"),
+    slow: require("../../assets/audio/w-000926-slow.mp3"),
+  },
+  "w-000927": {
+    normal: require("../../assets/audio/w-000927-normal.mp3"),
+    slow: require("../../assets/audio/w-000927-slow.mp3"),
+  },
+  "w-000928": {
+    normal: require("../../assets/audio/w-000928-normal.mp3"),
+    slow: require("../../assets/audio/w-000928-slow.mp3"),
+  },
+  "w-000929": {
+    normal: require("../../assets/audio/w-000929-normal.mp3"),
+    slow: require("../../assets/audio/w-000929-slow.mp3"),
+  },
+  "w-000930": {
+    normal: require("../../assets/audio/w-000930-normal.mp3"),
+    slow: require("../../assets/audio/w-000930-slow.mp3"),
+  },
+  "w-000931": {
+    normal: require("../../assets/audio/w-000931-normal.mp3"),
+    slow: require("../../assets/audio/w-000931-slow.mp3"),
+  },
+  "w-000932": {
+    normal: require("../../assets/audio/w-000932-normal.mp3"),
+    slow: require("../../assets/audio/w-000932-slow.mp3"),
+  },
+  "w-000933": {
+    normal: require("../../assets/audio/w-000933-normal.mp3"),
+    slow: require("../../assets/audio/w-000933-slow.mp3"),
+  },
+  "w-000934": {
+    normal: require("../../assets/audio/w-000934-normal.mp3"),
+    slow: require("../../assets/audio/w-000934-slow.mp3"),
+  },
+  "w-000935": {
+    normal: require("../../assets/audio/w-000935-normal.mp3"),
+    slow: require("../../assets/audio/w-000935-slow.mp3"),
+  },
+  "w-000936": {
+    normal: require("../../assets/audio/w-000936-normal.mp3"),
+    slow: require("../../assets/audio/w-000936-slow.mp3"),
+  },
+  "w-000937": {
+    normal: require("../../assets/audio/w-000937-normal.mp3"),
+    slow: require("../../assets/audio/w-000937-slow.mp3"),
+  },
+  "w-000938": {
+    normal: require("../../assets/audio/w-000938-normal.mp3"),
+    slow: require("../../assets/audio/w-000938-slow.mp3"),
+  },
+  "w-000939": {
+    normal: require("../../assets/audio/w-000939-normal.mp3"),
+    slow: require("../../assets/audio/w-000939-slow.mp3"),
+  },
+  "w-000940": {
+    normal: require("../../assets/audio/w-000940-normal.mp3"),
+    slow: require("../../assets/audio/w-000940-slow.mp3"),
+  },
+  "w-000941": {
+    normal: require("../../assets/audio/w-000941-normal.mp3"),
+    slow: require("../../assets/audio/w-000941-slow.mp3"),
+  },
+  "w-000942": {
+    normal: require("../../assets/audio/w-000942-normal.mp3"),
+    slow: require("../../assets/audio/w-000942-slow.mp3"),
+  },
+  "w-000943": {
+    normal: require("../../assets/audio/w-000943-normal.mp3"),
+    slow: require("../../assets/audio/w-000943-slow.mp3"),
+  },
+  "w-000944": {
+    normal: require("../../assets/audio/w-000944-normal.mp3"),
+    slow: require("../../assets/audio/w-000944-slow.mp3"),
+  },
+  "w-000945": {
+    normal: require("../../assets/audio/w-000945-normal.mp3"),
+    slow: require("../../assets/audio/w-000945-slow.mp3"),
+  },
+  "w-000946": {
+    normal: require("../../assets/audio/w-000946-normal.mp3"),
+    slow: require("../../assets/audio/w-000946-slow.mp3"),
+  },
+  "w-000947": {
+    normal: require("../../assets/audio/w-000947-normal.mp3"),
+    slow: require("../../assets/audio/w-000947-slow.mp3"),
+  },
+  "w-000948": {
+    normal: require("../../assets/audio/w-000948-normal.mp3"),
+    slow: require("../../assets/audio/w-000948-slow.mp3"),
+  },
+  "w-000949": {
+    normal: require("../../assets/audio/w-000949-normal.mp3"),
+    slow: require("../../assets/audio/w-000949-slow.mp3"),
+  },
+  "w-000950": {
+    normal: require("../../assets/audio/w-000950-normal.mp3"),
+    slow: require("../../assets/audio/w-000950-slow.mp3"),
+  },
+  "w-000951": {
+    normal: require("../../assets/audio/w-000951-normal.mp3"),
+    slow: require("../../assets/audio/w-000951-slow.mp3"),
+  },
+  "w-000952": {
+    normal: require("../../assets/audio/w-000952-normal.mp3"),
+    slow: require("../../assets/audio/w-000952-slow.mp3"),
+  },
+  "w-000953": {
+    normal: require("../../assets/audio/w-000953-normal.mp3"),
+    slow: require("../../assets/audio/w-000953-slow.mp3"),
+  },
+  "w-000954": {
+    normal: require("../../assets/audio/w-000954-normal.mp3"),
+    slow: require("../../assets/audio/w-000954-slow.mp3"),
+  },
+  "w-000955": {
+    normal: require("../../assets/audio/w-000955-normal.mp3"),
+    slow: require("../../assets/audio/w-000955-slow.mp3"),
+  },
+  "w-000956": {
+    normal: require("../../assets/audio/w-000956-normal.mp3"),
+    slow: require("../../assets/audio/w-000956-slow.mp3"),
+  },
+  "w-000957": {
+    normal: require("../../assets/audio/w-000957-normal.mp3"),
+    slow: require("../../assets/audio/w-000957-slow.mp3"),
+  },
+  "w-000958": {
+    normal: require("../../assets/audio/w-000958-normal.mp3"),
+    slow: require("../../assets/audio/w-000958-slow.mp3"),
+  },
+  "w-000959": {
+    normal: require("../../assets/audio/w-000959-normal.mp3"),
+    slow: require("../../assets/audio/w-000959-slow.mp3"),
+  },
+  "w-000960": {
+    normal: require("../../assets/audio/w-000960-normal.mp3"),
+    slow: require("../../assets/audio/w-000960-slow.mp3"),
+  },
+  "w-000961": {
+    normal: require("../../assets/audio/w-000961-normal.mp3"),
+    slow: require("../../assets/audio/w-000961-slow.mp3"),
+  },
+  "w-000962": {
+    normal: require("../../assets/audio/w-000962-normal.mp3"),
+    slow: require("../../assets/audio/w-000962-slow.mp3"),
+  },
+  "w-000963": {
+    normal: require("../../assets/audio/w-000963-normal.mp3"),
+    slow: require("../../assets/audio/w-000963-slow.mp3"),
+  },
+  "w-000964": {
+    normal: require("../../assets/audio/w-000964-normal.mp3"),
+    slow: require("../../assets/audio/w-000964-slow.mp3"),
+  },
+  "w-000965": {
+    normal: require("../../assets/audio/w-000965-normal.mp3"),
+    slow: require("../../assets/audio/w-000965-slow.mp3"),
+  },
+  "w-000966": {
+    normal: require("../../assets/audio/w-000966-normal.mp3"),
+    slow: require("../../assets/audio/w-000966-slow.mp3"),
+  },
+  "w-000967": {
+    normal: require("../../assets/audio/w-000967-normal.mp3"),
+    slow: require("../../assets/audio/w-000967-slow.mp3"),
+  },
+  "w-000968": {
+    normal: require("../../assets/audio/w-000968-normal.mp3"),
+    slow: require("../../assets/audio/w-000968-slow.mp3"),
+  },
+  "w-000969": {
+    normal: require("../../assets/audio/w-000969-normal.mp3"),
+    slow: require("../../assets/audio/w-000969-slow.mp3"),
+  },
+  "w-000970": {
+    normal: require("../../assets/audio/w-000970-normal.mp3"),
+    slow: require("../../assets/audio/w-000970-slow.mp3"),
+  },
+  "w-000971": {
+    normal: require("../../assets/audio/w-000971-normal.mp3"),
+    slow: require("../../assets/audio/w-000971-slow.mp3"),
+  },
+  "w-000972": {
+    normal: require("../../assets/audio/w-000972-normal.mp3"),
+    slow: require("../../assets/audio/w-000972-slow.mp3"),
+  },
+  "w-000973": {
+    normal: require("../../assets/audio/w-000973-normal.mp3"),
+    slow: require("../../assets/audio/w-000973-slow.mp3"),
+  },
+  "w-000974": {
+    normal: require("../../assets/audio/w-000974-normal.mp3"),
+    slow: require("../../assets/audio/w-000974-slow.mp3"),
+  },
+  "w-000975": {
+    normal: require("../../assets/audio/w-000975-normal.mp3"),
+    slow: require("../../assets/audio/w-000975-slow.mp3"),
+  },
+  "w-000976": {
+    normal: require("../../assets/audio/w-000976-normal.mp3"),
+    slow: require("../../assets/audio/w-000976-slow.mp3"),
+  },
+  "w-000977": {
+    normal: require("../../assets/audio/w-000977-normal.mp3"),
+    slow: require("../../assets/audio/w-000977-slow.mp3"),
+  },
+  "w-000978": {
+    normal: require("../../assets/audio/w-000978-normal.mp3"),
+    slow: require("../../assets/audio/w-000978-slow.mp3"),
+  },
+  "w-000979": {
+    normal: require("../../assets/audio/w-000979-normal.mp3"),
+    slow: require("../../assets/audio/w-000979-slow.mp3"),
+  },
+  "w-000980": {
+    normal: require("../../assets/audio/w-000980-normal.mp3"),
+    slow: require("../../assets/audio/w-000980-slow.mp3"),
+  },
+  "w-000981": {
+    normal: require("../../assets/audio/w-000981-normal.mp3"),
+    slow: require("../../assets/audio/w-000981-slow.mp3"),
+  },
+  "w-000982": {
+    normal: require("../../assets/audio/w-000982-normal.mp3"),
+    slow: require("../../assets/audio/w-000982-slow.mp3"),
+  },
+  "w-000983": {
+    normal: require("../../assets/audio/w-000983-normal.mp3"),
+    slow: require("../../assets/audio/w-000983-slow.mp3"),
+  },
+  "w-000984": {
+    normal: require("../../assets/audio/w-000984-normal.mp3"),
+    slow: require("../../assets/audio/w-000984-slow.mp3"),
+  },
+  "w-000985": {
+    normal: require("../../assets/audio/w-000985-normal.mp3"),
+    slow: require("../../assets/audio/w-000985-slow.mp3"),
+  },
+  "w-000986": {
+    normal: require("../../assets/audio/w-000986-normal.mp3"),
+    slow: require("../../assets/audio/w-000986-slow.mp3"),
+  },
+  "w-000987": {
+    normal: require("../../assets/audio/w-000987-normal.mp3"),
+    slow: require("../../assets/audio/w-000987-slow.mp3"),
+  },
+  "w-000988": {
+    normal: require("../../assets/audio/w-000988-normal.mp3"),
+    slow: require("../../assets/audio/w-000988-slow.mp3"),
+  },
+  "w-000989": {
+    normal: require("../../assets/audio/w-000989-normal.mp3"),
+    slow: require("../../assets/audio/w-000989-slow.mp3"),
+  },
+  "w-000990": {
+    normal: require("../../assets/audio/w-000990-normal.mp3"),
+    slow: require("../../assets/audio/w-000990-slow.mp3"),
+  },
+  "w-000991": {
+    normal: require("../../assets/audio/w-000991-normal.mp3"),
+    slow: require("../../assets/audio/w-000991-slow.mp3"),
+  },
+  "w-000992": {
+    normal: require("../../assets/audio/w-000992-normal.mp3"),
+    slow: require("../../assets/audio/w-000992-slow.mp3"),
+  },
+  "w-000993": {
+    normal: require("../../assets/audio/w-000993-normal.mp3"),
+    slow: require("../../assets/audio/w-000993-slow.mp3"),
+  },
+  "w-000994": {
+    normal: require("../../assets/audio/w-000994-normal.mp3"),
+    slow: require("../../assets/audio/w-000994-slow.mp3"),
+  },
+  "w-000995": {
+    normal: require("../../assets/audio/w-000995-normal.mp3"),
+    slow: require("../../assets/audio/w-000995-slow.mp3"),
+  },
+  "w-000996": {
+    normal: require("../../assets/audio/w-000996-normal.mp3"),
+    slow: require("../../assets/audio/w-000996-slow.mp3"),
+  },
+  "w-000997": {
+    normal: require("../../assets/audio/w-000997-normal.mp3"),
+    slow: require("../../assets/audio/w-000997-slow.mp3"),
+  },
+  "w-000998": {
+    normal: require("../../assets/audio/w-000998-normal.mp3"),
+    slow: require("../../assets/audio/w-000998-slow.mp3"),
+  },
+  "w-000999": {
+    normal: require("../../assets/audio/w-000999-normal.mp3"),
+    slow: require("../../assets/audio/w-000999-slow.mp3"),
+  },
+  "w-001000": {
+    normal: require("../../assets/audio/w-001000-normal.mp3"),
+    slow: require("../../assets/audio/w-001000-slow.mp3"),
+  },
 };

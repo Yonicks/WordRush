@@ -1,6 +1,6 @@
 # Daily learning implementation — 2026-10-01
 
-The five requested improvements are implemented: durable sessions, comfortably finishable rounds, daily progress, picture/listening practice and a 500-word library.
+The requested improvements are implemented: durable sessions, comfortably finishable rounds, daily progress, picture/listening practice and a 1,000-word library.
 
 ## Session behavior
 
@@ -14,7 +14,7 @@ The home, session, results and parent views show today's activity. Distinct word
 
 ## Library and media
 
-500 stable records; category, difficulty and learning-state filters; bilingual search; known list and undo; incremental display of 30 rows; expandable example, picture and pronunciation previews. 46 picture mappings were visually inspected. All 500 words have bundled normal and slow synthetic speech. Listening and pictures vary recognition practice; reverse recall retains its separate score. See `content-and-audio.md` for provenance and review limitations.
+1,000 stable records; category, difficulty and learning-state filters; bilingual search; known list and undo; incremental display of 30 rows; expandable example, picture and pronunciation previews. 46 picture mappings were visually inspected. All 1,000 words have bundled normal and slow synthetic speech. Listening and pictures vary recognition practice; reverse recall retains its separate score. See `content-and-audio.md` for provenance and review limitations.
 
 ## Validation
 

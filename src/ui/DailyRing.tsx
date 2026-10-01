@@ -43,7 +43,7 @@ export function DailyRing({
             strokeWidth={8}
             strokeDasharray={`${fraction * 302} 302`}
             strokeLinecap="round"
-          transform="rotate(-90 56 56)"
+            transform="rotate(-90 56 56)"
           />
         </Svg>
         <Text style={{ fontSize: 25, fontWeight: "800", color: colors.ink }}>

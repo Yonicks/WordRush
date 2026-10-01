@@ -1,6 +1,6 @@
 # Vocabulary and media
 
-The library contains 500 stable records across 13 categories and three difficulty levels. The original 100 IDs and English headwords remain unchanged. The additional 400 words were authored in 20 batches of 20, with Hebrew meanings, short examples and a subsequent editorial pass for articles, context and ambiguous senses (for example, light in weight versus bright light).
+The library contains 1,000 stable records across 15 categories and four difficulty levels. The original 500 IDs and English headwords remain unchanged. The additional 500 records include short examples and bundled offline pronunciation clips.
 
 All records remain `editorial-draft`: agent editorial checks are not independent review by a Hebrew-speaking language educator. Masculine forms are dictionary forms, not learner gender settings. Before a learning release, an educator should check age suitability, alternative translations and examples, and listen to the pronunciation set. Difficulty levels are editorial estimates, not validated placement scores.
 

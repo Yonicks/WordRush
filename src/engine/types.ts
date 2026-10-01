@@ -1,4 +1,5 @@
 export type Skill = "recognition" | "recall";
+export type Gender = "boy" | "girl";
 export interface Word {
   id: string;
   english: string;
@@ -26,6 +27,7 @@ export interface Child {
   id: string;
   name: string;
   avatar: number;
+  gender?: Gender;
   xp: number;
   progress: Record<string, Progress>;
   knownWordIds?: string[];

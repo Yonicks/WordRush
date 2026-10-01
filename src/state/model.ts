@@ -119,6 +119,7 @@ export function parseState(raw: string | null): AppState {
       Number.isInteger(c.avatar) &&
       nonnegative(c.avatar) &&
       c.avatar < 3 &&
+      (c.gender === undefined || c.gender === "boy" || c.gender === "girl") &&
       isObject(c.progress) &&
       (c.knownWordIds === undefined ||
         (Array.isArray(c.knownWordIds) &&
@@ -167,7 +168,9 @@ export function parseState(raw: string | null): AppState {
   migrated.activeSession = migrated.activeSession ?? null;
   if (migrated.activeSession !== null)
     migrated.activeSession = migrateDraft(migrated.activeSession, ids);
-  for (const child of migrated.children) child.knownWordIds ??= [];
+  for (const child of migrated.children) {
+    child.knownWordIds ??= [];
+  }
   for (const child of migrated.children)
     for (const p of Object.values(child.progress)) {
       p.nextReviewAtRecognition ??= p.nextReviewAt;

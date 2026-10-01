@@ -35,7 +35,7 @@ import {
   setWordKnown,
 } from "./src/state/model";
 import { effectiveMastery, mastery } from "./src/engine/learning";
-import type { Word } from "./src/engine/types";
+import type { Gender, Word } from "./src/engine/types";
 import seed from "./src/data/words.json";
 import { categoryNames } from "./src/data/categories";
 import { art, colors as c } from "./src/ui/theme";
@@ -193,7 +193,7 @@ function Profiles({
 }) {
   const { state, update } = useStore();
   const [name, setName] = useState("");
-  const [avatar, setAvatar] = useState(0);
+  const [gender, setGender] = useState<Gender>("boy");
   return (
     <Page>
       <Heading title="מי משחקים היום?" caption="לכל ילד וילדה הרפתקה משלהם" />
@@ -223,24 +223,31 @@ function Profiles({
           style={s.input}
         />
         <View style={s.row}>
-          {art.avatars.map((source, i) => (
-            <Pressable
-              key={i}
-              accessibilityRole="button"
-              accessibilityLabel={`דמות ${i + 1}`}
-              accessibilityState={{ selected: avatar === i }}
-              onPress={() => setAvatar(i)}
-              style={[
-                s.avatarOption,
-                avatar === i && {
-                  borderColor: c.purple,
-                  backgroundColor: "#F0EBFF",
-                },
-              ]}
-            >
-              <Image source={source} style={s.avatarLarge} />
-            </Pressable>
-          ))}
+          {(["boy", "girl"] as const).map((option) => {
+            const i = option === "boy" ? 0 : 1;
+            const source = art.avatars[i];
+            return (
+              <Pressable
+                key={option}
+                accessibilityRole="button"
+                accessibilityLabel={option === "boy" ? "בן" : "בת"}
+                accessibilityState={{ selected: gender === option }}
+                onPress={() => setGender(option)}
+                style={[
+                  s.avatarOption,
+                  gender === option && {
+                    borderColor: c.purple,
+                    backgroundColor: "#F0EBFF",
+                  },
+                ]}
+              >
+                <Image source={source} style={s.avatarLarge} />
+                <Text style={s.genderLabel}>
+                  {option === "boy" ? "בן" : "בת"}
+                </Text>
+              </Pressable>
+            );
+          })}
         </View>
         <Button
           label="מתחילים!"
@@ -255,7 +262,8 @@ function Profiles({
                 {
                   id: childId,
                   name: name.trim(),
-                  avatar,
+                  avatar: gender === "boy" ? 0 : 1,
+                  gender,
                   xp: 0,
                   progress: {},
                   knownWordIds: [],
@@ -346,6 +354,12 @@ function Play({ navigation }: Props<"Play">) {
       </Page>
     );
   const daily = dailyActivity(state, child.id, now);
+  const masteredIds = Object.values(child.progress)
+    .filter((p) => effectiveMastery(p, now) >= 80)
+    .map((p) => p.wordId);
+  const knownCount = new Set([...(child.knownWordIds ?? []), ...masteredIds])
+    .size;
+  const knownPercent = Math.round((knownCount / words.length) * 100);
   const finish = (early: boolean) => {
     if (ending.current) return;
     ending.current = true;
@@ -403,6 +417,12 @@ function Play({ navigation }: Props<"Play">) {
     );
   return (
     <Page>
+      <Image
+        source={art.learningGarden}
+        accessibilityElementsHidden
+        importantForAccessibility="no"
+        style={s.learningBackdrop}
+      />
       <View style={s.row}>
         <Text style={s.kicker}>
           {discovering
@@ -423,20 +443,18 @@ function Play({ navigation }: Props<"Play">) {
             : `שאלה ${draft.questionIndex + 1} מתוך ${draft.queue.length}`}
         </Text>
       </View>
-      <View style={s.track}>
-        <View
-          style={[
-            s.fill,
-            {
-              width: `${Math.min(100, ((draft.discoveryIndex + draft.questionIndex) / (draft.newWordIds.length + draft.queue.length)) * 100)}%`,
-            },
-          ]}
-        />
+      <View style={s.learningTop}>
+        <View style={s.learningTopLine}>
+          <Text style={s.small}>התקדמות באוצר המילים</Text>
+          <Text style={s.learningPercent}>{knownPercent}%</Text>
+        </View>
+        <View style={s.track}>
+          <View style={[s.fill, { width: `${knownPercent}%` }]} />
+        </View>
+        <Text style={s.tiny}>
+          {knownCount} מתוך {words.length} מילים מוכרות או בשליטה
+        </Text>
       </View>
-      <Text style={s.small}>
-        {daily.wordIds.length}/10 מילים היום •{" "}
-        {Math.floor(daily.activeMs / 60000)} דקות • אפשר לסיים בכל רגע
-      </Text>
       {daily.complete && !keepGoing && (
         <View style={s.card}>
           <Text style={s.sectionTitle}>עשיתם דרך יפה היום!</Text>
@@ -448,6 +466,23 @@ function Play({ navigation }: Props<"Play">) {
             onPress={() => setKeepGoing(true)}
           />
         </View>
+      )}
+      {discovering && (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="לסמן את המילה כמוכרת כבר"
+          onPress={() =>
+            update((s) => ({
+              ...setWordKnown(s, child.id, word.id, true),
+              activeSession: s.activeSession
+                ? skipDiscoveryWord(s.activeSession)
+                : null,
+            }))
+          }
+          style={s.knownShortcut}
+        >
+          <Text style={s.knownShortcutText}>כבר מכיר/ה את המילה</Text>
+        </Pressable>
       )}
       <Heading
         title={
@@ -526,18 +561,6 @@ function Play({ navigation }: Props<"Play">) {
       {discovering ? (
         <>
           <Button label="הכרנו! ממשיכים" onPress={discoverNext} />
-          <Button
-            secondary
-            label="אני כבר מכיר/ה את המילה"
-            onPress={() =>
-              update((s) => ({
-                ...setWordKnown(s, child.id, word.id, true),
-                activeSession: s.activeSession
-                  ? skipDiscoveryWord(s.activeSession)
-                  : null,
-              }))
-            }
-          />
         </>
       ) : (
         <>
@@ -760,7 +783,7 @@ function Library() {
       </ScrollView>
       <Text style={s.sectionTitle}>רמה</Text>
       <View style={s.filterRow}>
-        {[0, 1, 2, 3].map((value) => (
+        {[0, 1, 2, 3, 4].map((value) => (
           <Pressable
             key={value}
             accessibilityRole="button"
@@ -1160,6 +1183,14 @@ const s = StyleSheet.create({
     borderColor: "transparent",
     borderRadius: 20,
     padding: 4,
+    alignItems: "center",
+  },
+  genderLabel: {
+    color: c.purple,
+    fontWeight: "800",
+    fontSize: 12,
+    paddingHorizontal: 8,
+    paddingBottom: 4,
   },
   profileChoice: {
     flexDirection: "row",
@@ -1176,6 +1207,42 @@ const s = StyleSheet.create({
     overflow: "hidden",
   },
   fill: { height: 8, backgroundColor: c.purple, alignSelf: "flex-end" },
+  learningBackdrop: {
+    position: "absolute",
+    top: -24,
+    left: -24,
+    right: -24,
+    height: 260,
+    opacity: 0.18,
+    resizeMode: "cover",
+    borderRadius: 28,
+  },
+  learningTop: {
+    backgroundColor: "rgba(255,255,255,0.86)",
+    borderRadius: 16,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    gap: 7,
+    borderWidth: 1,
+    borderColor: c.line,
+  },
+  learningTopLine: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  learningPercent: { color: c.purple, fontSize: 18, fontWeight: "900" },
+  tiny: { color: c.muted, fontSize: 11, textAlign: "right" },
+  knownShortcut: {
+    alignSelf: "flex-start",
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: "#D8CEF8",
+    backgroundColor: "rgba(255,255,255,0.86)",
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+  },
+  knownShortcutText: { color: c.purple, fontSize: 12, fontWeight: "800" },
   wordCard: {
     backgroundColor: c.white,
     borderRadius: 28,

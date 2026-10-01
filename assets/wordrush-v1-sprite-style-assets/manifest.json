@@ -1,7 +1,7 @@
 {
   "pack": "WordRush V1 Sprite-Style Visual Assets",
   "version": "2.0.0",
-  "assetCount": 194,
+  "assetCount": 195,
   "format": "PNG",
   "background": "transparent",
   "categories": {
@@ -13,6 +13,7 @@
     "feedback-fx": 8,
     "world": 8,
     "avatars": 8,
-    "rewards": 12
+    "rewards": 12,
+    "scenes": 1
   }
 }
