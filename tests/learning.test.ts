@@ -14,6 +14,7 @@ import {
   initialState,
   parseState,
   recordAnswer,
+  setWordKnown,
 } from "../src/state/model";
 import type { Answer, AppState, Progress } from "../src/engine/types";
 const now = new Date(2026, 9, 1, 12).getTime();
@@ -38,6 +39,16 @@ test("new learner receives no more than five new words", () => {
   const chosen = selectWords(seed, {}, now);
   assert.equal(chosen.length, 5);
   assert.equal(new Set(chosen.map((w) => w.id)).size, 5);
+});
+test("known words are excluded from new sessions and can be restored", () => {
+  const excluded = seed.slice(0, 2).map((word) => word.id);
+  const chosen = selectWords(seed, {}, now, 5, excluded);
+  assert.equal(chosen.length, 5);
+  assert.ok(chosen.every((word) => !excluded.includes(word.id)));
+  const marked = setWordKnown(state, "a", seed[0].id, true);
+  assert.deepEqual(marked.children[0].knownWordIds, [seed[0].id]);
+  const restored = setWordKnown(marked, "a", seed[0].id, false);
+  assert.deepEqual(restored.children[0].knownWordIds, []);
 });
 test("due reviews outrank unseen content and selection fills 15 without duplicates", () => {
   const progress: Record<string, Progress> = {};

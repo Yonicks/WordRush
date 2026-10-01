@@ -92,10 +92,13 @@ export function selectWords(
   progress: Record<string, Progress>,
   now: number,
   limit = 15,
+  knownWordIds: string[] = [],
 ): Word[] {
+  const excluded = new Set(knownWordIds);
   const due = words
     .filter(
       (w) =>
+        !excluded.has(w.id) &&
         progress[w.id] &&
         Math.min(
           progress[w.id].nextReviewAtRecognition,
@@ -114,17 +117,22 @@ export function selectWords(
         ),
     );
   const weak = words
-    .filter((w) => progress[w.id] && effectiveMastery(progress[w.id], now) < 60)
+    .filter(
+      (w) =>
+        !excluded.has(w.id) &&
+        progress[w.id] &&
+        effectiveMastery(progress[w.id], now) < 60,
+    )
     .sort(
       (a, b) =>
         effectiveMastery(progress[a.id], now) -
         effectiveMastery(progress[b.id], now),
     );
   const fresh = words
-    .filter((w) => !progress[w.id])
+    .filter((w) => !excluded.has(w.id) && !progress[w.id])
     .sort((a, b) => a.difficulty - b.difficulty);
-  const known = words
-    .filter((w) => progress[w.id])
+  const familiar = words
+    .filter((w) => !excluded.has(w.id) && progress[w.id])
     .sort((a, b) => progress[a.id].lastSeenAt - progress[b.id].lastSeenAt);
   const result: Word[] = [];
   const add = (pool: Word[], count: number) => {
@@ -142,7 +150,7 @@ export function selectWords(
   add(due, Math.ceil(limit * 0.4));
   add(weak, Math.ceil(limit * 0.25));
   add(fresh, Math.min(5, Math.ceil(limit * 0.2)));
-  add(known, limit);
+  add(familiar, limit);
   add(fresh, 5 - result.filter((w) => !progress[w.id]).length);
   return result;
 }

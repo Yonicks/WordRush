@@ -45,6 +45,23 @@ export function completeSession(
     activeSession: null,
   };
 }
+export function setWordKnown(
+  state: AppState,
+  childId: string,
+  wordId: string,
+  known: boolean,
+): AppState {
+  return {
+    ...state,
+    children: state.children.map((child) => {
+      if (child.id !== childId) return child;
+      const knownIds = new Set(child.knownWordIds ?? []);
+      if (known) knownIds.add(wordId);
+      else knownIds.delete(wordId);
+      return { ...child, knownWordIds: [...knownIds] };
+    }),
+  };
+}
 const isObject = (value: unknown): value is Record<string, unknown> =>
   !!value && typeof value === "object" && !Array.isArray(value);
 const nonnegative = (value: unknown): value is number =>
@@ -85,6 +102,9 @@ export function parseState(raw: string | null): AppState {
       nonnegative(c.avatar) &&
       c.avatar < 3 &&
       isObject(c.progress) &&
+      (c.knownWordIds === undefined ||
+        (Array.isArray(c.knownWordIds) &&
+          c.knownWordIds.every((wordId) => typeof wordId === "string"))) &&
       Object.entries(c.progress).every(
         ([key, p]) =>
           isObject(p) &&
@@ -131,6 +151,8 @@ export function parseState(raw: string | null): AppState {
   ) {
     migrated.activeSession.newWordIds = [];
   }
+  for (const child of migrated.children)
+    child.knownWordIds ??= [];
   for (const child of migrated.children)
     for (const p of Object.values(child.progress)) {
       p.nextReviewAtRecognition ??= p.nextReviewAt;

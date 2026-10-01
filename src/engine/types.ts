@@ -26,6 +26,7 @@ export interface Child {
   avatar: number;
   xp: number;
   progress: Record<string, Progress>;
+  knownWordIds?: string[];
 }
 export interface Answer {
   wordId: string;

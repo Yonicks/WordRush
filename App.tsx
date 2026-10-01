@@ -19,7 +19,7 @@ import { StatusBar } from "expo-status-bar";
 import * as Speech from "expo-speech";
 import * as Haptics from "expo-haptics";
 import { StoreProvider, useStore } from "./src/state/store";
-import { completeSession, recordAnswer } from "./src/state/model";
+import { completeSession, recordAnswer, setWordKnown } from "./src/state/model";
 import {
   effectiveMastery,
   mastery,
@@ -36,6 +36,7 @@ type Routes = {
   Play: undefined;
   Results: { sessionId: string };
   Parent: undefined;
+  Library: undefined;
   Profiles: undefined;
 };
 const Stack = createNativeStackNavigator<Routes>();
@@ -156,6 +157,11 @@ function Home({ navigation }: Props<"Home">) {
       </View>
       <Button
         secondary
+        label="כל המילים שלי"
+        onPress={() => navigation.navigate("Library")}
+      />
+      <Button
+        secondary
         label="אזור הורים"
         onPress={() => navigation.navigate("Parent")}
       />
@@ -228,7 +234,14 @@ function Profiles({
               activeChildId: childId,
               children: [
                 ...v.children,
-                { id: childId, name: name.trim(), avatar, xp: 0, progress: {} },
+                {
+                  id: childId,
+                  name: name.trim(),
+                  avatar,
+                  xp: 0,
+                  progress: {},
+                  knownWordIds: [],
+                },
               ],
             }));
             navigation.navigate("Home");
@@ -249,7 +262,7 @@ function Play({ navigation }: Props<"Play">) {
       ? draft.selectedWordIds
           .map((wordId) => words.find((w) => w.id === wordId))
           .filter((w): w is Word => Boolean(w))
-      : selectWords(words, child.progress, Date.now()),
+      : selectWords(words, child.progress, Date.now(), 15, child.knownWordIds),
   );
   const [newWords] = useState(() =>
     draft
@@ -431,24 +444,46 @@ function Play({ navigation }: Props<"Play">) {
         )}
       </View>
       {discovering ? (
-        <Button
-          label="הכרנו! ממשיכים"
-          onPress={() => {
-            const nextDiscovery = discovery + 1;
-            setDiscovery(nextDiscovery);
-            update((v) =>
-              v.activeSession
-                ? {
-                    ...v,
-                    activeSession: {
-                      ...v.activeSession,
-                      discoveryIndex: nextDiscovery,
-                    },
-                  }
-                : v,
-            );
-          }}
-        />
+        <>
+          <Button
+            label="הכרנו! ממשיכים"
+            onPress={() => {
+              const nextDiscovery = discovery + 1;
+              setDiscovery(nextDiscovery);
+              update((v) =>
+                v.activeSession
+                  ? {
+                      ...v,
+                      activeSession: {
+                        ...v.activeSession,
+                        discoveryIndex: nextDiscovery,
+                      },
+                    }
+                  : v,
+              );
+            }}
+          />
+          <Button
+            secondary
+            label="אני כבר מכיר/ה את המילה"
+            onPress={() => {
+              update((v) => setWordKnown(v, child.id, word.id, true));
+              const nextDiscovery = discovery + 1;
+              setDiscovery(nextDiscovery);
+              update((v) =>
+                v.activeSession
+                  ? {
+                      ...v,
+                      activeSession: {
+                        ...v.activeSession,
+                        discoveryIndex: nextDiscovery,
+                      },
+                    }
+                  : v,
+              );
+            }}
+          />
+        </>
       ) : (
         <>
           <View style={s.options}>
@@ -518,6 +553,89 @@ function Results({ navigation, route }: Props<"Results">) {
         </Text>
       </View>
       <Button label="בחזרה להרפתקה" onPress={() => navigation.popToTop()} />
+    </Page>
+  );
+}
+function Library() {
+  const { state, update } = useStore();
+  const child = state.children.find((c) => c.id === state.activeChildId)!;
+  const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<"all" | "known" | "learning" | "new">(
+    "all",
+  );
+  const knownIds = new Set(child.knownWordIds ?? []);
+  const visible = words.filter((word) => {
+    const matches = `${word.english} ${word.hebrew} ${word.category}`
+      .toLowerCase()
+      .includes(query.trim().toLowerCase());
+    const known = knownIds.has(word.id);
+    const learning = Boolean(child.progress[word.id]);
+    return (
+      matches &&
+      (filter === "all" ||
+        (filter === "known" && known) ||
+        (filter === "learning" && learning && !known) ||
+        (filter === "new" && !learning && !known))
+    );
+  });
+  const setKnown = (wordId: string, known: boolean) =>
+    update((current) => setWordKnown(current, child.id, wordId, known));
+  return (
+    <Page>
+      <Heading
+        title="כל המילים"
+        caption={`${words.length} מילים במסע • אפשר לסמן מילה שמכירים כבר`}
+      />
+      <TextInput
+        accessibilityLabel="חיפוש מילים"
+        placeholder="חיפוש בעברית או באנגלית"
+        value={query}
+        onChangeText={setQuery}
+        style={s.input}
+      />
+      <View style={s.filterRow}>
+        {(
+          [
+            ["all", "הכול"],
+            ["new", "חדשות"],
+            ["learning", "לומדים"],
+            ["known", "מכיר/ה"],
+          ] as const
+        ).map(([value, label]) => (
+          <Pressable
+            key={value}
+            accessibilityRole="button"
+            accessibilityState={{ selected: filter === value }}
+            onPress={() => setFilter(value)}
+            style={[s.filter, filter === value && s.filterSelected]}
+          >
+            <Text style={s.filterText}>{label}</Text>
+          </Pressable>
+        ))}
+      </View>
+      {visible.map((word) => {
+        const known = knownIds.has(word.id);
+        const learning = Boolean(child.progress[word.id]);
+        return (
+          <View key={word.id} style={s.libraryRow}>
+            <View style={{ flex: 1, gap: 3 }}>
+              <Text style={[s.libraryWord, s.englishText]}>{word.english}</Text>
+              <Text style={s.small}>
+                {word.hebrew} • {known ? "כבר מכירים" : learning ? "בלמידה" : "חדשה"}
+              </Text>
+            </View>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={known ? `להחזיר את ${word.english} ללמידה` : `לסמן שאני מכיר את ${word.english}`}
+              onPress={() => setKnown(word.id, !known)}
+              style={[s.knownButton, known && s.knownButtonActive]}
+            >
+              <Text style={s.knownButtonText}>{known ? "להחזיר" : "מכיר/ה"}</Text>
+            </Pressable>
+          </View>
+        );
+      })}
+      {!visible.length && <Text style={s.subtitle}>לא מצאנו מילים כאלה עדיין.</Text>}
     </Page>
   );
 }
@@ -624,6 +742,11 @@ function Shell() {
               name="Parent"
               component={Parent}
               options={{ title: "אזור הורים" }}
+            />
+            <Stack.Screen
+              name="Library"
+              component={Library}
+              options={{ title: "כל המילים" }}
             />
           </Stack.Navigator>
         </NavigationContainer>
@@ -869,5 +992,35 @@ const s = StyleSheet.create({
     borderRadius: 16,
     gap: 10,
   },
+  filterRow: { flexDirection: "row-reverse", flexWrap: "wrap", gap: 8 },
+  filter: {
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: c.line,
+    backgroundColor: c.white,
+    paddingHorizontal: 13,
+    paddingVertical: 9,
+  },
+  filterSelected: { backgroundColor: "#EEE9FC", borderColor: c.purple },
+  filterText: { color: c.ink, fontWeight: "700", fontSize: 13 },
+  libraryRow: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: 12,
+    padding: 16,
+    backgroundColor: c.white,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: c.line,
+  },
+  libraryWord: { fontSize: 21, fontWeight: "800", color: c.ink },
+  knownButton: {
+    borderRadius: 14,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    backgroundColor: "#E8F8EF",
+  },
+  knownButtonActive: { backgroundColor: "#FFF1D7" },
+  knownButtonText: { color: c.green, fontWeight: "800", fontSize: 12 },
   error: { backgroundColor: "#FFF0E9", padding: 12, gap: 8 },
 });
