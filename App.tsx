@@ -19,6 +19,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { Pronunciation } from "./src/audio/Pronunciation";
 import { DailyRing } from "./src/ui/DailyRing";
+import { HomeScreen } from "./src/ui/HomeScreen";
 import { pictures } from "./src/data/pictures";
 import {
   createDraft,
@@ -112,78 +113,20 @@ function Home({ navigation }: Props<"Home">) {
   const daily = dailyActivity(state, child.id, Date.now());
   const hasDraft = state.activeSession?.childId === child.id;
   return (
-    <Page>
-      <View style={s.headerRow}>
-        <Text style={s.wordmark}>
-          Word<Text style={{ color: c.purple }}>Rush</Text>
-        </Text>
-        <Pressable
-          accessibilityRole="button"
-          onPress={() => navigation.navigate("Profiles")}
-          style={s.profile}
-        >
-          <Image source={art.avatars[child.avatar]} style={s.avatar} />
-          <Text style={s.small}>{child.name}</Text>
-        </Pressable>
-      </View>
-      <View style={s.chip}>
-        <Text style={s.chipText}>ההרפתקה הקטנה של היום</Text>
-      </View>
-      <Heading
-        title={`היי ${child.name}, מוכנים לשחק?`}
-        caption="עוד כמה מילים. עוד עולם שלם לגלות."
-      />
-      <View style={s.hero}>
-        <View style={s.heroCircle} />
-        <Image source={art.mascot} style={s.mascot} />
-        <Text style={s.heroTitle}>מילים קטנות, הרפתקה גדולה</Text>
-        <Text style={s.subtitle}>לומדים אנגלית, צעד קטן בכל יום</Text>
-        <Button
-          label={hasDraft ? "ממשיכים לשחק" : "בואו נשחק"}
-          onPress={() => navigation.navigate("Play")}
-        />
-        <Text style={s.hint}>סיבוב קצר • בקצב שלכם</Text>
-      </View>
-      <DailyRing
-        count={daily.wordIds.length}
-        minutes={Math.floor(daily.activeMs / 60000)}
-      />
-      <View style={s.row}>
-        <View style={s.stat}>
-          <Text style={s.statNumber}>{child.xp}</Text>
-          <Text style={s.small}>נקודות XP</Text>
-        </View>
-        <View style={s.stat}>
-          <Text style={s.statNumber}>{progress.length}</Text>
-          <Text style={s.small}>מילים שתרגלנו</Text>
-        </View>
-        <View style={s.stat}>
-          <Text style={s.statNumber}>{due}</Text>
-          <Text style={s.small}>מילים לחזרה</Text>
-        </View>
-      </View>
-      <View style={s.worldCard}>
-        <Image source={art.world} style={s.world} />
-        <View style={{ flex: 1 }}>
-          <Text style={s.kicker}>העולם הראשון</Text>
-          <Text style={s.sectionTitle}>מתחילים לגלות</Text>
-          <Text style={s.small}>
-            {progress.filter((p) => mastery(p) >= 80).length} מילים בשליטה מתוך
-            {words.length}
-          </Text>
-        </View>
-      </View>
-      <Button
-        secondary
-        label="כל המילים שלי"
-        onPress={() => navigation.navigate("Library")}
-      />
-      <Button
-        secondary
-        label="אזור הורים"
-        onPress={() => navigation.navigate("Parent")}
-      />
-    </Page>
+    <HomeScreen
+      child={child}
+      due={due}
+      practiced={progress.length}
+      mastered={progress.filter((p) => mastery(p) >= 80).length}
+      totalWords={words.length}
+      dailyCount={daily.wordIds.length}
+      dailyMinutes={Math.floor(daily.activeMs / 60000)}
+      hasDraft={hasDraft}
+      onPlay={() => navigation.navigate("Play")}
+      onProfiles={() => navigation.navigate("Profiles")}
+      onLibrary={() => navigation.navigate("Library")}
+      onParent={() => navigation.navigate("Parent")}
+    />
   );
 }
 function Profiles({
